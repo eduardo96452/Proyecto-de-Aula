@@ -9,8 +9,277 @@ and open the template in the editor.
         <title>Guia de JavaScript</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"><!-- comment -->
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script><!-- comment -->
+
+        <style>
+            main{     
+                margin: 1.5%;
+                font-family: Times New Roman;
+            }
+            .colores{
+                padding: 4%;
+                background-color: #fdecda;
+            }            
+
+            .blanco{
+                background-color: whitesmoke;
+            }
+
+            .centrado{
+                text-align:center;
+            } 
+        </style>
     </head>
     <body>
-        <div>Hola Mundo</div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Mundo HMTL</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Pagina Principal</a>
+                        </li>                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Guias                               
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="Html/guiaCSS.html">Guias de HTML</a></li>
+                                <li><a class="dropdown-item" href="Html/guiaCSS.html">Guias de CSS</a></li>
+                                <li><a class="dropdown-item" href="Html/guiaJavaScript.html">Guias de JavaScript</a></li>                                
+                            </ul>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link ">Acerca de</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="colores">
+                <h1 class="centrado">Guia sobre JavaScript</h1>            
+                <h3>¿Qué es JavaScript?</h3>
+                <p>
+                    JavaScript es uno de los llamados lenguajes de secuencias de comandos. 
+                    textos (textos traducidos a guiones, Literalmente) son archivos por lotes, 
+                    generalmente programas simples. Por eso no podemos poner JavaScript. 
+                    Como lenguaje de programación por derecho propio, pero aún permite la creación de páginas dinámicas,
+                    usando El efecto es realmente genial y mejora mucho su apariencia. 
+                    Nos permite tener alguna interacción.
+                </p>
+                <p>
+                    Con los usuarios de nuestros sitios para conocer y responder a ciertos eventos 
+                    que puedan ocurrir Derecha. Por ejemplo, se pueden agregar elementos animados que 
+                    recuerdan a la animación flash. Similar Podemos crear programas más complejos que 
+                    traten con estructuras de datos. Como lenguaje de secuencias de comandos, 
+                    los programas que creamos no necesitarán ser compilados. 
+                    Idiomas El texto es un lenguaje interpretado. Esto significa que, en la práctica, 
+                    cuando trabajemos con JavaScript, escribiremos Nuestro software y podemos ejecutarlo 
+                    directamente sin hacer nada más, En resumen: trabajar con JavaScript es rápido y fácil, 
+                    y los resultados pueden ser muy satisfactorios. Este lenguaje tiene ciertas limitaciones, 
+                    le permite al programador controlar lo que sucede en la página [1].
+                </p>
+                <h3>Los Orígenes de JavaScript</h3>
+                <p>
+                    HTML se creó originalmente para permitir la manipulación de varios elementos que podrían 
+                    aparecer en una página. Sin embargo, con el tiempo, se vuelve insuficiente para cubrir las 
+                    necesidades que surgen a medida que se vuelven cada vez más complejas. Con el tiempo, 
+                    cada vez se impone más complejidad en las posibilidades.
+                </p>
+                Los procedimientos y HTML no son suficientes para satisfacer este requisito, 
+                porque es un lenguaje muy estático. En la década de 1990 se creó Java, 
+                lo que supone un gran paso adelante en esta tecnología. Java le permite desarrollar applets 
+                que están incrustados dentro de la propia página, llamados applets. 
+                <p>
+                    Desarrollado por Sun Microsystems. Más tarde, Brendan Eich de Netscape también desarrolló 
+                    LiveScript (inicialmente llamado Mocha), un pionero de JavaScript. 
+                    Mucho más simple que Java, puede desarrollar pequeños programas en páginas. 
+                </p>
+                <p>
+                    Después de la alianza de Netscape conSun Microsystems seguramente hará que JavaScript, 
+                    que es la "hermana pequeña" de Java, sea asequible incluso para aquellos que no saben 
+                    mucho sobre programación y solo es útil en el campo web. Netscape 2.0 fue el primer navegador 
+                    capaz de interpretar JavaScript, seguido por Microsoft. Hoy, debido a su creciente popularidad, 
+                    cualquier navegador moderno es capaz de traducir secuencia de comandos javascript. 
+                </p>
+                <p>
+                    Debemos aclarar que, aparte del origen común y algunas similitudes en los nombres, 
+                    Java y JavaScript son dos lenguajes diferentes. Java es un lenguaje mucho más poderoso y poderoso, 
+                    debe ser compilador y orientado a objetos. También es un lenguaje muy tipado: las variables 
+                    deben declararse como un tipo y no pueden usarse con otros tipos de valores, lo que no es el 
+                    caso (como veremos) en JavaScript [1].
+                </p>
+                <h3>Especificaciones oficiales</h3>
+                <p>
+                    ECMA ha publicado una serie de estándares relacionados con ECMAScript. En junio de 1997 se 
+                    publicó La primera versión del estándar ECMA-262. Un año después, en junio de 1998, 
+                    Modificaciones menores para adaptar ISO/IEC-16262 y Norma II enmienda. La tercera versión 
+                    del estándar ECMA-262 (publicada en diciembre de 1999) es la versión
+                </p>
+                <p>
+                    Los navegadores actuales están en uso y están disponibles gratuitamente en 
+                    http://www.ecma-international.org/publications/standards/Ecma-262.htm
+                </p>
+                <p>
+                    Actualmente se está desarrollando una cuarta versión de ECMA-262, que puede incluir nuevas 
+                    funciones como paquetes, espacios de nombres, definiciones de clases explícitas, etc. 
+                </p>
+                <p>
+                    ECMA también ha definido una serie de estándares relacionados con ECMAScript, como ECMA-357, 
+                    que define una extensión llamada E4X y permite la integración JavaScript y XML [2].
+                </p>
+                <h3>Ventajas de JavaScript</h3>
+                <p>
+                    JavaScript se conoció primero como LiveScript. Pero como Java es un lenguaje muy popular, 
+                    Netscape decidió cambiar su nombre a JavaScript. Su primera aparición fue en 1995 en 
+                    Netscape 2.0. Estos son algunos de los principales beneficios de usar JavaScript [3]:
+                </p>
+                <p>
+                    •	Interacción mínima con el servidor.
+                </p>
+                <p>
+                    •	Interfaces más completas y fáciles de usar.
+                </p>
+                <p>
+                    •	Retroalimentación inmediata para el usuario.
+                </p>
+                <p>
+                    •	Fácil depuración.
+                </p>
+                <h4>Interacción mínima con el servidor</h4>
+                <p>
+                    Es un hecho bien conocido que, si desea mejorar el rendimiento del sitio web, 
+                    la mejor manera es reducir la conexión al servidor. JavaScript ayuda en este sentido al 
+                    validar la información ingresada por el usuario en el lado del cliente. Solo envía la 
+                    solicitud al servidor después de ejecutar las comprobaciones de validación iniciales. 
+                    Como resultado, el uso de recursos y la cantidad de solicitudes al servidor se reducen 
+                    significativamente.
+                </p>
+                <h4>Interfaces más completas y fáciles de usar</h4>
+                <p>
+                    Con JavaScript, puede crear interfaces interactivas del lado del cliente. 
+                    Por ejemplo, agregue controles deslizantes, presentaciones de diapositivas, 
+                    efectos de desplazamiento, arrastrar y soltar, y más.
+                </p>
+                <h4>Retroalimentación inmediata para el usuario</h4>
+                <p>
+                    Con JavaScript, puede asegurarse de que sus usuarios reciban una respuesta inmediata. 
+                    Por ejemplo, supongamos que un usuario completó un formulario y dejó un campo vacío. 
+                    Sin la validación de JavaScript, tendrían que esperar a que la página se recargara 
+                    para darse cuenta de que dejaron un campo vacío. Sin embargo, con JavaScript, 
+                    reciben una alerta inmediata.
+                </p>
+                <h4>Fácil depuración</h4>
+                <p>
+                    JavaScript es un lenguaje interpretado, lo que significa que el código escrito se decodifica línea por línea. 
+                    Si hay un error, obtendrá el número de línea exacto donde está el problema.
+                </p>
+                <h3>Inclusión de JavaScript en las páginas</h3>
+                <p>
+                    Hay dos formas de incluir JavaScript en HTML y hacer que funcionen juntos. 
+                    Ahora que hemos hablado sobre JavaScript y visto algunas de sus ventajas, 
+                    veamos algunas de las formas en que podemos conectar JavaScript a HTML [3].
+                </p>
+                <h4>Agregar JavaScript directamente a un archivo HTML</h4>
+                <p>
+                    Para hacer que un documento HTML incluya instrucciones en JavaScript se debe hacer 
+                    uso de la etiqueta &ltSCRIPT&gt  de esta forma [4]:
+                </p>
+                <div class="blanco">
+                    <pre>
+
+                    &ltscript language=”JavaScript”&gt   
+                        código JavaScript 
+                    &lt/script&gt
+                
+                    </pre>
+                </div>
+                <p>
+                    Si se quiere especificar qué versión de JavaScript se utiliza, para evitar que 
+                    navegadores que no soportan la versión decodifiquen el JavaScript, entonces se usa, por ejemplo:
+                </p>
+                <div class="blanco">
+                    <pre>
+
+                    &ltscript language=”JavaScript1.3”&gt
+                    
+                    </pre>
+                </div>
+                <h4>Agregar código JavaScript a un archivo separado</h4>
+                <p>
+                    También se puede usar código JavaScript escrito en un archivo separado. 
+                    Este archivo debe tener la extensión js. Solo se coloca código JavaScript en el archivo. 
+                    Entonces este código se puede llamar desde la página web con un código [4]:
+                </p>
+                <div class="blanco">
+                    <pre>
+
+                    &ltscript language=”Javascript” src=”archivo.js”&gt
+                    
+                    </pre>
+                </div>
+                <h3>Normas de escritura en JavaScript</h3>
+                <p>
+                    •	Los comentarios deben empezar con el símbolo // 
+                    si son de una sola línea o iniciarse con los símbolos /* y finalizar con */ si son de varias líneas.
+                </p>
+                <p>
+                    •	Las líneas de código terminan con el signo de punto y coma (;)
+                </p>
+                <p>
+                    •	Javascript distingue entre mayúsculas y minúsculas
+                </p>
+                <p>
+                    •	Las llaves ({ y }) permiten agrupar código [4].
+                </p>
+                <h3>Operadores</h3>
+                <p>
+                    Los operadores son los elementos que permite en realizar operaciones con los datos del código.
+                </p>
+                <br>
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Operador</th>
+                            <th scope="col">Significado</th>
+                            <th scope="col">Ejemplo</th>
+                            <th scope="col">Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">+</th>
+                            <td>Suma</td>
+                            <td>3 + 5</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"></th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                    <br>
+                </table>
+            </div>
+        </main>
     </body>
 </html>

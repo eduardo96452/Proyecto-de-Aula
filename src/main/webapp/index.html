@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Proyecto de Aula</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"><!-- comment -->
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script><!-- comment -->
+        <style>
+            main{     
+                margin: 1.5%;
+                font-family: veldana;
+            }
+
+            .centrado{
+                text-align:center;
+            } 
+            .colores{
+                padding: 4%;
+                background-color: #fdecda;
+            } 
+
+            .cuadro{
+                margin:  5%;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Mundo HMTL</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Pagina Principal</a>
+                        </li>                        
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Guias                               
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="Html/guiaHTML.html">Guias de HTML</a></li>
+                                <li><a class="dropdown-item" href="Html/guiaCSS.html">Guias de CSS</a></li>
+                                <li><a class="dropdown-item" href="Html/guiaJavaScript.html">Guias de JavaScript</a></li>                                
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Acerca de</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>       
+        <main>
+            <div class=" p-2 row g-4">
+                <div class="col-md-4 col-lg-3 order-md-last">
+                    <form class="card p-2 colores">
+                        <h4 class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-primary">Contenido de la pagina</span>                        
+                        </h4>
+                    </form>
+                    <br>
+                    <form class="card p-2 colores">
+                        <a href="#HistoriaWeb" class="link-dark" >Historia de la Web</a>                        
+                        <a href="#Definiciones" class="link-dark" >Definiciones</a>
+                        <ul>
+                            <li>  
+                                <a href="#Paginaweb" class="link-dark" >Página web</a>
+                            </li>                        
+                            <li>
+                                <a href="#Sitioweb" class="link-dark" >Sitio web</a>
+                            </li>
+                            <li>
+                                <a href="#Aplicacion" class="link-dark" >Aplicación web</a>
+                            </li>
+                            <li>
+                                <a href="#Portalweb" class="link-dark" >Portal web</a>
+                            </li>
+                            <li>
+                                <a href="#Dominioweb" class="link-dark" >Dominio web</a>
+                            </li>
+                            <li>
+                                <a href="#Servidorweb" class="link-dark" >Servidor web</a>
+                            </li>
+                            <li>
+                                <a href="#Servidorapp" class="link-dark" >Servidor de aplicaciones</a>
+                            </li>                            
+                        </ul>                       
+                        <a href="#Evolucion" class="link-dark" >Evolución de la web</a>
+                        <ul>
+                            <li>  
+                                <a href="#Web1" class="link-dark" >La web 1.0</a>
+                            </li>                        
+                            <li>
+                                <a href="#Web2" class="link-dark" >La web 2.0</a>
+                            </li>
+                            <li>
+                                <a href="#Web3" class="link-dark" >La web 3.0</a>
+                            </li>
+                            <li>
+                                <a href="#Web4" class="link-dark" >La web 4.0</a>
+                            </li>
+                        </ul>
+                        <a href="#Bibliografia" class="link-dark" >Bibliografia de esta pagina</a>
+                    </form>
+                </div>
+                <div class="colores col-md-8 col-lg-9">
+
+                    <h1 class="display-2 centrado"><strong>BIENVENIDO AL PROYECTO DE AULA</strong></h1><!-- comment -->
+                    <br>
+                    <hr class="border-primary border-3 opacity-75"><!-- linia divisora del contenido -->
+
+                    <div id="HistoriaWeb"></div>
+                    <h1 class="centrado"><strong>Historia de la Web</strong></h1>
+                    <br><!-- comment -->
+                    <p>
+                        En esta seccion se verán conceptos, definiciones y propiedades de las paginas web, sitio web y aplicaciones web.
+                    </p>
+                    <br><!-- comment -->
+                    <div id="Definiciones"></div>
+                    <h4><strong>Definiciones</strong></h4>
+                    <p>
+                        Antes de poder continuar debemos prestar atención que tenemos algunos términos similares y que debemos porque son diferentes:
+                    </p>
+                    <div id="Paginaweb"></div>
+                    <h4><strong>Página web</strong></h4>
+                    <p>
+                        Es un documento digital escrito en HTML que es capaz de ser interpretado por un navegador.<a><u>[1]</u></a>
+                    </p>
+                    <p>
+                        Algunos de los elementos más comunes que podemos encontrar en la construcción de la página web son:
+                    </p>
+                    <ul>
+                        <li>  
+                            <p>
+                                <strong>Html:</strong> <em>(Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language)</em> es el componente más básico de la Web. Define el significado y la estructura del contenido web.
+                            </p>
+                        </li>                        
+                        <li>
+                            <p>
+                                <strong>CSS:</strong> Las Hojas de estilo en cascada <em>(del inglés Cascading Stylesheets CSS)</em> es la siguiente tecnología que aprenderemos después de HTML. Mientras que HTML se utiliza para definir la estructura y la semántica del contenido, CSS se usa para darle estilo y posicionarlo visualmente.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>JavaScript:</strong> JavaScript es un lenguaje de programación 
+                                que te permite implementar cosas complejas en páginas web.
+                            </p>
+                        </li>
+                    </ul>
+                    <div id="Sitioweb"></div>
+                    <h4><strong>Sitio web</strong></h4>
+                    <p>
+                        Son estructuras de información como tantas otras, con las singularidades que 
+                        aportan las singularidades que aportan las características que le son propias 
+                        como: la hipertextualidad, la forma gráfica, el acceso y la interactividad.
+                    </p>
+                    <div id="Aplicacion"></div>
+                    <h4><strong>Aplicación web</strong></h4>
+                    <p>
+                        Es un sistema de software al que se accede a través de Internet (o Intranet): 
+                        Las aplicaciones Web constituyen una clase especial de aplicaciones de software 
+                        que se construyen de acuerdo con ciertas tecnologías y estándares.
+                    </p>
+                    <div id="Portalweb"></div>
+                    <h4><strong>Portal web</strong></h4>
+                    <p>
+                        Es una herramienta electrónica que contiene información concreta de un tema en 
+                        específico que es almacenado en algún sistema de cómputo que se encuentra enlazado 
+                        a la red universal de información conocida como internet, de tal manera que esta 
+                        herramienta pueda ser consultada por cualquier individuo que permita conectarse a esta red universal de informaciones
+                    </p>
+                    <p>
+                        Es un sitio web que ofrece de manera integrada o de forma única el ingreso a los 
+                        “sitios web” o “aplicaciones web” de una empresa.
+                    </p>
+                    <div id="Dominioweb"></div>
+                    <h4><strong>Dominio web</strong></h4>
+                    <p>
+                        Nombre único que identifica a un sitio web como único en la red. Subdominio es el 
+                        nombre de una aplicación o sitio web que necesita del dominio para ser visible en red.
+                    </p>
+                    <div id="Servidorweb"></div>
+                    <h4><strong>Servidor web</strong></h4>
+                    <p>
+                        Programa de software que procesa una aplicación del lado del servidor, realizando 
+                        conexiones bidireccionales o unidireccionales y síncronas o asíncronas con el cliente.
+                    </p>
+                    <div id="Servidorapp"></div>
+                    <h4><strong>Servidor de aplicaciones</strong></h4>
+                    <p>
+                        Aplicación de software que corre sobre una computadora generalmente con mayores 
+                        recursos de procesamiento, memoria y almacenamiento que las demás computadoras de 
+                        la red, y que ejecuta las aplicaciones para brindar los servicios a los clientes que los soliciten.
+                    </p>
+                    <div id="Evolucion"></div>
+                    <h4><strong>Evolución de la web</strong></h4>
+                    <p>
+                        la Web ha pasado por una evolución sorprendente. La Web 1.0 que se identifica por 
+                        visualizar contenido estático. La Web 2.0 se caracteriza por permitir un contenido 
+                        dinámico o interactivo. La Web 3.0 se identifica por el contenido colaborativo, 
+                        ajustándose a los intereses de los usuarios. Y La Web 4.0 que se caracteriza por 
+                        ser la Web emotiva, basándose en un ancho de banda de alta tecnología que permite 
+                        al usuario obtener un mejor contenido
+                    </p>
+                    <div id="Web1"></div>
+                    <h5><strong>La web 1.0</strong></h5>
+                    <p>
+                        La Web 1.0 no era atractiva para pautas publicitarias ni de
+                        grandes ni de pequeñas empresas, pues no era un medio masivo y su frecuencia en cuanto a actualización era mínima. El
+                        hombre interesado sólo podía cumplir la función de receptor
+                        aceptando esa escasa información, puesto que eran pocas
+                        las opciones que la Web ofrecía.
+                    </p>
+                    <p>                    
+                        Con el paso de los años, más precisamente en octubre del
+                        2004, ocurre el gran salto de la historia informática, cuando
+                        aparece la Web 2.0, una segunda generación en la historia.
+                        Con esta aparición vinieron grandes cambios que hicieron
+                    </p>
+
+                    <h6><strong>Características</strong></h6>
+                    <p>
+                        Las características de La Web 1.0 están relacionadas principalmente por el tipo 
+                        de contenido, la interacción con el usuario y el tipo de comunicación entre clientes
+                    </p>
+
+                    <div class="accordion cuadro" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    Paginas estáticas
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body">
+                                    Las paginas web se consideraban estaticas, porque los usuarios solo podian acceder a contendos web predeterminados y sin poder
+                                    tener mucha interacción.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    Carga rapida de las páginas
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body">
+                                    Al ser contenido web predeterminado, y la información que se mostraban era sólo de texto, con pocas imágenes y sin ningún archivo
+                                    multimedia
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Dispersión del consumidor
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                <div class="accordion-body">
+                                    Se refiere a que pocos usuarios podían añadir
+                                    contenido                   </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Contenido creado por organizaciones
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                                <div class="accordion-body">
+                                    La mayoría de las empresas crearon sus
+                                    sitios web, básicamente con anuncios de compras 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Falta de normas
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                                <div class="accordion-body">
+                                    Al no contar con normas de diseño de páginas web, las páginas
+                                    creaban un desconcierto en el usuario.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsesSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Falta de autenticación
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapsesSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+                                <div class="accordion-body">
+                                    Todos los usuarios eran considerados visitantes, por
+                                    motivo de que no se usaban bases de datos para realizar los inicios de sesión.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Muy pocos navegadores
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
+                                <div class="accordion-body">
+                                    En esta versión hubieron muy pocos navegadores, entre ellos estaban NetScape, Internet Explorer, entre otros.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingNine">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Interaccion con el usuario casi nula
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingNine">
+                                <div class="accordion-body">
+                                    al ser una web donde los contenidos estaban
+                                    preestablecidos y para realizar algún cambio debía ser hecho por el webmaster.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Diseño sencillos
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTen">
+                                <div class="accordion-body">
+                                    El diseño consistía en el empleo de saltos de
+                                    línea y líneas horizontales como separadores, se usaban listas para organizar la
+                                    información, quedando los diseños similares a un documento en papel
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingEleven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEleven" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Baja frecuencia de cambios
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseEleven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEleven">
+                                <div class="accordion-body">
+                                    Añadir o cambiar algo en la página web requería
+                                    de tiempo y esfuerzo, debido a que las páginas web estaban escritas en código
+                                    HTML sin ayuda de programas o herramientas.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="Web2"></div>
+                    <h5><strong>La web 2.0</strong></h5>
+                    <p>
+                        La Web 2.0 desarrolló el software, un equipamiento lógico de
+                        un computador digital, capaz de poder realizar una tarea específica. La Web pasó a ser una plataforma donde el usuario
+                        era el lector y productor con el control total de la información
+                        y los sitios Web dejaron de ser lugares de recepción de datos,
+                        pasando a ser zonas de encuentro. La información era introducida y extraída fácilmente por los usuarios, quienes se convirtieron en productores de la misma data que consumían
+                    </p>
+                    <h6><strong>Características</strong></h6>
+                    <p>
+                        Las características de la Web 2.0, se relacionan
+                        con el contenido, el grado de interacción con el usuario, el tipo de comunicación entre
+                        los navegadores y la WWW
+                    </p>
+                    <div class="accordion cuadro" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headinguno">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseuno" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    Las páginas dejan de ser estáticas
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseuno" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headinguno">
+                                <div class="accordion-body">
+                                    Esto significa que el contenido es creado por
+                                    los usuarios, es decir, la Web dispone de aplicaciones web que permiten crear
+                                    contenido, disminuyendo la dependencia de los diseñadores web para tener su
+                                    propia página web.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingdos">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsedos" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    Carga de las páginas
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapsedos" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingdos">
+                                <div class="accordion-body">
+                                    Se pude pensar que, la carga de las páginas de la Web 2.0 es
+                                    más lenta que las páginas de la Web 1.0 porque incluyen elementos interactivos,
+                                    lógica de programación y consultas a bases de datos que se deben ejecutar en
+                                    el lado servidor para satisfacer las solicitudes de los usuarios.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingtres">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsetres" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Dispersión del consumidor
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapsetres" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingtres">
+                                <div class="accordion-body">
+                                    Mientras en la Web 1.0 eran muy pocos los que
+                                    podían agregar contenido, en la Web 2.0 el abanico de usuarios se extendió
+                                    considerablemente hasta llegar a considerarse que el límite sería el número de
+                                    personas que acceden a Internet.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingcuatro">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsecuatro" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Propietarios de los sitios web
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapsecuatro" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingcuatro">
+                                <div class="accordion-body">
+                                    Antes de la Web 2.0 los sitios web era exclusivos
+                                    de grandes empresas y organizaciones. Eso cambió con el surgimiento de la Web
+                                    2.0. la Web es de todos. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingcinco">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsecinco" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Frecuencia de cambios
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapsecinco" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingcinco">
+                                <div class="accordion-body">
+                                    Los cambios en las páginas de los sitios web ya no
+                                    requieren de mucho tiempo ni de mucho esfuerzo, ya que, la existencia de
+                                    aplicaciones y herramientas que ayudan en estas tareas.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingseis">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsesseis" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Estándares de diseño web
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapsesseis" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingseis">
+                                <div class="accordion-body">
+                                    Hasta que se fundó el Proyecto de estándares Web con sus siglas en inglés WaSP en 1998, cada fabricante de navegadores producía sus propios elementos y maneras
+                                    para manipular los documentos web.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingsiete">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsesiete" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Autenticación de Usuarios
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapsesiete" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingsiete">
+                                <div class="accordion-body">
+                                    La identificación de las personas que acceden a la
+                                    información fue requerida más allá de conocer el número de veces que acceden a la
+                                    información (Web 1.0), se requiere conocer el número de usuarios (personas) que
+                                    acceden.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingocho">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseocho" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Interaccion con el usuario
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseocho" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingocho">
+                                <div class="accordion-body">
+                                    La interactividad es la principal diferencia entre las
+                                    dos primeras eras de la Web. La Web 1.0 con una interactividad casi nula, mientras
+                                    que en la Web 2.0 abundante interactividad.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingnueve">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsenueve" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Diseño de sitios web
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapsenueve" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingnueve">
+                                <div class="accordion-body">
+                                    Así como la interactividad, el diseño de los sitios web pasó
+                                    de diseñar sitios web sencillos, llenos de texto, con una u otra imagen, a tener que
+                                    diseñar sitios web con muchas posibilidades de interacción con el usuario.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingdiez">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsediez" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Navegación estructurada
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapsediez" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingdiez">
+                                <div class="accordion-body">
+                                    Uno de los problemas en la navegación, era el uso de
+                                    marcos (frames). Con la Web 2.0, estos problemas fueron atacados con el uso de
+                                    otros elementos para la maquetación de los sitios web, como tablas, cajas (div)
+                                    entre otros; y así se eliminó los problemas de desorientación de la navegación.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h6><strong>Tecnologias usadas en la aplicacion de la web 2.0</strong></h6>
+                    <p>
+                        Las principales tecnologías de la Web 2.0 son: Las que permiten la distribución
+                        de contenido, tecnología de Internet basada en Ajax, DOM, REST, XML, Blogs,
+                        Really Simple Syndication (RSS), Wikis, Mashups.
+                    </p>
+                    <div id="Web3"></div>
+                    <h5><strong>La web 3.0</strong></h5>
+                    <p>
+                        La Web 3.0 es una nueva versión de la Web. Aunque la versión 2.0 se puede considerar
+                        muy diferente a su predecesora, no sucede eso entre la Web 2.0 y La 3.0. Sin desentonar
+                        y guardando la armonía, se puede decir que la Web 3.0 es una Web extendida, con
+                        el mayor significado, brindándole al usuario la posibilidad de encontrar respuestas a
+                        sus preguntas de formas más significativa y rápida.
+                    </p>
+                    <h6><strong>Elementos clave de la web 3.0</strong></h6>
+                    <p>
+                        La Web 3.0 se basa por que las aplicaciones web son clientes de aplicaciones web,
+                        es decir, la comunicación entre aplicaciones:
+                    </p>
+                    <div class="accordion cuadro" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingonce">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseonce" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    Web Social
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseonce" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingonce">
+                                <div class="accordion-body">
+                                    Aunque las redes sociales están presentes desde la Web 2.0, se
+                                    considera que son el elemento que va a evolucionar con la Web. Utilizando
+                                    las tecnologías de la Web 3.0, en lugar de enlazar únicamente documentos.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingdoce">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsedoce" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    La web semántica
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapsedoce" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingdoce">
+                                <div class="accordion-body">
+                                    La web semántica es una extensión en evolución de la
+                                    web [86], que permite a las personas encontrar la información a un nivel mucho
+                                    más profundo del significado de los términos de búsqueda y el contexto en
+                                    el que se utilizan.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingtrece">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsetrece" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Web 3D
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapsetrece" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingtrece">
+                                <div class="accordion-body">
+                                    Los mundos virtuales en 3D, han llamado la atención de todo tipo de
+                                    usuarios, desde curiosos hasta investigadores para apoyar al avance de la creación
+                                    de vidas paralelas.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingcatorce">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsecatorce" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    La Web centrada en los medios
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapsecatorce" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingcatorce">
+                                <div class="accordion-body">
+                                    Con medios se refiere a los medios para la
+                                    comunicación o información, como el texto, sonido, imagen, video. Por lo
+                                    tanto, Web centrada en los medios se refiere a que la Web debe valerse de los
+                                    medios multimedia para encontrar otros medios similares, pero no sólo valiéndose
+                                    en los metadatos.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingQuince">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseQuince" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    La Web Omnipresente y Ubicua
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseQuince" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingQuince">
+                                <div class="accordion-body">
+                                    Con omnipresente y ubicua se refiere
+                                    que está presente en todas partes. Es decir que el usuario puede interactuar con la
+                                    Web sin necesidad de él acercarse a los dispositivos sino que ellos están siempre
+                                    cerca del usuario.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingdieciseis">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsesdieciseis" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Inteligencia Artificial
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapsesdieciseis" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingdieciseis">
+                                <div class="accordion-body">
+                                    El uso de la robótica y la inteligencia artificial marcan
+                                    la era de la Web 3.0 en comunicación bidireccional, primero entre humanos y
+                                    computadoras y segundo entre humanos entre sí a través de computadoras, así
+                                    mismo la comunicación entre computadoras o entre dispositivos en general.
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div id="Web4"></div>
+                    <h5><strong>La web 4.0</strong></h5>
+                    <p>
+                        La Web 4.0 se puede considerar como un Agente Electrónico Ultra-Inteligente, web simbiótica y 
+                        web Ubicua [25]. La interacción entre humanos y máquinas en simbiosis fue el motivo detrás de 
+                        la red simbiótica. Potente como el cerebro humano, avances en el desarrollo de las telecomunicaciones, 
+                        avance de la nanotecnología en el mundo e interfaces controladas mediante la web 4.0. En palabras simples, 
+                        las máquinas serían inteligentes para leer los contenidos de la web y reaccionarían ejecutando y decidiendo 
+                        qué ejecutar primero para cargar los sitios web rápidamente con calidad y rendimiento superiores y construir 
+                        interfaces más dominantes.
+                    </p>
+                    <h6><strong>Elementos clave de la web 4.0</strong></h6>
+                    <p>
+                        Mucho de lo que hay ya es de la Web 4.0, sin embargo será aún más diferente. Cuando
+                        esté completamente desarrollado, eliminará varios de los pasos necesarios al usar la
+                        Web 3.0, de esta manera su uso será más directo e “invisible”
+                    </p>
+                    <div class="accordion cuadro" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingveinte">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseveinte" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    Los motores de búsqueda
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseveinte" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingveinte">
+                                <div class="accordion-body">
+                                    Lo propio de la Web 4.0 serán los asistente virtuales, a quienes les pides lo que deseas
+                                    y ellos te lo sirven. Actualmente ya se vive algo de esto..
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingveintiuno">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseveintiuno" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    La Red activa
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseveintiuno" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingveintiuno">
+                                <div class="accordion-body">
+                                    Podra ser capaz de ella misma proponer cosas según la situación, el
+                                    contexto, el ambiente en el que el usuario se esté desenvolviendo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingveintidos">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseveintidos" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Big Data
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseveintidos" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingveintidos">
+                                <div class="accordion-body">
+                                    Toda la inteligencia de las aplicaciones es gracias a los
+                                    datos que se obtienen del mundo real.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingveintitres">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseveintitres" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Aplicaciones web Inteligentes
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseveintitres" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingveintitres">
+                                <div class="accordion-body">
+                                    la Web Inteligente es la próxima generación de la
+                                    Web Semántica.
+                                </div>
+                            </div>
+                        </div>                                       
+                    </div>
+                    <hr class="border-primary border-3 opacity-75"><!-- linia divisora del contenido -->
+
+                    <h3>Apartado de guias dentro del Sitio Web</h3>
+                    <div class="card-group">
+                        <div class="card">
+                            <img src="Imagen/logohtml.png" class="card-img-top" alt="...">                    
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Guia de HTML</strong></h5>
+                                <p class="card-text">Con HTML el programador no tiene
+                                    un control directo sobre los elementos que incluirá en su página...</p>
+                                <a href="Html/guiaHTML.html" class="btn btn-primary">Ir a la Guia</a>
+                            </div>                       
+                        </div>
+                        <div class="card">
+                            <img src="Imagen/logocss.png" class="card-img-top" alt="...">                    
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Guia de CSS</strong></h5>
+                                <p class="card-text">Con CSS el programador podra poner todos los
+                                    estilo que quiera en su página...</p>
+                                <a href="Html/guiaCSS.html" class="btn btn-primary">Ir a la Guia</a>                            
+                            </div>
+                        </div>
+                        <div class="card">                  
+                            <img src="Imagen/logojavascript.jpg" class="card-img-top" alt="...">                    
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Guia de JavaScript</strong></h5>
+                                <p class="card-text">JavaScript es uno de los llamados lenguajes de secuencias de comandos.</p>
+                                <a href="Html/guiaJavaScript.html" class="btn btn-primary">Ir a la Guia</a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div id="Bibliografia"></div>
+            <hr class="border-primary border-3 opacity-75"><!-- linia divisora del contenido -->
+            <h1 class="centrado"><strong>Bibliografia de esta pagina</strong></h1>
+            <p>[1]</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </main>
+    </body>
+</html>

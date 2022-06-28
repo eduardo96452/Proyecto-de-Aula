@@ -69,8 +69,8 @@ and open the template in the editor.
         </nav>
         <main>
             <div class="colores">
-                <h1 class="centrado">Guia sobre JavaScript</h1>            
-                <h3>¿Qué es JavaScript?</h3>
+                <h1 class="centrado"><strong>Guia sobre JavaScript</strong></h1>            
+                <h3><strong>¿Qué es JavaScript?</strong></h3>
                 <p>
                     JavaScript es uno de los llamados lenguajes de secuencias de comandos. 
                     textos (textos traducidos a guiones, Literalmente) son archivos por lotes, 
@@ -91,7 +91,7 @@ and open the template in the editor.
                     y los resultados pueden ser muy satisfactorios. Este lenguaje tiene ciertas limitaciones, 
                     le permite al programador controlar lo que sucede en la página [1].
                 </p>
-                <h3>Los Orígenes de JavaScript</h3>
+                <h3><strong>Los Orígenes de JavaScript</strong></h3>
                 <p>
                     HTML se creó originalmente para permitir la manipulación de varios elementos que podrían 
                     aparecer en una página. Sin embargo, con el tiempo, se vuelve insuficiente para cubrir las 
@@ -121,7 +121,7 @@ and open the template in the editor.
                     deben declararse como un tipo y no pueden usarse con otros tipos de valores, lo que no es el 
                     caso (como veremos) en JavaScript [1].
                 </p>
-                <h3>Especificaciones oficiales</h3>
+                <h3><strong>Especificaciones oficiales</strong></h3>
                 <p>
                     ECMA ha publicado una serie de estándares relacionados con ECMAScript. En junio de 1997 se 
                     publicó La primera versión del estándar ECMA-262. Un año después, en junio de 1998, 
@@ -140,25 +140,27 @@ and open the template in the editor.
                     ECMA también ha definido una serie de estándares relacionados con ECMAScript, como ECMA-357, 
                     que define una extensión llamada E4X y permite la integración JavaScript y XML [2].
                 </p>
-                <h3>Ventajas de JavaScript</h3>
+                <h3><strong>Ventajas de JavaScript</strong></h3>
                 <p>
                     JavaScript se conoció primero como LiveScript. Pero como Java es un lenguaje muy popular, 
                     Netscape decidió cambiar su nombre a JavaScript. Su primera aparición fue en 1995 en 
                     Netscape 2.0. Estos son algunos de los principales beneficios de usar JavaScript [3]:
                 </p>
-                <p>
-                    •	Interacción mínima con el servidor.
-                </p>
-                <p>
-                    •	Interfaces más completas y fáciles de usar.
-                </p>
-                <p>
-                    •	Retroalimentación inmediata para el usuario.
-                </p>
-                <p>
-                    •	Fácil depuración.
-                </p>
-                <h4>Interacción mínima con el servidor</h4>
+                <ul>
+                    <li>  
+                        <p>Interacción mínima con el servidor.</p>
+                    </li>                        
+                    <li>
+                        <p>Interfaces más completas y fáciles de usar.</p>
+                    </li>
+                    <li>
+                        <p>Retroalimentación inmediata para el usuario.</p>
+                    </li>
+                    <li>
+                        <p>Fácil depuración.</p>
+                    </li>                          
+                </ul>
+                <h4><strong>Interacción mínima con el servidor</strong></h4>
                 <p>
                     Es un hecho bien conocido que, si desea mejorar el rendimiento del sitio web, 
                     la mejor manera es reducir la conexión al servidor. JavaScript ayuda en este sentido al 
@@ -167,13 +169,13 @@ and open the template in the editor.
                     Como resultado, el uso de recursos y la cantidad de solicitudes al servidor se reducen 
                     significativamente.
                 </p>
-                <h4>Interfaces más completas y fáciles de usar</h4>
+                <h4><strong>Interfaces más completas y fáciles de usar</strong></h4>
                 <p>
                     Con JavaScript, puede crear interfaces interactivas del lado del cliente. 
                     Por ejemplo, agregue controles deslizantes, presentaciones de diapositivas, 
                     efectos de desplazamiento, arrastrar y soltar, y más.
                 </p>
-                <h4>Retroalimentación inmediata para el usuario</h4>
+                <h4><strong>Retroalimentación inmediata para el usuario</strong></h4>
                 <p>
                     Con JavaScript, puede asegurarse de que sus usuarios reciban una respuesta inmediata. 
                     Por ejemplo, supongamos que un usuario completó un formulario y dejó un campo vacío. 
@@ -181,18 +183,18 @@ and open the template in the editor.
                     para darse cuenta de que dejaron un campo vacío. Sin embargo, con JavaScript, 
                     reciben una alerta inmediata.
                 </p>
-                <h4>Fácil depuración</h4>
+                <h4><strong>Fácil depuración</strong></h4>
                 <p>
                     JavaScript es un lenguaje interpretado, lo que significa que el código escrito se decodifica línea por línea. 
                     Si hay un error, obtendrá el número de línea exacto donde está el problema.
                 </p>
-                <h3>Inclusión de JavaScript en las páginas</h3>
+                <h3><strong>Inclusión de JavaScript en las páginas</strong></h3>
                 <p>
                     Hay dos formas de incluir JavaScript en HTML y hacer que funcionen juntos. 
                     Ahora que hemos hablado sobre JavaScript y visto algunas de sus ventajas, 
                     veamos algunas de las formas en que podemos conectar JavaScript a HTML [3].
                 </p>
-                <h4>Agregar JavaScript directamente a un archivo HTML</h4>
+                <h4><strong>Agregar JavaScript directamente a un archivo HTML</strong></h4>
                 <p>
                     Para hacer que un documento HTML incluya instrucciones en JavaScript se debe hacer 
                     uso de la etiqueta &ltSCRIPT&gt  de esta forma [4]:
@@ -217,7 +219,7 @@ and open the template in the editor.
                     
                     </pre>
                 </div>
-                <h4>Agregar código JavaScript a un archivo separado</h4>
+                <h4><strong>Agregar código JavaScript a un archivo separado</strong></h4>
                 <p>
                     También se puede usar código JavaScript escrito en un archivo separado. 
                     Este archivo debe tener la extensión js. Solo se coloca código JavaScript en el archivo. 
@@ -230,21 +232,23 @@ and open the template in the editor.
                     
                     </pre>
                 </div>
-                <h3>Normas de escritura en JavaScript</h3>
-                <p>
-                    •	Los comentarios deben empezar con el símbolo // 
-                    si son de una sola línea o iniciarse con los símbolos /* y finalizar con */ si son de varias líneas.
-                </p>
-                <p>
-                    •	Las líneas de código terminan con el signo de punto y coma (;)
-                </p>
-                <p>
-                    •	Javascript distingue entre mayúsculas y minúsculas
-                </p>
-                <p>
-                    •	Las llaves ({ y }) permiten agrupar código [4].
-                </p>
-                <h3>Operadores</h3>
+                <h3><strong>Normas de escritura en JavaScript</strong></h3>
+                <ul>
+                    <li>  
+                        <p>Los comentarios deben empezar con el símbolo // 
+                    si son de una sola línea o iniciarse con los símbolos /* y finalizar con */ si son de varias líneas.</p>
+                    </li>                        
+                    <li>
+                        <p>Las líneas de código terminan con el signo de punto y coma (;)</p>
+                    </li>
+                    <li>
+                        <p>Javascript distingue entre mayúsculas y minúsculas</p>
+                    </li>
+                    <li>
+                        <p>Las llaves ({ y }) permiten agrupar código [4].</p>
+                    </li>                          
+                </ul>
+                <h3><strong>Operadores</strong></h3>
                 <p>
                     Los operadores son los elementos que permite en realizar operaciones con los datos del código.
                 </p>
@@ -419,7 +423,7 @@ and open the template in the editor.
                     <br>
                 </table>
                 <hr>
-                <h1 class="centrado">Bibliografia</h1>
+                <h1 class="centrado"><strong>Bibliografia</strong></h1>
                 <p>
                     [1] 	P. R. Alba, MANUAL DE JAVASCRIPT, EDITORIAL CEP S.L., 2011. 
                 </p>

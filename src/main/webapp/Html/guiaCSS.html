@@ -49,64 +49,112 @@ and open the template in the editor.
                         </li>                        
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Guias                               
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="guiaHTML.html">Guias de HTML</a></li>
+                                <li><a class="dropdown-item " href="guiaHTML.html">Guias de HTML</a></li>
                                 <li><a class="dropdown-item" href="guiaCSS.html">Guias de CSS</a></li>
-                                <li><a class="dropdown-item" href="guiaJavaScript.html">Guias de JavaScript</a></li>   
-                                <li><a class="dropdown-item" href="Accesibilidad.html">Guia de Inclusividad</a></li>  
+                                <li><a class="dropdown-item" href="guiaJavaScript.html">Guias de JavaScript</a></li> 
+
                             </ul>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="Acercade.html">Acerca de</a>
+                            <a class="nav-link active" aria-current="page" href="Accesibilidad.html">Guia de Inclusividad</a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link nav-link active" href="Acercade.html">Acerca de...</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
+                    <!--<form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
+                    </form>-->
                 </div>
             </div>
         </nav> 
         <main>
-            <div class="colores">
-                <h1 class="centrado">Guia sobre CSS</h1>            
-                <h3>¿Que es CSS?</h3>
-                <p>
-                    CSS (Cascading Style Sheets - en español Hojas de Estilo en Cascadas) es usado para darle estilo y 
-                    diseño a las páginas Web — por ejemplo, para cambiar la fuente de letra, color, tamaño y el espaciado 
-                    de tu contenido; dividir en múltiples columnas, o agregar animaciones y otras propiedades decorativas 
-                    para añadir estilo a HTML.[6]
-                </p>
-                <h3>¿Para que sirve?</h3>
-                <p>
-                    El CSS es un lenguaje informático que especifica cómo se presentan los documentos a los usuarios: 
-                    cómo se diseñan, compaginan, etc.
-                </p>
-                <p>
-                    Un documento suele ser un archivo de texto estructurado con un lenguaje de marcado: HTML es el 
-                    más común, pero también existen otros como SVG o XML.[6]
-                </p>
-                <p>
-                    Presentar un documento a un usuario significa convertirlo en un formulario que el público pueda 
-                    utilizar. Los navegadores, como por ejemplo Firefox, Chrome o Edge (en-US), están diseñados para 
-                    presentar documentos visualmente en una pantalla de ordenador, un proyector o una impresora.[6]
-                </p>
-                <h3>Sintaxis del CSS</h3>
-                <p>
-                    El CSS es un lenguaje basado en reglas: cada usuario define las reglas que especifican los grupos de 
-                    estilos que van a aplicarse a elementos particulares o grupos de elementos de la página web. Por 
-                    ejemplo: «Quiero que el encabezado principal de mi página se muestre en letras grandes de color rojo»[6]
-                </p>
+            <div class=" p-2 row g-4">
+                <div class="col-md-4 col-lg-3 order-md-last">
+                    <form class="card p-2 colores">
+                        <h4 class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-primary">Contenido de la pagina</span>                        
+                        </h4>
+                    </form>
+                    <br>
+                    <form class="card p-2 colores">                        
+                        <ul>
+                            <li>
+                                <a href="#QueesCSS" class="link-dark" >¿Que es CSS?</a>
+                            </li>                        
+                            <li>
+                                <a href="#Paraquesirve" class="link-dark" >¿Para que sirve?</a>
+                            </li>
+                            <li>
+                                <a href="#Sintaxis" class="link-dark" >Sintaxis</a>
+                            </li>
+                            <li>
+                                <a href="#selectoresgrupo" class="link-dark" >Selectores de grupo</a>
+                            </li>
+                            <li>
+                                <a href="#selectoresclase" class="link-dark" >Selectores de clase</a>
+                            </li>
+                            <li>
+                                <a href="#selectoresindetificacion" class="link-dark" >Selectores de identificación</a>
+                            </li>
+                            <li>
+                                <a href="#comentario" class="link-dark" >Como añadir comentarios</a>
+                            </li>                            
+                        </ul>                       
 
-                <p>
-                    El código siguiente muestra una regla CSS muy simple que proporciona el estilo descrito en el párrafo 
-                    anterior:[6]
-                </p>
-                <div class="blanco">
-                    <pre>
+                        <a href="#Bibliografia" class="link-dark" >Bibliografia de esta pagina</a>
+                    </form>
+                </div>
+                <div class="colores col-md-8 col-lg-9">
+                    <div class="colores">
+                        <div id="comienzodelapagina"></div><h1 class="centrado"><strong>Guia sobre CSS</strong></h1>            
+                        <div id="QueesCSS"></div><h3><strong>¿Que es CSS?</strong></h3>
+                        <p>
+                            CSS (Cascading Style Sheets - en español Hojas de Estilo en Cascadas) es 
+                            usado para darle estilo y diseño a las páginas Web — por ejemplo, para 
+                            cambiar la fuente de letra, color, tamaño y el espaciado de tu contenido; 
+                            dividir en múltiples columnas, o agregar animaciones y otras propiedades 
+                            decorativas para añadir estilo a HTML.<a href="#10" class="link-dark" >[10]</a>
+
+                        </p>
+                        <div id="Paraquesirve"></div><h3><strong>¿Para que sirve?</strong></h3>
+                        <p>
+                            El CSS es un lenguaje informático que especifica cómo se presentan los documentos 
+                            a los usuarios: cómo se diseñan, compaginan, etc.<a href="#7" class="link-dark" >[7]</a>
+
+                        </p>
+                        <p>
+                            Un documento suele ser un archivo de texto estructurado con un lenguaje de marcado: 
+                            HTML es el más común, pero también existen otros como SVG o XML.<a href="#10" class="link-dark" >[10]</a>
+                        </p>
+                        <p>
+                            Presentar un documento a un usuario significa convertirlo en un formulario que el 
+                            público pueda utilizar. Los navegadores, como por ejemplo Firefox, Chrome o Edge 
+                            (en-US), están diseñados para presentar documentos visualmente en una pantalla de 
+                            ordenador, un proyector o una impresora.<a href="#7" class="link-dark" >[7]</a>
+
+                        </p>
+                        <div id="Sintaxis"></div><h3><strong>Sintaxis del CSS</strong></h3>
+                        <p>
+                            El CSS es un lenguaje basado en reglas: cada usuario define las reglas que especifican 
+                            los grupos de estilos que van a aplicarse a elementos particulares o grupos de elementos 
+                            de la página web. Por ejemplo: «Quiero que el encabezado principal de mi página se muestre
+                            en letras grandes de color rojo».<a href="#6" class="link-dark" >[6]</a>
+
+                        </p>
+
+                        <p>
+                            El código siguiente muestra una regla CSS muy simple que proporciona el estilo 
+                            descrito en el párrafo anterior:
+                        </p>
+                        <div class="blanco">
+                            <pre>
 
                 h1 
                 {
@@ -114,68 +162,77 @@ and open the template in the editor.
                     font-size: 5em;
                 }
 
-                    </pre>
-                </div>
-                <p>
-                    La regla se abre con un selector. Este selecciona el elemento HTML que vamos a diseñar. En este 
-                    caso, diseñaremos encabezados de nivel uno (< h1 >). [7]
-                </p>
-                <p>
-                    Luego tenemos un conjunto de llaves { }. Entre estas habrá una o más declaraciones, que tomarán la 
-                    forma de pares de propiedad y valor. Cada par específica cada una de las propiedades de los elementos 
-                    seleccionados y el valor que queremos dar a esa propiedad.[6]
-                </p>
-                <h3>Selectores de grupo</h3>
-                <p>
-                    Si tiene que aplicar estilos a más de un elemento puede agrupar los selectores que comparten las 
-                    mismas definiciones. Para ello se escriben uno tras otro separados por una coma. En el siguiente 
-                    ejemplo h1 y los elementos hasta h6 comparten la misma definición: [6]
-                </p>
-                <div class="blanco">
-                    <pre>
+                            </pre>
+                        </div>
+                        <p>
+                            La regla se abre con un selector. Este selecciona el elemento HTML que vamos a 
+                            diseñar. En este caso, diseñaremos encabezados de nivel uno (&lt;h1&gt).<a href="#6" class="link-dark" >[6]</a>
+
+                        </p>
+                        <p>
+                            Luego tenemos un conjunto de llaves { }. Entre estas habrá una o más declaraciones, 
+                            que tomarán la forma de pares de propiedad y valor. Cada par específica cada una de 
+                            las propiedades de los elementos seleccionados y el valor que queremos dar a esa 
+                            propiedad.<a href="#6" class="link-dark" >[6]</a>
+
+                        </p>
+                        <div id="selectoresgrupo"></div>
+                        <h3><strong>Selectores de grupo</strong></h3>
+                        <p>
+                            Si tiene que aplicar estilos a más de un elemento puede agrupar los selectores que 
+                            comparten las mismas definiciones. Para ello se escriben uno tras otro separados
+                            por una coma. En el siguiente ejemplo h1 y los elementos hasta h6 comparten la 
+                            misma definición:<a href="#7" class="link-dark" >[7]</a>
+                        </p>
+                        <div class="blanco">
+                            <pre>
 
                 h1,h2,h3,h4,h5,h6
                 {
                 color: green
                 }
 
-                    </pre>
-                </div>
-                <h3>Selectores de clase</h3>
-                <p>
-                    Los selectores de clase permiten establecer diferentes estilos que se pueden aplicar al mismo 
-                    elemento. Imagine que usted necesita tener dos párrafos diferentes en el documento: uno alineado a la 
-                    derecha y otro alineado al centro. Así es como los selectores de clase hacen que esta tarea sea muy 
-                    fácil: [7]
-                </p>
-                <div class="blanco">
-                    <pre>
+                            </pre>
+                        </div>
+                        <div id="selectoresclase"></div>
+                        <h3><strong>Selectores de clase</strong></h3>
+                        <p>
+                            Los selectores de clase permiten establecer diferentes estilos que se pueden 
+                            aplicar al mismo elemento. Imagine que usted necesita tener dos párrafos diferentes
+                            en el documento: uno alineado a la derecha y otro alineado al centro. Así es como 
+                            los selectores de clase hacen que esta tarea sea muy fácil:<a href="#7" class="link-dark" >[7]</a>
+                        </p>
+                        <div class="blanco">
+                            <pre>
 
                 p.derecha{Text-align: right}               o                .derecha{Text-align: right}
 
-                    </pre>
-                </div>
-                <p>
-                    El atributo clase, al igual que cualquier otro atributo, solo se puede especificar una vez en un elemento 
-                    dado. El ejemplo siguiente es incorrecto:
-                </p>
-                <div class="blanco">
-                    <pre>
+                            </pre>
+                        </div>
+                        <p>
+                            El atributo clase, al igual que cualquier otro atributo, solo se puede especificar 
+                            una vez en un elemento dado. El ejemplo siguiente es incorrecto:<a href="#6" class="link-dark" >[6]</a>
+                        </p>
+                        <div class="blanco">
+                            <pre>
                 
-                < p class= “right” class= “center”>  <!- -Esta mal-->
+                &lt;p class= “right” class= “center”&gt;  &lt;!- -Esta mal--&gt;
 
-                < p class= “right”> 		      <!- -Esta bien-->
+                &lt;p class= “right”&gt; 		  &lt;!- -Esta bien--&gt;
 
-                    </pre>
-                </div>
-                <h3>Selector de Identificación</h3>
-                <p>
-                    El selector de ID es diferente del selector de clase porque se aplica a un solo elemento de la página. 
-                    Las reglas HTML dictan que los valores del atributo ID no se pueden repetir en la misma página. De 
-                    ello se desprende que el número de elementos de identidad en un determinado documento es uno o es cero.[7]
-                </p>
-                <div class="blanco">
-                    <pre>
+                            </pre>
+                        </div>
+                        <div id="selectoresindetificacion"></div>
+                        <h3><strong>Selector de Identificación</strong></h3>
+                        <p>
+                            El selector de ID es diferente del selector de clase porque se aplica a un solo 
+                            elemento de la página. Las reglas HTML dictan que los valores del atributo ID no 
+                            se pueden repetir en la misma página. De ello se desprende que el número de elementos 
+                            de identidad en un determinado documento es uno o es cero.<a href="#10" class="link-dark" >[10]</a>
+
+                        </p>
+                        <div class="blanco">
+                            <pre>
 
                 p#para1
                 {
@@ -183,14 +240,15 @@ and open the template in the editor.
                 color: red
                 }
 
-                    </pre>
-                </div>
-                <p>
-                    Si queremos que esta regla se aplique a cualquier elemento que tenga el id ”para1” tenemos que 
-                    ponerlo de la siguiente manera:
-                </p>
-                <div class="blanco">
-                    <pre>
+                            </pre>
+                        </div>
+                        <p>
+                            Si queremos que esta regla se aplique a cualquier elemento que tenga el id ”para1” 
+                            tenemos que ponerlo de la siguiente manera:<a href="#7" class="link-dark" >[7]</a>
+
+                        </p>
+                        <div class="blanco">
+                            <pre>
 
                 #para1
                 {
@@ -198,25 +256,38 @@ and open the template in the editor.
                 color: red
                 }
 
-                    </pre>
-                </div>
-                <h3>¿Cómo añadir comentarios en CSS?</h3>
-                <p>
-                    Los comentarios serán ignorados por el navegador; para empezar un comentario se escribe la cadena 
-                    “/*” al inicio del texto del comentario y al final “*/” para terminar el comentario, como el siguiente 
-                    ejemplo: [7]
-                </p>
-                <div class="blanco">
-                    <pre>
+                            </pre>
+                        </div>
+                        <div id="comentario"></div>
+                        <h3><strong>¿Cómo añadir comentarios en CSS?</strong></h3>
+                        <p>
+                            Los comentarios serán ignorados por el navegador; para empezar un comentario se 
+                            escribe la cadena “/*” al inicio del texto del comentario y al final “*/” para 
+                            terminar el comentario, como el siguiente ejemplo:<a href="#7" class="link-dark" >[7]</a>
+
+                        </p>
+                        <div class="blanco">
+                            <pre>
 
                 /*Este es un comentario/*
 
+                            </pre>
+
+                        </div>
+                        <div id="Bibliografia"></div>
+                        <hr class="border-primary border-3 opacity-75"><!-- linia divisora del contenido -->
+                        <h1 class="centrado"><strong>Bibliografia de esta pagina</strong></h1>
+                        <br>
+                        <div id="6"></div><p>[6]	G. Carballeiro, Diseño web con HTML y CSS. Buenos Aires: Dalaga S:A, 2017.</p>
+                        <div id="7"></div><p>[7]	A. Durango, Diseños web con CSS. [Online]. Available: 
+                            https://books.google.es/books?hl=es&lr=&id=bCXsCgAAQBAJ&oi=fnd&pg=PA11&dq=css&ots= </p> 
+                        <div id="10"></div> <p>[10]      MDN contributors, “CSS,” developer.mozilla, 2021. 
+                            https://developer.mozilla.org/es/docs/Web/CSS</p>
+                        <br>
+                        <a href="#comienzodelapagina" class="link-dark" ><img src="../imagenes/flecha-correcta.png" class="rounded mx-auto d-block" alt="..."></a>
+                        <br>
                     </div>
-                <h5 class="centrado"><strong>Bibliografia</strong></h5>
-                    <p>[6]	“ACFrOgDroNao9HcbDU88EgI9s3xGoenFcdn80C_0KDPdTt4Y-em_5N3N4n75x6auZOj9wvnWHrM7xA5nAy59ajZ2qHl8zlcadWiFGp-zpLkRpCrvOXzXGFHa2wWtAZ1nYCRjb56T_0UE-WVFM-wV.pdf.”</p>
-                      
-                    <p>[7]	A. Durango, Diseños web con CSS. [Online]. Available: https://books.google.es/books?hl=es&lr=&id=bCXsCgAAQBAJ&oi=fnd&pg=PA11&dq=css&ots=  </p>
-                
+                </div>
             </div>
         </main>
     </body>

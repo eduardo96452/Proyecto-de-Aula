@@ -86,26 +86,29 @@ and open the template in the editor.
                     <form class="card p-2 colores">                        
                         <ul>
                             <li>
-                                <a href="#QueesCSS" class="link-dark" >¿Que es CSS?</a>
+                                <a href="#Queesjavascript" class="link-dark" >¿Que es JavaScript?</a>
                             </li>                        
                             <li>
-                                <a href="#Paraquesirve" class="link-dark" >¿Para que sirve?</a>
+                                <a href="#origenes" class="link-dark" >Los origenes de JavaScript</a>
                             </li>
                             <li>
-                                <a href="#Sintaxis" class="link-dark" >Sintaxis</a>
+                                <a href="#especificaciones" class="link-dark" >Especificaciones oficiales</a>
                             </li>
                             <li>
-                                <a href="#selectoresgrupo" class="link-dark" >Selectores de grupo</a>
+                                <a href="#ventajas" class="link-dark" >Ventajas de JavaScript</a>
                             </li>
                             <li>
-                                <a href="#selectoresclase" class="link-dark" >Selectores de clase</a>
+                                <a href="#agregardirectamente" class="link-dark" >Agregar JavaScript directamente a un archivo HTML</a>
                             </li>
                             <li>
-                                <a href="#selectoresindetificacion" class="link-dark" >Selectores de identificación</a>
+                                <a href="#agregararchivoseparado" class="link-dark" >Agregar código JavaScript a un archivo separado</a>
                             </li>
                             <li>
-                                <a href="#comentario" class="link-dark" >Como añadir comentarios</a>
-                            </li>                            
+                                <a href="#normas" class="link-dark" >Normas de escritura en JavaScript</a>
+                            </li>  
+                            <li>
+                                <a href="#operadores" class="link-dark" >Operadores</a>
+                            </li>   
                         </ul>                       
 
                         <a href="#Bibliografia" class="link-dark" >Bibliografia de esta pagina</a>
@@ -113,8 +116,9 @@ and open the template in the editor.
                 </div>
                 <div class="colores col-md-8 col-lg-9">
                     <div class="colores">
-                        <h1 class="centrado"><strong>Guia sobre JavaScript</strong></h1>            
-                        <h3><strong>¿Qué es JavaScript?</strong></h3>
+                        <h1 class="centrado"><strong>Guia sobre JavaScript</strong></h1>  
+                        <hr color="black" size="3" id="hrpr">
+                        <div id="Queesjavascript"><h3><strong>¿Qué es JavaScript?</strong></h3>
                         <p>
                             JavaScript es uno de los llamados lenguajes de secuencias de comandos. 
                             textos (textos traducidos a guiones, Literalmente) son archivos por lotes, 
@@ -133,9 +137,9 @@ and open the template in the editor.
                             cuando trabajemos con JavaScript, escribiremos Nuestro software y podemos ejecutarlo 
                             directamente sin hacer nada más, En resumen: trabajar con JavaScript es rápido y fácil, 
                             y los resultados pueden ser muy satisfactorios. Este lenguaje tiene ciertas limitaciones, 
-                            le permite al programador controlar lo que sucede en la página [1].
+                            le permite al programador controlar lo que sucede en la página.<a href="#13" class="link-dark" >[13]</a>
                         </p>
-                        <h3><strong>Los Orígenes de JavaScript</strong></h3>
+                        <div id="origenes"><h3><strong>Los Orígenes de JavaScript</strong></h3>
                         <p>
                             HTML se creó originalmente para permitir la manipulación de varios elementos que podrían 
                             aparecer en una página. Sin embargo, con el tiempo, se vuelve insuficiente para cubrir las 
@@ -163,9 +167,9 @@ and open the template in the editor.
                             Java y JavaScript son dos lenguajes diferentes. Java es un lenguaje mucho más poderoso y poderoso, 
                             debe ser compilador y orientado a objetos. También es un lenguaje muy tipado: las variables 
                             deben declararse como un tipo y no pueden usarse con otros tipos de valores, lo que no es el 
-                            caso (como veremos) en JavaScript [1].
+                            caso (como veremos) en JavaScript.<a href="#14" class="link-dark" >[14]</a>
                         </p>
-                        <h3><strong>Especificaciones oficiales</strong></h3>
+                        <div id="especificaciones"><h3><strong>Especificaciones oficiales</strong></h3>
                         <p>
                             ECMA ha publicado una serie de estándares relacionados con ECMAScript. En junio de 1997 se 
                             publicó La primera versión del estándar ECMA-262. Un año después, en junio de 1998, 
@@ -182,13 +186,13 @@ and open the template in the editor.
                         </p>
                         <p>
                             ECMA también ha definido una serie de estándares relacionados con ECMAScript, como ECMA-357, 
-                            que define una extensión llamada E4X y permite la integración JavaScript y XML [2].
+                            que define una extensión llamada E4X y permite la integración JavaScript y XML.<a href="#14" class="link-dark" >[14]</a>
                         </p>
-                        <h3><strong>Ventajas de JavaScript</strong></h3>
+                        <div id="ventajas"><h3><strong>Ventajas de JavaScript</strong></h3>
                         <p>
                             JavaScript se conoció primero como LiveScript. Pero como Java es un lenguaje muy popular, 
                             Netscape decidió cambiar su nombre a JavaScript. Su primera aparición fue en 1995 en 
-                            Netscape 2.0. Estos son algunos de los principales beneficios de usar JavaScript [3]:
+                            Netscape 2.0. Estos son algunos de los principales beneficios de usar JavaScript:<a href="#15" class="link-dark" >[15]</a>
                         </p>
                         <ul>
                             <li>  
@@ -236,12 +240,12 @@ and open the template in the editor.
                         <p>
                             Hay dos formas de incluir JavaScript en HTML y hacer que funcionen juntos. 
                             Ahora que hemos hablado sobre JavaScript y visto algunas de sus ventajas, 
-                            veamos algunas de las formas en que podemos conectar JavaScript a HTML [3].
+                            veamos algunas de las formas en que podemos conectar JavaScript a HTML.<a href="#15" class="link-dark" >[15]</a>
                         </p>
-                        <h4><strong>Agregar JavaScript directamente a un archivo HTML</strong></h4>
+                        <div id="agregardirectamente"><h4><strong>Agregar JavaScript directamente a un archivo HTML</strong></h4>
                         <p>
                             Para hacer que un documento HTML incluya instrucciones en JavaScript se debe hacer 
-                            uso de la etiqueta &ltSCRIPT&gt  de esta forma [4]:
+                            uso de la etiqueta &ltSCRIPT&gt  de esta forma:<a href="#16" class="link-dark" >[16]</a>
                         </p>
                         <div class="blanco">
                             <pre>
@@ -263,11 +267,11 @@ and open the template in the editor.
                     
                             </pre>
                         </div>
-                        <h4><strong>Agregar código JavaScript a un archivo separado</strong></h4>
+                        <div id="agregararchivoseparado"><h4><strong>Agregar código JavaScript a un archivo separado</strong></h4>
                         <p>
                             También se puede usar código JavaScript escrito en un archivo separado. 
                             Este archivo debe tener la extensión js. Solo se coloca código JavaScript en el archivo. 
-                            Entonces este código se puede llamar desde la página web con un código [4]:
+                            Entonces este código se puede llamar desde la página web con un código:<a href="#16" class="link-dark" >[16]</a>
                         </p>
                         <div class="blanco">
                             <pre>
@@ -276,7 +280,7 @@ and open the template in the editor.
                     
                             </pre>
                         </div>
-                        <h3><strong>Normas de escritura en JavaScript</strong></h3>
+                        <div id="normas"><h3><strong>Normas de escritura en JavaScript</strong></h3>
                         <ul>
                             <li>  
                                 <p>Los comentarios deben empezar con el símbolo // 
@@ -289,10 +293,10 @@ and open the template in the editor.
                                 <p>Javascript distingue entre mayúsculas y minúsculas</p>
                             </li>
                             <li>
-                                <p>Las llaves ({ y }) permiten agrupar código [4].</p>
+                                <p>Las llaves ({ y }) permiten agrupar código.<a href="#16" class="link-dark" >[16]</a></p>
                             </li>                          
                         </ul>
-                        <h3><strong>Operadores</strong></h3>
+                        <div id="operadores"><h3><strong>Operadores</strong></h3>
                         <p>
                             Los operadores son los elementos que permite en realizar operaciones con los datos del código.
                         </p>
@@ -467,21 +471,21 @@ and open the template in the editor.
                             <br>
                         </table>
                         <hr>
-                        <h1 class="centrado"><strong>Bibliografia</strong></h1>
-                        <p>
-                            [1] 	P. R. Alba, MANUAL DE JAVASCRIPT, EDITORIAL CEP S.L., 2011. 
-                        </p>
-                        <p>
-                            [2] 	J. E. Pérez, Introducción a JavaScript. 
-                        </p>
-                        <p>
-                            [3] 	G. B., «insertar javascript en html,» Hostinger Tutoriales, 04 05 2022. [En línea]. 
-                            Available: https://www.hostinger.es/tutoriales/insertar-javascript-en-html/.
-                        </p>
-                        <p>
-                            [4] 	J. Sánchez, JavaScript manual de referencia, 2003. 
-                        </p>
+                        <div id="Bibliografia"></div>
+                        <hr class="border-primary border-3 opacity-75"><!-- linia divisora del contenido -->
+                        <h1 class="centrado"><strong>Bibliografia de esta pagina</strong></h1>
+                        <br>                        
+                        <div id="13"><p>    [13] 	P. R. Alba, MANUAL DE JAVASCRIPT, EDITORIAL CEP S.L., 2011. </p>
+                        <div id="14"><p>     [14] 	J. E. Pérez, Introducción a JavaScript. </p>
+                        <div id="15"><p>    [15] 	G. B., «insertar javascript en html,» Hostinger Tutoriales, 04 05 2022. [En línea]. 
+                            Available: https://www.hostinger.es/tutoriales/insertar-javascript-en-html/. </p>
+                        <div id="16"><p>    [16] 	J. Sánchez, JavaScript manual de referencia, 2003. </p>
+
+                        <br>
+                        <a href="#comienzodelapagina" class="link-dark" ><img src="../imagenes/flecha-correcta.png" class="rounded mx-auto d-block" alt="..."></a>
+                        <br>
                     </div>
+
                 </div>
         </main>
     </body>

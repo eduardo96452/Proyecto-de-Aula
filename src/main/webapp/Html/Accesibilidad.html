@@ -14,7 +14,24 @@ and open the template in the editor.
 
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script><!-- comment -->
-        
+        <style>
+            main{     
+                margin: 1.5%;
+                font-family: Times New Roman;
+            }
+            .colores{
+                padding: 4%;
+                background-color: #fdecda;
+            }            
+
+            .blanco{
+                background-color: whitesmoke;
+            }
+
+            .centrado{
+                text-align:center;
+            } 
+        </style>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -36,7 +53,8 @@ and open the template in the editor.
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item " href="guiaHTML.html">Guias de HTML</a></li>
                                 <li><a class="dropdown-item" href="guiaCSS.html">Guias de CSS</a></li>
-                                <li><a class="dropdown-item" href="guiaJavaScript.html">Guias de JavaScript</a></li> 
+                                <li><a class="dropdown-item" href="guiaJavaScript.html">Guias de JavaScript</a></li>
+                                <li><a class="dropdown-item " href="Html/pagina_java.html">Guias de JAVA</a></li>
 
                             </ul>
                         </li>
@@ -55,6 +73,79 @@ and open the template in the editor.
                 </div>
             </div>
         </nav> 
-        <div>Muy Pronto</div>
+        <main>
+            <div class=" p-2 row g-4">
+                <div class="col-md-4 col-lg-3 order-md-last">
+                    <form class="card p-2 colores">
+                        <h4 class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-primary">Contenido de la pagina</span>                        
+                        </h4>
+                    </form>
+                    <br>
+                    <form class="card p-2 colores">                        
+                        <ul>
+                            <li>
+                                <a href="#introduccion" class="link-dark" >Introducción</a>
+                            </li>                        
+                            <li>
+                                <a href="#caracteristicashtml" class="link-dark" >Características del lenguaje HTML</a>
+                            </li>
+                            <li>
+                                <a href="#baseHTML" class="link-dark" >Las bases de HTML</a>
+                            </li>
+                            <li>
+                                <a href="#estructurapagina" class="link-dark" >Estructura de una página</a>
+                            </li>
+                            <li>
+                                <a href="#encabezados" class="link-dark" >Los encabezados</a>
+                            </li>
+                            <li>
+                                <a href="#atributoshtml" class="link-dark" >Los atributos en HTML</a>
+                            </li>
+                            <li>
+                                <a href="#saltoslinea" class="link-dark" >Saltos de línea</a>
+                            </li>
+                            <li>
+                                <a href="#insertarparrafos" class="link-dark" >Cómo se insertan párrafos</a>
+                            </li>
+                            <li>
+                                <a href="#insertarimagenes" class="link-dark" >Cómo insertar imágenes en una página.</a>
+                            </li>  
+                            <li>
+                                <a href="#etiquetaenlaces" class="link-dark" >La etiqueta para enlaces</a>
+                            </li>                                                          
+                        </ul>                       
+
+                        <a href="#Bibliografia" class="link-dark" >Bibliografia de esta pagina</a>
+                    </form>
+                </div>
+                <div class="colores col-md-8 col-lg-9">                    
+                    <div id="comienzodelapagina"></div><h1 class="centrado"><strong>Accesibilidad</strong></h1>
+                        
+                    <p>Hola mundo</p>
+                    
+                    
+                    
+                    <div id="Bibliografia"></div>
+                    <hr class="border-primary border-3 opacity-75"><!-- linia divisora del contenido -->
+                    <h1 class="centrado"><strong>Bibliografia de esta pagina</strong></h1>
+                    <br>
+                    <div id="11">
+                        <p>[1]    	M. Corvino, “Diseño inclusivo,” مجله دانشکده پزشکی دانشگاه علوم پزشکی مشهد, vol. 59.</p>
+                        <p>[2]    	F. Garcia, “Diseño inclusivo: como sumarse al desafio de crear productos para cada uno,” Marzo, 2022. 
+                            https://www.thinkwithgoogle.com/intl/es-419/futuro-del-marketing/creatividad/diseno-inclusivo-como-sumarse-al-desafio-
+                            de-crear-productos-para-cada-uno/#:~:text=todos”%2C advierte.-,“Diseñar de forma inclusiva es mirar a las 
+                            personas con,diseñar productos</p>
+                        <p>[3]    	C. A. Pg, “Indice,” 2008.</p>
+                        <p>[4]      L. W. Henny Swan , Ian Pouncey , Heydon Pickering, “Principios de diseño inclusivo,” inclusivedesignprinciples
+                            https://inclusivedesignprinciples.org/#add-value</p>
+
+
+                        <br>
+                        <a href="#comienzodelapagina" class="link-dark" ><img src="../imagenes/flecha-correcta.png" class="rounded mx-auto d-block" alt="..."></a>
+                        <br>
+                    </div>
+                </div>
+        </main>
     </body>
 </html>

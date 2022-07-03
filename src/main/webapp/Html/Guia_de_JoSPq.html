@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"><!-- comment -->
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script><!-- comment -->
+        <style>
+            main{     
+                margin: 1.5%;
+                font-family: Times New Roman;
+            }
+            .colores{
+                padding: 4%;
+                background-color: #fdecda;
+            }            
+
+            .blanco{
+                background-color: whitesmoke;
+            }
+
+            .centrado{
+                text-align:center;
+            } 
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Mundo HMTL</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Pagina Principal</a>
+                        </li>                        
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Guias                               
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item " href="guiaHTML.html">Guias de HTML</a></li>
+                                <li><a class="dropdown-item" href="guiaCSS.html">Guias de CSS</a></li>
+                                <li><a class="dropdown-item" href="guiaJavaScript.html">Guias de JavaScript</a></li>
+                                <li><a class="dropdown-item " href="pagina_java.html">Guias de JAVA</a></li>
+                                <li><a class="dropdown-item " href="Guia_de_JoSPq.html">Guias de JSP</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Accesibilidad.html">Guia de Inclusividad</a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link nav-link active" href="Acercade.html">Acerca de...</a>
+                        </li>
+                    </ul>
+                    <!--<form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>-->
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class=" p-2 row g-4">
+                <div class="col-md-4 col-lg-3 order-md-last">
+                    <form class="card p-2 colores">
+                        <h4 class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-primary">Contenido de la pagina</span>                        
+                        </h4>
+                    </form>
+                    <br>
+                    <form class="card p-2 colores">                        
+                        <ul>
+                            <li>
+                                <a href="#introduccionjsp" class="link-dark" >Intruducción a JSP</a>
+                            </li>                        
+                            <li>
+                                <a href="#elementosjsp" class="link-dark" >Elementos de JSP</a>
+                            </li>
+                            <li>
+                                <a href="#Directivas" class="link-dark" >Directivas</a>
+                            </li>
+                            <li>
+                                <a href="#Acciones" class="link-dark" >Acciones</a>
+                            </li>  
+                            <li>
+                                <a href="#inclusivopaginas" class="link-dark" >Inclusión de paginas</a>
+                            </li>  
+                            <li>
+                                <a href="#Objetosimplicitos" class="link-dark" >Objetos implicitos</a>
+                            </li>  
+                            <li>
+                                <a href="#aut" class="link-dark" >OUT</a>
+                            </li>  
+                            <li>
+                                <a href="#Application" class="link-dark" >Application</a>
+                            </li> 
+                            <li>
+                                <a href="#Page" class="link-dark" >Page</a>
+                            </li> 
+                        </ul>                       
+
+                        <a href="#Bibliografia" class="link-dark" >Bibliografia de esta pagina</a>
+                    </form>
+                </div>
+                <div class="colores col-md-8 col-lg-9">                    
+                    <div id="comienzodelapagina"></div>
+                    <div class="colores">
+                        <h1 class="centrado"><strong>Guia sobre JSP COMO TECNOLOGIA PARA DESARROLLO DE APLICACIONES WED</strong></h1>            
+                        <h3><strong>¿INTRODUCCION A JSP?</strong></h3>
+                        <p>
+                            JavaServer Pages (JSP) (http://java.sun.com/jsp) es una tecnología basada en el lenguaje Java que
+                            permite incorporar contenido dinámico a las páginas web. Los archivos JSP combinan HTML con
+                            etiquetas especiales y fragmentos de código Java.
+                            El código fuente de una página JSP puede contener[1]:
+                        </p>
+                        <ul>
+                            <li>  
+                                <p>Directivas: Indican información general de la página, como puede ser importación de clases,
+                                    página a invocar ante errores, si la página forma parte de una sesión, etc</p>
+                            </li>                        
+                            <li>
+                                <p>Declaraciones: Sirven para declarar métodos o variables.</p>
+                            </li>
+                            <li>
+                                <p>Scriptlets: Código Java embebido.</p>
+                            </li>
+                            <li>
+                                <p>Expresiones: Expresiones Java que se evalúan y se envían a la salida. </p>
+                            </li>
+                            <li>
+                                <p>Tags JSP: Etiquetas especiales que interpreta el servidor.</p>
+                            </li>
+                        </ul>
+                        <p>
+                            Un ejemplo simple de archivo JSP sería: 
+                        </p>
+                        <div class="blanco">
+                            <pre>
+
+                    &lt%@page import="java.util.*"%&gt
+                    &lt%! String cadena="Bienvenidos a JSP"; %&gt
+                    &lthtml&gt    
+                        &ltbody&gt
+                            &lt%= cadena %&gt
+                            &ltbr&gt
+                            &lt% out.println(new Date()); %&gt
+                        &lt/body&gt
+                    &lt/html&gt
+                
+                            </pre>
+                        </div>
+                        <p>
+                            JSP tiene bastantes ventajas frente a otras orientaciones, como ASP o PHP. Al ser JSP una
+                            especificación, podemos elegir entre diversas implementaciones, comerciales o gratuitas, sin tener que
+                            depender de un proveedor en particular. Quizá la ventaja fundamental es que tenemos toda la potencia del
+                            lenguaje Java a nuestro alcance, con sus ventajas como reusabilidad, robustez, multiplataforma, etc. 
+                        </p>
+                        
+                        <h4><strong>Elementos de JSP</strong></h4>
+                        <p>
+                            Podemos insertar código Java dentro de JSP de tres formas: Expresiones, scriptlets y declaraciones. 
+                        </p>
+                        <p>
+                            Expresiones: Son fragmentos de código Java, con la forma &lt%= expresión %&gt que se evalúan
+                            y se muestran en la salida del navegador. En general, dentro de una expresión podemos usar cualquier
+                            cosa que usaríamos dentro de un System.out.print(expr);
+                            Ejemplos:
+                        </p>
+                        <div class="blanco">
+                            <pre>
+
+                    &lt%= "Tamaño de cadena: "+cadena.length() %&gt
+                    &lt%= new java.util.Date() %&gt
+                    &lt%= Math.PI*2 %&gt 
+                
+                            </pre>
+                        </div>
+                        <p>
+                            Scriptlets: Son fragmentos de código Java con la forma &lt% código %&gt, en general, podemos
+                            insertar cualquier código que pudiéramos usar dentro de una función Java. Para acceder a la salida del
+                            navegador, usamos el objeto implícito out.
+                            Ejemplos:
+                        </p>
+                        <div class="blanco">
+                            <pre>
+
+                    &lttable&gt
+                        &lt% for (int i=0;i&lt10;i++)
+                        {
+                       %&gt
+                       &lttr&gt&lttd&gt &lt%=i%&gt &lt/td&gt&lt/tr&gt
+                       &lt% }
+                       %&gt
+                    &lt/table&gt
+                    &lt%
+                        out.println("&lttable&gt");
+                        for (int i=0;i&lt10;i++)
+                        out.println("&lttr&gt&lttd&gt"+i+"&lt/td&gt&lt/tr&gt");
+                        out.println("&lt/table&gt");
+                    %&gt 
+                
+                            </pre>
+                        </div>
+                        <p>
+                            Si observamos los dos ejemplos anteriores (que hacen lo mismo), podría parecer que la segunda opción
+                            es más deseable, pero en general hay que evitar el uso de out.println() para elementos HTML. En
+                            un proyecto en el que trabajen programadores y diseñadores conjuntamente, hay que separar presentación
+                            y código tanto como sea posible.
+                        </p>
+                        <p>
+                            Dentro de un scriptlet podemos usar cualquier librería de Java, incluyendo las propias, lo cual hace que
+                            resulte muy sencillo construir interfaces web de entrada y salida para nuestras clases.
+                        </p>
+                        <div class="blanco">
+                            <pre>
+
+                    &lt%
+                        String parametro1=request.getParameter("parametro1");
+                        String parametro2=request.getParameter("parametro2");
+                        MiClase miClase=new MiClase();
+                        String salida=miClase.procesa(parametro1, parametro2);
+                    %&gt
+                    &lt%= salida %&gt 
+                
+                            </pre>
+                        </div>
+                        <p>
+                            Para introducir comentarios en JSP, usaremos las marcas &lt%-- comentario --%&gt, dentro de un
+                            scriptlet o declaración podemos usar comentarios siguiendo la sintaxis de Java. 
+                        </p>
+                        <div class="blanco">
+                            <pre>
+
+                    &lt%-- Comentario JSP --%&gt
+                    &lt!-- Comentario HTML --&gt
+                    &lt%
+                     // Comentario
+                     /* Comentario */
+                    %&gt 
+                
+                            </pre>
+                        </div>
+                        <p>
+                            Declaraciones: Contienen declaraciones de variables o métodos, con la forma &lt%!
+                            declaración %&gt. Estas variables o métodos serán accesibles desde cualquier lugar de la página JSP.
+                            Hay que tener en cuenta que el servidor transforma la página JSP en un servlet, y éste es usado por
+                            múltiples peticiones, lo que provoca que las variables conserven su valor entre sucesivas ejecuciones.
+                            Ejemplos: 
+                        </p>
+                        <div class="blanco">
+                            <pre>
+
+                     &lt%! int numeroAccesos=0; %&gt
+                    &lthtml&gt
+                        &ltbody&gt
+                            &lt%=
+                             "La página ha sido accedida "+(++numeroAccesos)+
+                             " veces desde el arranque del servidor"
+                            %&gt
+                        &lt/body&gt
+                    &lt/html&gt
+                    &lt%! java.util.Date primerAcceso=new java.util.Date(); %&gt
+                    &lthtml&gt
+                        &ltbody&gt
+                            El primer acceso a la página se realizo en:
+                           &lt%= primerAcceso %&gt
+                        &lt/body&gt
+                    &lt/html&gt
+                    &lt%!
+                        private String ahora()
+                         {
+                         return ""+new java.util.Date();
+                         }
+                    %&gt
+                    &lthtml&gt
+                        &ltbody&gt
+                            &lt%= ahora() %&gt
+                        &lt/body&gt
+                    &lt/html&gt 
+
+                            </pre>
+                        </div>
+                        <h3><strong>Directivas</strong></h3>
+                        <p>
+                            Las directivas son elementos que proporcionan información al motor JSP, e influirán en la estructura del
+                            servlet generado. Hay tres tipos de directivas: page, taglib e include. 
+                        </p>
+                        <p>
+                            Page: Se indica con la forma &lt%@ page atributo="valor"&gt. Tiene diversos usos, entre los
+                            cuales destacaremos: 
+                        </p>
+                        <p>
+                            Importar clases. Importar código, de la misma forma que se realiza en un programa en Java,
+                            se indica con el atributo import.
+                            Ejemplo:
+                        </p>
+                        <div class="blanco">
+                            <pre>
+
+                    &lt%@page import="java.io.*, miPackage.miClase"%&gt 
+                
+                            </pre>
+                        </div>
+                        <p>
+                            Indicar si la página tendrá acceso a la sesión. Se especifica con el atributo session. El
+                            uso de sesiones se verá con más detalle en el apartado de objetos implícitos.
+                            Ejemplo:
+                        </p>
+                        <div class="blanco">
+                            <pre>
+
+                    &lt%@page session="true" import="java.util.ArrayList"%&gt
+                
+                            </pre>
+                        </div>
+                        <p>
+                            Gestión de errores. Permite redireccionar a una página cuando se produzca un error, se
+                            indica con los atributos errorPage y isErrorPage.
+                            Ejemplos:
+                        </p>
+                        <div class="blanco">
+                            <pre>
+
+                    &lt%@page errorPage="error.jsp"&gt
+                    [...]
+                    &lt%@page isErrorPage="yes"&gt
+                    &lthtml&gt
+                        &ltbody&gt
+                            Error, contacte con el administrador [...]
+                        &lt/body&gt
+                    &lt/html&gt 
+                
+                            </pre>
+                        </div>
+                        <p>
+                            Include: Permite incluir un archivo en el lugar donde se especifique, al contrario que con la acción
+                            &ltjsp:include&gt que veremos más adelante, la directiva include simplemente copia el contenido
+                            del archivo byte a byte, siendo el resultado similar a si copiáramos el texto del archivo incluido y lo
+                            pegáramos en el JSP.
+                            Ejemplo:
+                        </p>
+                        <div class="blanco">
+                            <pre>
+
+                    &lthtml&gt
+                        &lthead&gt
+                            &lt%@ include file="titulo.txt"%&gt
+                        &lt/head&gt
+                        &ltbody&gt
+                        &lt%@ include file="cuerpoPagina.jsp"%&gt
+                        &lt/body&gt
+                    &lt/html&gt
+                
+                            </pre>
+                        </div>
+                        <p>
+                            Taglib: Se emplea para indicar que se van a emplear librerías de etiquetas. Se verá con más detalle
+                            en el apartado de JSTL.
+                            Ejemplo:
+                        </p>
+                        <div class="blanco">
+                            <pre>
+
+                    &lt%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %&gt 
+                
+                            </pre>
+                        </div>
+                        <h3><strong>Acciones</strong></h3>
+                        <p>
+                            Las acciones tienen la forma &ltjsp:accion [parámetros]/&gt, y tienen diversos usos, entre los
+                            que destacan la inclusión de páginas y transferencia de control. 
+                        </p>
+                        <h4><strong>Inclusión de páginas</strong></h4>
+                        <p>
+                            Se realiza con la acción &ltjsp:include page="pagina.jsp"&gt. Incluye la salida de otra página
+                            JSP en la actual, al contrario que con la directiva &lt%@include file="fichero.ext"%&gt la
+                            página incluida se ejecuta y su salida se inserta en la página que la incluye, con la directiva se incluye el
+                            contenido del archivo (no su salida) y se ejecuta conjuntamente con la página principal.
+                            La página incluída tiene acceso a los parámetros enviados a la principal, y podemos enviarle nuevos
+                            parámetros con la subetiqueta &ltjsp:param name="nombre" value="valor"/&gt.
+                            Ejemplo: 
+                        </p>
+                        <div class="blanco">
+                            <pre>
+
+                    &lthtml&gt
+                        &lthead&gt
+                            &ltjsp:include page="cabecera.jsp"/&gt
+                        &lt/head&gt
+                        &ltbody&gt
+                            &ltjsp:include page="cuerpo.jsp"&gt
+                                &ltjsp:param name="tipo" value="paginaPrincipal"/&gt
+                            &lt/jsp:include&gt
+                        &lt/body&gt
+                    &lt/html&gt
+                
+                            </pre>
+                        </div>
+                        <p>
+                            Transferencia de control
+                            Se realiza con la acción &ltjsp:forward page="pagina.jsp"/&gt. La petición es redirigida a otra
+                            página, y la salida de la actual se descarta. Al igual que con la inclusión, la página a la que se redirige
+                            tiene acceso a los parámetros pasados a la actual, y es posible el envío de nuevos parámetros.
+                            Ejemplo:
+                        </p>
+                        <div class="blanco">
+                            <pre>
+
+                    &ltjsp:forward page="principal.jsp"&gt
+                        &ltjsp:param name="titulo" value="Principal"/&gt
+                    &lt/jsp:forward&gt
+                
+                            </pre>
+                        </div>
+                        <h3><strong>Objetos implícitos</strong></h3>
+                        <p>
+                            En JSP disponemos de algunos objetos implícitos, que nos permitirán acceder a diferente información y
+                            realizar diversas acciones. En JSP tenemos los siguientes objetos implícitos: request, response,
+                            out, session, application, config, pageContext, y page. Podemos acceder al JavaDoc de
+                            estas clases para ver los atributos y funciones disponibles en las direcciones:
+                            http://java.sun.com/products/servlet/reference/api/index.html
+                            http://java.sun.com/products/jsp/reference/api/index.html
+                        </p>
+                        <h3><strong>Request</strong></h3>
+                        <p>
+                            Es un objetode la clase HttpServletRequest, su uso principal es el acceso a los parámetros de la
+                            petición. Destacaremos las siguientes funciones: 
+                        </p>
+                        <ul>
+                            <li>  
+                                <p>String getParameter(String name)
+                                    Devuelve el valor de un parámetro. </p>
+                            </li>                        
+                            <li>
+                                <p>Enumeration getParameterNames()
+                                    Devuelve una enumeración con los nombres de todos los parámetros de la petición. </p>
+                            </li>
+                            <li>
+                                <p>String[] getParameterValues(String name)
+                                    Los parámetros pueden tener valor múltiple, con esta función recuperamos un array con todos los
+                                    valores para un nombre dado. </p>
+                            </li>
+                            <li>
+                                <p>String getRemoteAddr()
+                                    Devuelve la IP del host desde el que se realiza la petición </p>
+                            </li>
+                            <li>
+                                <p>String getRemoteHost()
+                                    Devuelve el nombre del host desde el que se realiza la petición. </p>
+                            </li>
+                        </ul>
+                        <p>
+                            Ejemplo:
+                        </p>
+                        <div class="blanco">
+                            <pre>
+
+                    &lthtml&gt
+                        &ltbody&gt
+                            &ltform&gt
+                                &ltinput type="text" name="parametro"/&gt
+                                &ltinput type="submit"/&gt
+                            &lt/form&gt
+                            &ltbr&gt
+                            &ltbr&gt
+                            Su IP: &lt%=request.getRemoteAddr()%&gt
+                            &ltbr&gt
+                            Su nombre de host: &lt%= request.getRemoteHost() %&gt
+                            &ltbr&gt
+                            Valor del parámetro:
+                            &lt%= request.getParameter("parametro") %&gt
+                        &lt/body&gt
+                    &lt/html&gt
+                
+                            </pre>
+                        </div>
+                        <h3><strong>Response</strong></h3>
+                        <p>
+                            Es un objeto de la clase HttpServletResponse, que asiste al servlet en su generación de la
+                            respuesta para el cliente, contiene funciones para manejo de cabeceras, códigos de estado, cookies y
+                            transferencia de control. 
+                        </p>
+                        <h3><strong>Out</strong></h3>
+                        <p>
+                            Es un objeto de la clase JspWriter, es el que nos permite acceder a la salida del navegador desde los
+                            scriplet.
+                            Ejemplo: 
+                        </p>
+                        <div class="blanco">
+                            <pre>
+
+                    &lt%
+                        out.print("cadena");
+                        out.println("cadena");
+                    %&gt
+                
+                            </pre>
+                        </div>
+                        <h3><strong>Session</strong></h3>
+                        <p>
+                            Es un objeto de la clase HttpSession. Nos permite acceder a la sesión asociada a la petición. A
+                            través de este objeto podemos, entre otras cosas, guardar objetos que serán accesibles desde cualquier JSP
+                            de la sesión o invalidarla. 
+                        </p>
+                        <p>
+                            Para guardar y recuperar información usaremos:
+                            Object session.getAttribute("clave");
+                            void session.setAttribute("clave", Object objeto);
+                        </p>
+                        <p>
+                            Y para invalidar la sesión:
+                            void session.invalidate();
+                        </p>
+                        <p>
+                            Ejemplo:
+                        </p>
+                        <div class="blanco">
+                            <pre>
+
+                    &lt%@ page session="true" %&gt
+                    &lt%
+                        java.util.ArrayList accesos=
+                            (java.util.ArrayList)session.getAttribute("accesos");
+                        if (accesos==null)
+                            accesos=new java.util.ArrayList();
+                        accesos.add(new java.util.Date().toString());
+                        session.setAttribute("accesos", accesos);
+                        <br>
+                        if (request.getParameter("invalidaSesion")!=null)
+                            session.invalidate();
+                    %&gt
+                    &lthtml&gt
+                        &ltbody&gt
+                            &ltform&gt
+                                &ltinput type="submit" name="invalidaSesion"
+                               value="Invalidar sesión"/&gt
+                                &ltinput type="submit" value="Recargar página"/&gt
+                            &lt/form&gt
+                            &ltbr/&gt
+                            Usted accedió a esta página en los
+                            siguientes momentos: &ltbr&gt
+                            &lt%
+                                for (int i=0;i&ltaccesos.size();i++)
+                                {
+                            %&gt
+                            &lt%= accesos.get(i) %&gt
+                            &ltbr&gt
+                            &lt%
+                                 }
+                            %&gt
+                        &lt/body&gt
+                    &lt/html&gt 
+                
+                            </pre>
+                        </div>
+                        <h3><strong>Application</strong></h3>
+                        <p>
+                            Es un objeto de la clase ServletContext. Este objeto es común para toda la aplicación web y,
+                            entre otras cosas, nos permite almacenar información que será accesible desde todas las páginas de la
+                            aplicación web, independientemente de la sesión.
+                            Para guardar y recuperar valores:
+                        </p>
+                        <div class="blanco">
+                            <pre>
+
+                        Object application.getAttribute("clave");
+                        void application.setAttribute("clave", Object objeto); 
+                
+                            </pre>
+                        </div>
+                        <p>
+                            Ejemplo:
+                        </p>
+                        <div class="blanco">
+                            <pre>
+
+                        &lt%@ page session="true" %&gt
+                        &lt%
+                            java.util.Hashtable direcciones=
+                                (java.util.Hashtable)application.
+                                    getAttribute("direcciones");
+                            if (direcciones==null)
+                                direcciones=new java.util.Hashtable();
+                            direcciones.put(request.getRemoteAddr(),"");
+                            application.setAttribute("direcciones", direcciones);
+                        %&gt
+                        &lthtml&gt
+                            &ltbody&gt
+                                El servidor fue accedido desde las
+                                siguientes direcciones IP:
+                                &ltbr&gt
+                                &lt%
+                                    java.util.Enumeration e=
+                                        direcciones.keys();
+                                    while (e.hasMoreElements())
+                                    {
+                                %&gt
+                                    &lt%= e.nextElement() %&gt
+                                    &ltbr&gt
+                                &lt%
+                                    }
+                                %&gt
+                            &lt/body&gt
+                        &lt/html&gt
+                
+                            </pre>
+                        </div>
+                        <h3><strong>Config</strong></h3>
+                        <p>
+                            Es un objeto de la clase ServletConfig. Permite acceder a parámetros de inicialización del servlet y
+                            a su contexto. 
+                        </p>
+                        <h3><strong>PageContext</strong></h3>
+                        <p>
+                            Es un objeto de la clase PageContext. Entre otras cosas, nos permite almacenar información
+                            localmente a la página.
+                            <br>
+                            Para guardar y recuperar valores: 
+                        </p>
+                        <div class="blanco">
+                            <pre>
+
+                        Object pageContext.getAttribute("clave");
+                        void pageContext.setAttribute("clave", Object objeto);
+                
+                            </pre>
+                        </div>
+                        <p>
+                            También podemos usar PageContext para almacenar y recuperar información en sesión y en aplicación: 
+                        </p>
+                        <p>
+                            Almacenar en contexto de página:
+                        </p>
+                        <div class="blanco">
+                            <pre>
+
+                       PageContext.setAttribute("clave", obj, PageContext.PAGE_SCOPE);
+                       PageContext.setAttribute("clave", obj);
+                
+                            </pre>
+                        </div>
+                        <p>
+                            Almacenar en contexto de sesión:
+                        </p>
+                        <div class="blanco">
+                            <pre>
+
+                        PageContext.setAttribute("clave",obj, PageContext.SESSION_SCOPE);
+                        session.setAttribute("clave", objeto);
+                
+                            </pre>
+                        </div>
+                        <p>
+                            Almacenar en contexto de aplicación:
+                        </p>
+                        <div class="blanco">
+                            <pre>
+
+                        PageContext.setAttribute("clave",obj,PageContext.APPLICATION_SCOPE);
+                        application.setAttribute("clave",objeto);
+                
+                            </pre>
+                        </div>
+                        <h3><strong>Page</strong></h3>
+                        <p>
+                            Es un sinónimo de this, no tiene utilidad en el estado actual de la especificación.
+                        </p>
+                        
+                        <div id="Bibliografia"></div>
+                        <hr class="border-primary border-3 opacity-75"><!-- linia divisora del contenido -->
+                        <h1 class="centrado"><strong>Bibliografia de esta pagina</strong></h1>
+                        <br>
+                            <p>[1] 	J. C. G. Candela, «INTRODCUCCION jsp,» 2004. </p>
+                        <br>
+                        <a href="#comienzodelapagina" class="link-dark" ><img src="../imagenes/flecha-correcta.png" class="rounded mx-auto d-block" alt="..."></a>
+                        <br>
+                    </div>
+                </div>
+        </main>
+    </body>
+</html>

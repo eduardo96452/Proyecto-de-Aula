@@ -11,97 +11,196 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../codigo_color/prism.css" rel="stylesheet" type="text/css"/>
         <link href="../css/style.css" rel="stylesheet" type="text/css"/>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"><!-- comment -->
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script><!-- comment -->
+
         <style>
-            h1,
-            h2,
-            h3 {
-                text-align: center;
+            main{     
+                margin: 1.5%;
+                font-family: Times New Roman;
             }
+            .colores{
+                padding: 4%;
+                background-color: #fdecda;
+            }            
+
+            .blanco{
+                background-color: whitesmoke;
+            }
+
+            .centrado{
+                text-align:center;
+            } 
         </style>
     </head>
     <body>
-        <h1>JAVA</h1>
-        <hr color="black" size="3" id="hrpr">
-        <h2>LA HISTORIA DE JAVA</h2>
-    <p class="styparrafos">
-        Java no fue creado originalmente para la red internet. <span lang="en">Sun Microsystems</span> comenzó a
-        desarrollarlo con el objetivo
-        de crear un lenguaje, independiente de la plataforma y del sistema operativo, para el desarrollo de electrónica
-        de consumo (dispositivos electrónicos inteligentes, como televisores, vídeos, equipos de música, etc.). El
-        proyecto original, denominado Green comenzó apoyándose en C++, pero a medida que se progresaba en su desarrollo
-        el equipo creador de &lt&ltGreen&gt&gt comenzó a encontrarse con dificultades, especialmente de portabilidad.
-        Para
-        evitar estas dificultades, decidieron desarrollar su propio lenguaje y en agosto de 1991 nació un nuevo
-        lenguaje orientado a objetos. Este lenguaje fue bautizado con el nombre de Oak. En 1993, el proyecto Green
-        se volvió a renombrar y pasó a llamarse <span lang="en">First Penon Juc</span>. Sun invirtió un gran presupuesto
-        y esfuerzo humano
-        para intentar ven- der esta tecnología, hardware y software, sin gran éxito.[1]
-    </p>
-    <h2>¿QUÉ ES JAVA? </h2>
-    <p class="styparrafos">
-        El significado de Java tal y como se le conoce en la actualidad es el de un lenguaje de programación y un
-        entorno para ejecución de programas escritos en el lenguaje Java. AI contrario que los compiladores
-        tradicionales, que convierten el código fuente en instrucciones a nivel de máquina, el compilador Java traduce
-        el código fuente Java en instrucciones que son interpretadas por la Máquina Virtual Java <span lang="en">(JVM,
-            Java Virtual
-            Machine)</span> . A diferencia de los lenguajes C y C++ en los que está inspirado, Java es un lenguaje
-        interpretado.
-        Aunque hoy en día Java es por excelencia el lenguaje de programación para Internet y la <span>World Wide Web</span> en
-        particular, Java no comenzó como proyecto Internet y por esta circunstancia es idóneo para tareas de
-        programación de pro- pósito general y, de hecho, muchas de las herramientas Java están escritas en Java.[1]
-    </p>
-    <h2>Java como lenguaje de Internet</h2>
-    <p class="styparrafos">
-        Java es un lenguaje para programar en Internet que trata de resolver dos problemas
-        claves con el contenido de Internet:[1]<br>
-    <ul>
-        <li class="styli">En la actualidad, el contenido de la WWW es pasivo y estático.</li>
-        <li class="styli">La entrega <span>(Deliverry)</span> del contenido WWW es dependiente de la configuración de
-            cada navegador Web de usuario.</li>
-    </ul>
-    </p>
-    <p class="styparrafos">
-        En el mundo de la Web, Java es una tecnología facilitadora que permite a los
-        desarrolladores crear páginas Web que se entregarán de modo consistente a todos
-        los usuarios con un navegador habilitado para Java y con independencia de la 
-        plataforma hardware y el sistema operativo que se esté utilizando. Dado que el 
-        código fuente se interpreta, si existe un intérprete Java para una plataforma específica
-        hardware o sistema operativo, se pueden escribir programas con el conocimiento de
-        que serán útiles en esa plataforma.[1]
-    </p>
-    <h2>CARACTERISTICAS DE JAVA</h2>
-    <p class="styparrafos">
-        Java ha conseguido una enorme popularidad. Su rápida difusión e implantación en el
-        mundo de la programación en Internet y fuera de línea ha sido posible
-        gracias a sus importantes características. Los creadores de Java escribieron un artículo,
-        ya clásico, en el que definían al lenguaje como sencillo, orientado a objetos,
-        distribuido, interpretado, robusto, seguro, arquitectura neutra, alto rendimiento, multihilo
-        y dinámico.[1]
-    </p>
-    <ul>
-        <div id="diviz">
-            <li class="styli2">Sencillo</li>
-            <li class="styli2">Orientado a objetos</li>
-            <li class="styli2">Distribuido</li>
-            <li class="styli2">Interpretado</li>
-            <li class="styli2">Robusto</li>
-            <li class="styli2">Seguro</li>
-        </div>
-        <div id="divid">
-            <li class="styli2">Arquitectura neutral</li>
-            <li class="styli2">Portable</li>
-            <li class="styli2">Alto rendimiento</li>
-            <li class="styli2">Multíhilo</li>
-            <li class="styli2">Dinámico</li>
-        </div>
-    </ul>
-    <h1><br><br><br><br><br>Decisiones y bucles</h1>
-    <h3><br>LA SENTENCIA if</h3>
-    <p class="styparrafos">La sentencia if permite en un programa tomar la decisión sobre la 
-        ejecución de una acción o de un grupo de acciones, mediante la evaluación de una expresión
-        lógica o booleana.[1]</p>
-    <div class="divcodi">
-        <pre>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Mundo HMTL</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Pagina Principal</a>
+                        </li>                        
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Guias                               
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item " href="guiaHTML.html">Guias de HTML</a></li>
+                                <li><a class="dropdown-item" href="guiaCSS.html">Guias de CSS</a></li>
+                                <li><a class="dropdown-item" href="guiaJavaScript.html">Guias de JavaScript</a></li>
+                                <li><a class="dropdown-item " href="pagina_java.html">Guias de JAVA</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Accesibilidad.html">Guia de Inclusividad</a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link nav-link active" href="Acercade.html">Acerca de...</a>
+                        </li>
+                    </ul>
+                    <!--<form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>-->
+                </div>
+            </div>
+        </nav> 
+        <main>
+            <div class=" p-2 row g-4">
+                <div class="col-md-4 col-lg-3 order-md-last">
+                    <form class="card p-2 colores">
+                        <h4 class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-primary">Contenido de la pagina</span>                        
+                        </h4>
+                    </form>
+                    <br>
+                    <form class="card p-2 colores">                        
+                        <ul>
+                            <li>
+                                <a href="#historiaJava" class="link-dark" >Historia de Java</a>
+                            </li>
+                            <li>
+                                <a href="#queesjava" class="link-dark" >¿Que es Java?</a>
+                            </li>                        
+                            <li>
+                                <a href="#javalenginternet" class="link-dark" >Java como lenguaje de internet</a>
+                            </li>
+
+                            <li>
+                                <a href="#caracteristicajava" class="link-dark" >Caracteristicas de java</a>
+                            </li>
+                            <li>
+                                <a href="#Decisiones" class="link-dark" >Decisiones</a>
+                            </li>  
+                            <li>
+                                <a href="#clases" class="link-dark" >Clases</a>
+                            </li>
+                            <li>
+                                <a href="#objetos" class="link-dark" >Objetos</a>
+                            </li>
+                            <li>
+                                <a href="#metodos" class="link-dark" >Metodos</a>
+                            </li>                            
+                        </ul>                       
+
+                        <a href="#Bibliografia" class="link-dark" >Bibliografia de esta pagina</a>
+                    </form>
+                </div>
+                <div class="colores col-md-8 col-lg-9">
+                    <div class="colores">
+                        <div id="comienzodelapagina"></div><h1 class="centrado"><strong>JAVA</strong></h1>
+                        <hr color="black" size="3" id="hrpr">
+                        <div id="historiajava"></div><h2><strong>LA HISTORIA DE JAVA</strong></h2>
+                        <p class="styparrafos">
+                            Java no fue creado originalmente para la red internet. <span lang="en">Sun Microsystems</span> comenzó a
+                            desarrollarlo con el objetivo
+                            de crear un lenguaje, independiente de la plataforma y del sistema operativo, para el desarrollo de electrónica
+                            de consumo (dispositivos electrónicos inteligentes, como televisores, vídeos, equipos de música, etc.). El
+                            proyecto original, denominado Green comenzó apoyándose en C++, pero a medida que se progresaba en su desarrollo
+                            el equipo creador de &lt&ltGreen&gt&gt comenzó a encontrarse con dificultades, especialmente de portabilidad.
+                            Para
+                            evitar estas dificultades, decidieron desarrollar su propio lenguaje y en agosto de 1991 nació un nuevo
+                            lenguaje orientado a objetos. Este lenguaje fue bautizado con el nombre de Oak. En 1993, el proyecto Green
+                            se volvió a renombrar y pasó a llamarse <span lang="en">First Penon Juc</span>. Sun invirtió un gran presupuesto
+                            y esfuerzo humano
+                            para intentar ven- der esta tecnología, hardware y software, sin gran éxito.<a href="#17" class="link-dark" >[17]</a>
+                        </p>
+                        <div id="queesjava"></div><h2><strong>¿QUÉ ES JAVA?</strong></h2>
+                        <p class="styparrafos">
+                            El significado de Java tal y como se le conoce en la actualidad es el de un lenguaje de programación y un
+                            entorno para ejecución de programas escritos en el lenguaje Java. AI contrario que los compiladores
+                            tradicionales, que convierten el código fuente en instrucciones a nivel de máquina, el compilador Java traduce
+                            el código fuente Java en instrucciones que son interpretadas por la Máquina Virtual Java <span lang="en">(JVM,
+                                Java Virtual
+                                Machine)</span> . A diferencia de los lenguajes C y C++ en los que está inspirado, Java es un lenguaje
+                            interpretado.
+                            Aunque hoy en día Java es por excelencia el lenguaje de programación para Internet y la <span>World Wide Web</span> en
+                            particular, Java no comenzó como proyecto Internet y por esta circunstancia es idóneo para tareas de
+                            programación de pro- pósito general y, de hecho, muchas de las herramientas Java están escritas en Java.<a href="#17" class="link-dark" >[17]</a>
+                        </p>
+                        <div id="javalenginternet"></div><h2><strong>Java como lenguaje de Internet</strong></h2>
+                        <p class="styparrafos">
+                            Java es un lenguaje para programar en Internet que trata de resolver dos problemas
+                            claves con el contenido de Internet:<a href="#17" class="link-dark" >[17]</a></p><br>
+                        <ul>
+                            <li class="styli">En la actualidad, el contenido de la WWW es pasivo y estático.</li>
+                            <li class="styli">La entrega <span>(Deliverry)</span> del contenido WWW es dependiente de la configuración de
+                                cada navegador Web de usuario.</li>
+                        </ul>
+
+                        <p class="styparrafos">
+                            En el mundo de la Web, Java es una tecnología facilitadora que permite a los
+                            desarrolladores crear páginas Web que se entregarán de modo consistente a todos
+                            los usuarios con un navegador habilitado para Java y con independencia de la 
+                            plataforma hardware y el sistema operativo que se esté utilizando. Dado que el 
+                            código fuente se interpreta, si existe un intérprete Java para una plataforma específica
+                            hardware o sistema operativo, se pueden escribir programas con el conocimiento de
+                            que serán útiles en esa plataforma.<a href="#17" class="link-dark" >[17]</a>
+                        </p>
+                        <div id="caracteristicajava"></div><h2><strong>CARACTERISTICAS DE JAVA</strong></h2>
+                        <p class="styparrafos">
+                            Java ha conseguido una enorme popularidad. Su rápida difusión e implantación en el
+                            mundo de la programación en Internet y fuera de línea ha sido posible
+                            gracias a sus importantes características. Los creadores de Java escribieron un artículo,
+                            ya clásico, en el que definían al lenguaje como sencillo, orientado a objetos,
+                            distribuido, interpretado, robusto, seguro, arquitectura neutra, alto rendimiento, multihilo
+                            y dinámico.<a href="#17" class="link-dark" >[17]</a>
+                        </p>
+                        <ul>
+
+                            <li class="styli2">Sencillo</li>
+                            <li class="styli2">Orientado a objetos</li>
+                            <li class="styli2">Distribuido</li>
+                            <li class="styli2">Interpretado</li>
+                            <li class="styli2">Robusto</li>
+                            <li class="styli2">Seguro</li>
+                        </ul>
+                        <ul>
+                            <li class="styli2">Arquitectura neutral</li>
+                            <li class="styli2">Portable</li>
+                            <li class="styli2">Alto rendimiento</li>
+                            <li class="styli2">Multíhilo</li>
+                            <li class="styli2">Dinámico</li>
+
+                        </ul>
+                        <div id="Decisiones"></div><h1><br>Decisiones y bucles</h1>
+                        <h3><br>LA SENTENCIA if</h3>
+                        <p class="styparrafos">La sentencia if permite en un programa tomar la decisión sobre la 
+                            ejecución de una acción o de un grupo de acciones, mediante la evaluación de una expresión
+                            lógica o booleana.<a href="#17" class="link-dark" >[17]</a></p>
+                        <div class="divcodi">
+                            <pre>
             <code class="language-java">
                 if (condición) 
                     sentencia ; 
@@ -110,26 +209,26 @@ and open the template in the editor.
                     //secuencia de sentencias 
                     }
             </code>
-        </pre>
-    </div>
-    <h3>LA SENTENCIA if-else</h3>
-    <p class="styparrafos">
-        Esta clase de sentencia if ofrece dos alternativas a seguir, basadas en la
-        conmprobación de la condición. La palabra reservada else separa las sentencias utilizadas
-        para ejecutar cada alternativa. La sintaxis de la sentencia if-else es:[1]
-    </p>
-    <div class="divcodi">
-        <pre>
+                            </pre>
+                        </div>
+                        <h3>LA SENTENCIA if-else</h3>
+                        <p class="styparrafos">
+                            Esta clase de sentencia if ofrece dos alternativas a seguir, basadas en la
+                            conmprobación de la condición. La palabra reservada else separa las sentencias utilizadas
+                            para ejecutar cada alternativa. La sintaxis de la sentencia if-else es:<a href="#17" class="link-dark" >[17]</a>
+                        </p>
+                        <div class="divcodi">
+                            <pre>
             <code class="language-java">
                 if (condicion) 
                     sentencia1; 
                 else 
                     sentencia2;
             </code>
-        </pre>
-    </div>
-    <div class="divcodi">
-        <pre>
+                            </pre>
+                        </div>
+                        <div class="divcodi">
+                            <pre>
             <code class="language-java">
                 if(condicion){
                     //secuencia de sentencias1
@@ -138,107 +237,107 @@ and open the template in the editor.
                     //secuencia de sentencias1
                 }
             </code>
-        </pre>
-    </div>
-    <p class="styparrafos">
-        Si la evaluación de la condición es verdadera, se ejecuta la sentencia1 o la
-        secuencia de sentenciasl, mientras que si la evaluación es falsa se ejecuta la
-        sentencia2 o la secuencia de sentencias2. Es decir, que las sentencias a realizar tanto
-        cuando se cumple como cuando no se cumple la condición podrán ser simples o
-        compuestas.[1]
-    </p>
-    <h3>LA SENTENCIA for</h3>
-    <p class="styparrafos">
-        El bucle for está diseñado para ejecutar una secuencia de sentencias un número
-        fijo de veces. La sintaxis de la sentencia for es:<br>
-        for (inicialización; condición de terminación; incremento)
-        sentencias; //desde 0 a un bloque delimitado por { }
-        Por ejemplo, para ejecutar una sentencia 1O veces se puede utilizar cualquiera
-        de los dos siguientes bucles for:[1]
-    </p>
-    <div class="divcodi">
-        <pre>
+                            </pre>
+                        </div>
+                        <p class="styparrafos">
+                            Si la evaluación de la condición es verdadera, se ejecuta la sentencia1 o la
+                            secuencia de sentenciasl, mientras que si la evaluación es falsa se ejecuta la
+                            sentencia2 o la secuencia de sentencias2. Es decir, que las sentencias a realizar tanto
+                            cuando se cumple como cuando no se cumple la condición podrán ser simples o
+                            compuestas.<a href="#17" class="link-dark" >[17]</a>
+                        </p>
+                        <h3>LA SENTENCIA for</h3>
+                        <p class="styparrafos">
+                            El bucle for está diseñado para ejecutar una secuencia de sentencias un número
+                            fijo de veces. La sintaxis de la sentencia for es:<br>
+                            for (inicialización; condición de terminación; incremento)
+                            sentencias; //desde 0 a un bloque delimitado por { }
+                            Por ejemplo, para ejecutar una sentencia 1O veces se puede utilizar cualquiera
+                            de los dos siguientes bucles for:<a href="#17" class="link-dark" >[17]</a>
+                        </p>
+                        <div class="divcodi">
+                            <pre>
             <code class="language-java">
                 int i;
                 for(int i=1; i&lt=l0;i++)
                     System.out.println(i);
             </code>
-        </pre>
-    </div>
-    <h3>LA SENTENCIA while</h3>
-    <p class="styparrafos">
-        El bucle while ejecuta una sentencia o bloque de sentencias mientras se cumple
-        una determinada condición; es decir, la acción o acciones se repiten mientras la
-        condición es verdadera. La sintaxis general de la sentencia while es:[1]
-    </p>
-    <div class="divcodi">
-        <pre>
+                            </pre>
+                        </div>
+                        <h3>LA SENTENCIA while</h3>
+                        <p class="styparrafos">
+                            El bucle while ejecuta una sentencia o bloque de sentencias mientras se cumple
+                            una determinada condición; es decir, la acción o acciones se repiten mientras la
+                            condición es verdadera. La sintaxis general de la sentencia while es:<a href="#17" class="link-dark" >[17]</a>
+                        </p>
+                        <div class="divcodi">
+                            <pre>
             <code class="language-java">
                 while(expresión) 
                     sentencia;
             </code>
-        </pre>
-    </div>
-    <div class="divcodi">
-        <pre>
+                            </pre>
+                        </div>
+                        <div class="divcodi">
+                            <pre>
             <code class="language-java">
                 while (expresión) 
                 { 
                     //secuencia de sentencias. 
                 }
             </code>
-        </pre>
-    </div>
-    <h3>LA SENTENCIA do-while</h3>
-    <p class="styparrafos">
-        La sentencia do-while es similar a la sentencia while, excepto que la
-        expresión se comprueba después de que el bloque de sentencias se ejecute (mientras
-        que la sentencia while realiza la prueba antes de que se ejecute el bloque de
-        sentencias). La sintaxis de la sentencia do-while es:[1]
-    </p>
-    <div class="divcodi">
-        <pre>
+                            </pre>
+                        </div>
+                        <h3>LA SENTENCIA do-while</h3>
+                        <p class="styparrafos">
+                            La sentencia do-while es similar a la sentencia while, excepto que la
+                            expresión se comprueba después de que el bloque de sentencias se ejecute (mientras
+                            que la sentencia while realiza la prueba antes de que se ejecute el bloque de
+                            sentencias). La sintaxis de la sentencia do-while es:<a href="#17" class="link-dark" >[17]</a>
+                        </p>
+                        <div class="divcodi">
+                            <pre>
             <code class="language-java">
                 do{  
                     sentencia; 
                 }while (expresión)
             </code>
-        </pre>
-    </div>
-    <br>
-    <h2>CLASES</h2>
-    <p class="styparrafos">
-        Las clases son estructuras o plantillas que sirven para definir un objeto. En
-        una clase Java, se pueden utilizar datos para describir propiedades y métodos
-        que definen su comportamiento. Una clase de un objeto contiene una colección
-        de métodos y definiciones de datos.[1]
-    </p>
-    <div class="divcodi">
-        <pre>
+                            </pre>
+                        </div>
+                        <br>
+                        <div id="clases"></div><h2><strong>CLASES</strong></h2>
+                        <p class="styparrafos">
+                            Las clases son estructuras o plantillas que sirven para definir un objeto. En
+                            una clase Java, se pueden utilizar datos para describir propiedades y métodos
+                            que definen su comportamiento. Una clase de un objeto contiene una colección
+                            de métodos y definiciones de datos.<a href="#17" class="link-dark" >[17]</a>
+                        </p>
+                        <div class="divcodi">
+                            <pre>
             <code class="language-java">
                 class Nombre 
                 {
                     // cuerpo de la clase
                 } 
             </code>
-        </pre>
-    </div><br>
-    <h2>OBJETOS</h2>
-    <p class="styparrafos">
-        Un objeto es una colección de datos y las subrutinas o métodos que operan sobre ellos.
-        Los objetos representan cosas físicas o abstractas, pero que tienen un estado y un
-        comportamiento. Por ejemplo, una mesa, un estudiante, un círculo, una cuenta corriente, un
-        préstamo, un automóvil, ... se consideran objetos. Así, ciertas propiedades definen a un
-        objeto y ciertas propiedades definen lo que hace. Las que definen el objeto se conocen
-        como campos de datos y el comportamiento de los objetos se define como métodos.[1]
-    </p>
-    <h3>Declaración e Instanciación </h3>
-    <p class="styparrafos">
-        Se pueden combinar la declaración y la instanciacibn en una sola sentencia con la
-        siguiente sintaxis:
-    </p>
-    <div class="divcodi">
-        <pre>
+                            </pre>
+                        </div><br>
+                        <div id="objetos"></div><h2><strong>OBJETOS</strong></h2>
+                        <p class="styparrafos">
+                            Un objeto es una colección de datos y las subrutinas o métodos que operan sobre ellos.
+                            Los objetos representan cosas físicas o abstractas, pero que tienen un estado y un
+                            comportamiento. Por ejemplo, una mesa, un estudiante, un círculo, una cuenta corriente, un
+                            préstamo, un automóvil, ... se consideran objetos. Así, ciertas propiedades definen a un
+                            objeto y ciertas propiedades definen lo que hace. Las que definen el objeto se conocen
+                            como campos de datos y el comportamiento de los objetos se define como métodos.<a href="#17" class="link-dark" >[17]</a>
+                        </p>
+                        <h3>Declaración e Instanciación </h3>
+                        <p class="styparrafos">
+                            Se pueden combinar la declaración y la instanciacibn en una sola sentencia con la
+                            siguiente sintaxis:
+                        </p>
+                        <div class="divcodi">
+                            <pre>
             <code class="language-java">
         NombreClace nombreobjeto = new NombreClase();
 
@@ -246,20 +345,20 @@ and open the template in the editor.
 
         Circulo obj_Circulo = new Circulo();
             </code>
-        </pre>
-    </div><br>
-    <h2>MÉTODOS</h2>
-    <p class="styparrafos">
-        Los métodos son acciones que se
-        realizan por un objeto de una clase. Una invocación a un método es una petición al
-        método para que ejecute su acción y lo haga con el objeto mencionado. La
-        invocación de un método se denominaría también llamar a un método y pasar un
-        mensaje a un objeto.<br><br>
-        Después de que se ha creado un objeto, se puede acceder a sus datos y métodos 
-        utilizando la notación siguiente:[1]
-    </p>
-    <div class="divcodi">
-        <pre>
+                            </pre>
+                        </div><br>
+                        <div id="metodos"></div><h2><strong>MÉTODOS</strong></h2>
+                        <p class="styparrafos">
+                            Los métodos son acciones que se
+                            realizan por un objeto de una clase. Una invocación a un método es una petición al
+                            método para que ejecute su acción y lo haga con el objeto mencionado. La
+                            invocación de un método se denominaría también llamar a un método y pasar un
+                            mensaje a un objeto.<br><br>
+                            Después de que se ha creado un objeto, se puede acceder a sus datos y métodos 
+                            utilizando la notación siguiente:<a href="#17" class="link-dark" >[17]</a>
+                        </p>
+                        <div class="divcodi">
+                            <pre>
             <code class="language-java">
             nombreObjeto.datos 
             //Referencia a un dato de un objeto
@@ -268,11 +367,11 @@ and open the template in the editor.
             nombreObjeto.metodo() 
             //Referencia a un método de un objeto   
             </code>
-        </pre>
-    </div><br>
-    <p style="text-align: center;"><b>Ejemplo con la clase Circulo</b></p><br>
-    <div class="divcodi">
-        <pre>
+                            </pre>
+                        </div><br>
+                        <p style="text-align: center;"><b>Ejemplo con la clase Circulo</b></p><br>
+                        <div class="divcodi">
+                            <pre>
             <code class="language-java">
             miCirculo.radio  
             //radio de mi circulo
@@ -281,14 +380,23 @@ and open the template in the editor.
             miCirculo.calcularSuperficie() 
             //Devuelve la superficie de micirculo   
             </code>
-        </pre>
-    </div><br>
-    <script src="../codigo_color/prism.js"></script>
-    <hr id="hrul" size="3"  color="black">
-    <h2>Referencias</h2>
-    <p class="styparrafos">
-        L. Joyanes Aguilar and M. Fernandez Azuela, JAVA 2 MANUAL DE PROGRAMACIÓN.<br> 
-        Osborne McGraw-Hill MADRID.
-    </p>
-</body>
+                            </pre>
+                        </div><br>
+                        <script src="../codigo_color/prism.js"></script>
+                        <div id="Bibliografia"></div>
+                        <hr class="border-primary border-3 opacity-75"><!-- linia divisora del contenido -->
+                        <h1 class="centrado"><strong>Bibliografia de esta pagina</strong></h1>
+                        <br>
+                        <div id="17"></div><p><p class="styparrafos">
+                            [17]     L. Joyanes Aguilar and M. Fernandez Azuela, JAVA 2 MANUAL DE PROGRAMACIÓN.<br> 
+                            Osborne McGraw-Hill MADRID.
+                        </p>
+                        <br>
+                        <a href="#comienzodelapagina" class="link-dark" ><img src="../imagenes/flecha-correcta.png" class="rounded mx-auto d-block" alt="..."></a>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
 </html>

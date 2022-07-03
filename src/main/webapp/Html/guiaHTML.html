@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
 <html lang="es">
     <head>
         <title>Guia de HTML</title>
@@ -5,19 +12,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"><!-- comment -->
-        <link rel="stylesheet" href="../css/style.css" />
+        
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script><!-- comment -->
         <style>
             hr{
                 color: black;
             }
-            h1,
-            h2,
-            h3 {
-                text-align: center;
-                font-weight: bold;
-            }
+
+
             main{     
                 margin: 1.5%;
                 font-family: Times New Roman;
@@ -57,7 +60,8 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item " href="guiaHTML.html">Guias de HTML</a></li>
                                 <li><a class="dropdown-item" href="guiaCSS.html">Guias de CSS</a></li>
-                                <li><a class="dropdown-item" href="guiaJavaScript.html">Guias de JavaScript</a></li> 
+                                <li><a class="dropdown-item" href="guiaJavaScript.html">Guias de JavaScript</a></li>
+                                <li><a class="dropdown-item " href="pagina_java.html">Guias de JAVA</a></li>
 
                             </ul>
                         </li>
@@ -77,293 +81,345 @@
             </div>
         </nav>
         <main>
-            <div class="colores">
-                <h1>HTML</h1>
-                <hr color="black" size="3" id="hrpr">
-                <h2>Introducción</h2>
-                <p class="styparrafos">
-                    El <span lang="en">World Wide Web</span> (WWW) es un sistema que contiene
-                    una cantidad de información casi inﬁnita. Pero esta información debe estar
-                    ordenada de alguna forma de manera que sea posible encontrar lo que se
-                    busca. La unidad básica donde está almacenada esta información son las
-                    páginas Web. Estas páginas se caracterizan por contener texto, imágenes,
-                    animaciones e incluso sonido y video.[1]
-                </p>
-                <p class="styparrafos">
-                    Una de las características más importantes de las páginas Web es que son
-                    hipertexto. Esto quiere decir que las páginas no son elementos aislados,
-                    sino que están unidas a otras mediante los links o enlaces hipertexto.
-                    Gracias a estos enlaces el navegante de internet puede pulsar sobre un
-                    texto de una página para navegar hasta otra página. Será cuestión del
-                    programador de la página inicial decidir que palabras o frases serán
-                    activas y a donde nos conducirá pulsar sobre ellas.[1]
-                </p>
-                <p class="styparrafos">
-                    En algunos ambientes se discute que el
-                    <span lang="en">World Wide Web</span> ya no es un sistema hipertexto sino
-                    hipermedia. Los que defienden el cambio se apoyan en que aunque en sus
-                    orígenes el WWW constaba únicamente de texto en la actualidad es un
-                    sistema principalmente gráﬁco y se puede hacer que las zonas activas sean,
-                    no sólo texto, sino imágenes, videos, botones, en deﬁnitiva cualquier
-                    elemento de una página. Aún así, el término original no ha sido
-                    reemplazado todavía y por tanto será el empleado a lo largo de esta
-                    obra.[1]
-                </p>
-                <h2>Características del lenguaje HTML</h2>
-                <p class="styparrafos">
-                    Pero empecemos ya con lo que nos interesa. ¿Cómo se hace una página Web?
-                    Cuando los diseñadores del WWW se hicieron esta pregunta decidieron que se
-                    debían cumplir, entre otras, las siguientes características:
-                <ul>
-                    <li class="styli">
-                        El Web tenía que ser distribuido: La información repartida en páginas no
-                        muy grandes enlazadas entre sí.
-                    </li>
-                    <li class="styli">
-                        El Web tenía que ser hipertexto y debía ser fácil navegar por él.
-                    </li>
-                    <li class="styli">Tenía que ser compatible con todo tipo de ordenadores (PCs, Macintosh, estaciones de
-                        trabajo...)
-                        y con todo tipo de sistemas operativos (Windows, MS-DOS, UNIX, MAC-OS,...).
-                    </li>
-                    <li class="styli">
-                        Debía ser dinámico: el proceso de cambiar y actualizar la información debía ser ágil y rápido.
-                    </li>
-                </ul>
-                </p>
-                <p class="styparrafos">
-                    Estas características son las que marcaron el diseño de todos los elementos del WWW incluida la
-                    programación de páginas Web. Como respuesta a todos estos requisitos se creo el lenguaje HTML
-                    <span>(HiperText Markup Language)</span>, cuyas siglas signiﬁcan "lenguaje hipertexto de marcas".[1]
-                </p>
-                <h2>Las bases de HTML</h2>
-                <p class="styparrafos">
-                    Una vez repasadas unas nociones básicas de HTML y de la programación de páginas Web en
-                    general entraremos de lleno en la programación con este lenguaje. Pronto nos daremos cuenta de
-                    la sencillez de este lenguaje lo que le convierte en un lenguaje muy fácil de aprender y que nos
-                    permitirá crear páginas con mayor facilidad aún.[1]<br><br>
-                    Las órdenes de este lenguaje estarán formadas por unos comandos llamados etiquetas que pueden
-                    tener o bien la
-                    siguiente estructura:
-                <pre class="stypre">
+            <div class=" p-2 row g-4">
+                <div class="col-md-4 col-lg-3 order-md-last">
+                    <form class="card p-2 colores">
+                        <h4 class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-primary">Contenido de la pagina</span>                        
+                        </h4>
+                    </form>
+                    <br>
+                    <form class="card p-2 colores">                        
+                        <ul>
+                            <li>
+                                <a href="#introduccion" class="link-dark" >Introducción</a>
+                            </li>                        
+                            <li>
+                                <a href="#caracteristicashtml" class="link-dark" >Características del lenguaje HTML</a>
+                            </li>
+                            <li>
+                                <a href="#baseHTML" class="link-dark" >Las bases de HTML</a>
+                            </li>
+                            <li>
+                                <a href="#estructurapagina" class="link-dark" >Estructura de una página</a>
+                            </li>
+                            <li>
+                                <a href="#encabezados" class="link-dark" >Los encabezados</a>
+                            </li>
+                            <li>
+                                <a href="#atributoshtml" class="link-dark" >Los atributos en HTML</a>
+                            </li>
+                            <li>
+                                <a href="#saltoslinea" class="link-dark" >Saltos de línea</a>
+                            </li>
+                            <li>
+                                <a href="#insertarparrafos" class="link-dark" >Cómo se insertan párrafos</a>
+                            </li>
+                            <li>
+                                <a href="#insertarimagenes" class="link-dark" >Cómo insertar imágenes en una página.</a>
+                            </li>  
+                            <li>
+                                <a href="#etiquetaenlaces" class="link-dark" >La etiqueta para enlaces</a>
+                            </li>                                                          
+                        </ul>                       
+
+                        <a href="#Bibliografia" class="link-dark" >Bibliografia de esta pagina</a>
+                    </form>
+                </div>
+                <div class="colores col-md-8 col-lg-9">
+                    <div id="comienzodelapagina"><h1 class="centrado"><strong>HTML</strong></h1>
+                    <hr color="black" size="3" id="hrpr">
+                    <div id="introduccion"></div><h2 ><strong>Introducción</strong></h2>
+                    <p class="styparrafos">
+                        El <span lang="en">World Wide Web</span> (WWW) es un sistema que contiene
+                        una cantidad de información casi inﬁnita. Pero esta información debe estar
+                        ordenada de alguna forma de manera que sea posible encontrar lo que se
+                        busca. La unidad básica donde está almacenada esta información son las
+                        páginas Web. Estas páginas se caracterizan por contener texto, imágenes,
+                        animaciones e incluso sonido y video.<a href="#11" class="link-dark" >[11]</a>
+                    </p>
+                    <p class="styparrafos">
+                        Una de las características más importantes de las páginas Web es que son
+                        hipertexto. Esto quiere decir que las páginas no son elementos aislados,
+                        sino que están unidas a otras mediante los links o enlaces hipertexto.
+                        Gracias a estos enlaces el navegante de internet puede pulsar sobre un
+                        texto de una página para navegar hasta otra página. Será cuestión del
+                        programador de la página inicial decidir que palabras o frases serán
+                        activas y a donde nos conducirá pulsar sobre ellas.<a href="#11" class="link-dark" >[11]</a>]
+                    </p>
+                    <p class="styparrafos">
+                        En algunos ambientes se discute que el
+                        <span lang="en">World Wide Web</span> ya no es un sistema hipertexto sino
+                        hipermedia. Los que defienden el cambio se apoyan en que aunque en sus
+                        orígenes el WWW constaba únicamente de texto en la actualidad es un
+                        sistema principalmente gráﬁco y se puede hacer que las zonas activas sean,
+                        no sólo texto, sino imágenes, videos, botones, en deﬁnitiva cualquier
+                        elemento de una página. Aún así, el término original no ha sido
+                        reemplazado todavía y por tanto será el empleado a lo largo de esta
+                        obra.<a href="#11" class="link-dark" >[11]</a>
+                    </p>
+                    <div id="caracteristicashtml"></div><h2><strong>Características del lenguaje HTML</strong></h2>
+                    <p class="styparrafos">
+                        Pero empecemos ya con lo que nos interesa. ¿Cómo se hace una página Web?
+                        Cuando los diseñadores del WWW se hicieron esta pregunta decidieron que se
+                        debían cumplir, entre otras, las siguientes características:</p>
+                    <ul>
+                        <li class="styli">
+                            El Web tenía que ser distribuido: La información repartida en páginas no
+                            muy grandes enlazadas entre sí.
+                        </li>
+                        <li class="styli">
+                            El Web tenía que ser hipertexto y debía ser fácil navegar por él.
+                        </li>
+                        <li class="styli">Tenía que ser compatible con todo tipo de ordenadores (PCs, Macintosh, estaciones de
+                            trabajo...)
+                            y con todo tipo de sistemas operativos (Windows, MS-DOS, UNIX, MAC-OS,...).
+                        </li>
+                        <li class="styli">
+                            Debía ser dinámico: el proceso de cambiar y actualizar la información debía ser ágil y rápido.
+                        </li>
+                    </ul>
+
+                    <p class="styparrafos">
+                        Estas características son las que marcaron el diseño de todos los elementos del WWW incluida la
+                        programación de páginas Web. Como respuesta a todos estos requisitos se creo el lenguaje HTML
+                        <span>(HiperText Markup Language)</span>, cuyas siglas signiﬁcan "lenguaje hipertexto de marcas".<a href="#11" class="link-dark" >[11]</a>
+                    </p>
+                    <div id="baseHTML"></div><h2><strong>Las bases de HTML</strong></h2>
+                    <p class="styparrafos">
+                        Una vez repasadas unas nociones básicas de HTML y de la programación de páginas Web en
+                        general entraremos de lleno en la programación con este lenguaje. Pronto nos daremos cuenta de
+                        la sencillez de este lenguaje lo que le convierte en un lenguaje muy fácil de aprender y que nos
+                        permitirá crear páginas con mayor facilidad aún.<a href="#11" class="link-dark" >[11]</a><br><br>
+                        Las órdenes de este lenguaje estarán formadas por unos comandos llamados etiquetas que pueden
+                        tener o bien la
+                        siguiente estructura:</p>
+                    <pre class="stypre">
             <code>
 &ltNOMBRE_ETIQUETA&gt
             </code>
-                </pre>
-                </p>
-                <p class="styparrafos">
-                    O bien esta otra:
-                <pre class="stypre">
+                    </pre>
+
+                    <p class="styparrafos">
+                        O bien esta otra:</p>
+                    <pre class="stypre">
                 <code>
 &ltNOMBRE_ETIQUETA&gt TEXTO &lt/NOMBRE ETIQUETA&gt
                 </code>
-                </pre>
-                </p>
-                <p class="styparrafos">Como vemos, la primera estructura está formada por una única instrucción y la segunda por
-                    dos:
-                    una que marca el inicio de la etiqueta y otra que marca el ﬁnal, con texto entre ambas.[1]<br><br>
-                    Por ejemplo, para indicarle al navegador que queremos que pinte una línea horizontal debemos
-                    escribir:
-                <pre class="stypre">
+                    </pre>
+
+                    <p class="styparrafos">Como vemos, la primera estructura está formada por una única instrucción y la segunda por
+                        dos:
+                        una que marca el inicio de la etiqueta y otra que marca el ﬁnal, con texto entre ambas.<a href="#11" class="link-dark" >[11]</a><br><br>
+                        Por ejemplo, para indicarle al navegador que queremos que pinte una línea horizontal debemos
+                        escribir:</p>
+                    <pre class="stypre">
             <code>
 &lthr&gt
             </code>
-                </pre>
-                </p>
-                <img style="margin: 0% 30%;" src="/proyectoAula/imagenes/linea_divisora.jpeg" alt="Linea horizontal">
-                <p class="styparrafos">
-                    Así de sencillo. Como vemos, el nombre de la etiqueta va delimitado por los símbolos menor que
-                    (<) y mayor que (>), todas las instrucciones de HTML deben ir encerradas entre estos dos
-                    símbolos.[1]
-                </p>
-                <h2>Primeros pasos con HTML</h2>
-                <h3>Estructura de una página</h3>
-                <p class="styparrafos">
-                    Todo documento HTML está formado por los bloques a continuación se procede explicar cada
-                    uno de ellos.<br><br>
-                    En primer lugar deberemos especiﬁcar que el archivo de texto que estamos escribiendo es un
-                    documento HTML, para ello usamos las instrucciones de inicio y ﬁn de la etiqueta &lthtml&gt al
-                    principio y al ﬁnal de la página respectivamente:[1]
-                </p>
-                <img style="margin: 0% 42%;" src="/proyectoAula/imagenes/html_codigo.jpeg" alt="Codigo_html">
-                <p class="styparrafos">
-                    El código de la página esta formado a su vez por dos grandes bloques, la cabecera y el cuerpo.<br><br>
-                    La cabecera de la página está delimitada por las instrucciones de inicio y ﬁn de la etiqueta head.
-                    Estas instrucciones deben estar dentro de la etiqueta HTML de la siguiente manera:[1]
-                </p>
-                <img style="margin: 0% 38%;" src="/proyectoAula/imagenes/Cabecera.jpeg" alt="Cabecera">
-                <p class="styparrafos">
-                    En la cabecera de la página se introduce toda aquella información que afectará a toda la página.
-                    En un principio esta información se limitará al título. Este título se indicará con la etiqueta title
-                    usando la siguiente sintaxis:[1]
-                </p>
-                <img style="margin: 0% 37.5%;" src="/proyectoAula/imagenes/titulo.jpeg" alt="Titulo">
-                <p class="styparrafos">
-                    El cuerpo es el siguiente gran bloque de nuestro documento HTML, éste quedará delimitado por
-                    la etiqueta body. En su interior introduciremos todos aquellos elementos de los que queremos que
-                    conste nuestra página como pueden ser testo, imágenes, tablas, etc.[1]
-                </p>
-                <img style="margin: 0% 22%;" src="/proyectoAula/imagenes/body.jpeg" alt="Body">
-                <p class="styparrafos">
-                    Como vemos todo el texto que hemos escrito entre las instrucciones de inicio y ﬁn forman ahora
-                    el cuerpo de nuestra página.[1]
-                </p>
-                <h2>Los encabezados</h2>
-                <p class="styparrafos">
-                    Usualmente un documento tiene, además de texto llano, una serie de encabezados o titulares. Para
-                    ello el lenguaje HTML posee una serie de etiquetas que permiten disponer de titulares de hasta 6
-                    niveles de importancia.
-                    Estas etiquetas son: &lth1&gt, &lth2gt, &lth3&gt, &lth4&gt, &lth5&gt y &ltH6&gt. La letra "h" al principio del
-                    nombre
-                    de estas etiquetas provien de la abreviatura de la palabra inglesa <span>heading</span> que signiﬁca encabezado.
-                    Siguiendo a la hache hay un número del uno al seis que indica la importancia del titular siendo el
-                    más importante el uno y el menos importante el seis.[1]
-                </p>
-                <h3>Codigo</h3>
-                <img style="margin: 0% 36%;" src="/proyectoAula/imagenes/codigo_de_los _h.jpeg" alt="Codigo de los h">
-                <h3><br>Resultado de la página</h3>
-                <img style="margin: 0% 31%;" src="/proyectoAula/imagenes/resultado.jpeg" alt="pagina">
-                <p class="styparrafos">
-                    <br>NOTA: Los encabezados empiezan siempre en una línea nueva y el texto que les sigue comenzará
-                    en la línea siguiente. Además el navegador podrá mostrar un espacio vertical adicional entre el
-                    encabezado y el texto anterior y posterior.[1]<br><br>
-                    En él observamos que todos los titulares están en negrita y el tamaño de la fuente usada para cada
-                    encabezado va decreciendo conforme decrece la importancia del titular. Pero hay que tener en
-                    cuenta, tal y como comentábamos en la introducción, que este es sólo un ejemplo y que otros
-                    navegadores pueden mostrar estos encabezados de manera diferente.[1]
-                </p>
-                <h2>Los atributos en HTML</h2>
-                <p class="styparrafos">
-                <ul>
-                    <li class="styli">
-                        id: identificador único del elemento (no pueden existir dos elementos con la misma id en un
-                        mismo documento).
-                    </li>
-                    <li class="styli">
-                        class: permite indicar el nombre de la clase del elemento.
-                    </li>
-                    <li class="styli">
-                        tyle: se usa para especificar el estilo (inline) para el elemento.
-                    </li>
-                    <li class="styli">
-                        title: hace posible escribir información adicional sobre el elemento.
-                    </li>
-                    <li class="styli">
-                        dir: permite especificar la dirección para el contenido en el elemento (el valor puede ser rtl o
-                        ltr).
-                    </li>
-                    <li class="styli">
-                        lang: se utiliza para especificar el código del lenguaje para el contenido del elemento. Para
-                        español se usa lang=”es-ES”.
-                    </li>
-                    <li class="styli">
-                        xml:lang: permite definir el código de lenguaje para elementos (en XHTML). El ejemplo para
-                        español es: xml:lang=”es”.
-                    </li>
-                    <li class="styli">
-                        charset: permite especificar la codificación de caracteres del documento al que se hace
-                        referencia. Por lo general se utiliza UTF-8 (para unicode) o ISO-8859-1 (para alfabeto latino).
-                    </li>
-                    <li class="styli">
-                        media: para especificar el tipo de dispositivo de salida. Su valor puede ser screen, tty, tv,
-                        projection, handheld, print, braille, aural, all.
-                    </li>
-                    <li class="styli">
-                        accesskey: tecla de acceso rápido.
-                    </li>
-                    <li class="styli">
-                        ref: permite indicar la URL de un archivo o recurso.
-                    </li>
-                    <li class="styli">
-                        reflang: permite indicar el lenguaje del texto en el documento.
-                    </li>
-                    <li class="styli">
-                        rel: se encarga de indicar la relación entre el documento actual, respecto del que se está
-                        vinculado.
-                    </li>
-                    <li class="styli">
-                        ev: indica la relación entre el documento vinculado y el actual.
-                    </li>
-                    <li class="styli">
-                        target: permite indicar el destino para el documento vinculado. Puede ser: _blank, _self, _top y
-                        _parent.
-                    </li>
-                    <li class="styli">
-                        ype: permite especificar el tipo MIME.
-                    </li>
-                    <li class="styli">
-                        align: permite indicar la alineación del elemento. Puede tomar los valores left, center, right o
-                        justify. Es un atributo que, desde hace tiempo, ha dejado de utilizarse ya que esto debe manejarse
-                        de CSS.
-                    </li>
-                    <li class="styli">
-                        height: define el alto del elemento
-                    </li>
-                    <li class="styli">
-                        width: se usa para definir el ancho del elemento.
-                    </li>
-                </ul>
-                </p>
-                <p class="styparrafos">
-                    Estos elementos conforman los principales atributos de HTML.[2]
-                </p>
-                <h2>Saltos de línea</h2>
-                <p class="styparrafos">
-                    En ocasiones puede ser conveniente introducir un punto y aparte cuando estamos escribiendo un
-                    texto. En HTML para hacer esto puede usarse la etiqueta &ltbr&gt. Cuando el navegador se
-                    encuentra con esta etiqueta provoca un salto de línea y sigue mostrando el contenido de la
-                    página. ejemplo:[1]<br><br>
-                    Estaba internándose en lo desconocido. &ltbr&gt<br><br>
-                    Durante todo el trayecto hasta Woodfield no dejó de pensar en los aspectos económicos, con el
-                    temor de estar cometiendo.[1]
-                </p>
-                <h2>Cómo se insertan párrafos</h2>
-                <p class="styparrafos">
-                    Un párrafo es un conjunto de frases sobre un mismo asunto. En HTML para demarcar un
-                    párrafo se usa la etiqueta p, situándose la instrucción de inicio &ltp&gt al comienzo del párrafo y la
-                    instrucción de ﬁn &lt/p&gt tras la última frase. Entre ellas pueden insertarse tantos saltos de línea
-                    como se deseen así como muchos otros elementos HTML. A continuación se muestra un
-                    ejemplo:[1]
-                </p>
-                <img style="margin: 0% 36%;" src="/proyectoAula/imagenes/p1.jpeg" alt="p1">
-                <p class="styparrafos">Otra opción hubiera sido crear un único párrafo e insertar un salto de línea tras la primera
-                    frase:</p>
-                <img style="margin: 0% 20%;" src="/proyectoAula/imagenes/p2.jpeg" alt="p2">
-                <h2><br>Cómo insertar imágenes en una página.</h2>
-                <p class="styparrafos">
-                    En el cuarto capítulo de la obra trataremos con detalle el mundo de las imágenes en el WWW y
-                    aprenderemos todas las posibilidades gráﬁcas que ofrece. En este capítulo aprenderemos, como
-                    introducción, a insertar imágenes para dar mas vida a nuestra página.[1]<br><br>
-                    La etiqueta usada para insertar imágenes es: &ltimg&gt. Esta etiqueta está compuesta por una única
-                    instrucción y por tanto &lt/img&gt no existe y su uso está prohibido. Podemos insertar una imagen
-                    en medio de una frase como si fuese una palabra más de ella y será mostrada por el navegador a
-                    continuación del texto (o cualquier otro elemento anterior)[1]
-                </p>
-                <h3>Codigo</h3>
-                <img style="margin: 0% 24.5%;" src="/proyectoAula/imagenes/img_codigo.jpeg" alt="imgcod">
-                <h3><br>Resultado de la página</h3>
-                <img style="margin: 0% 32.5%;" src="/proyectoAula/imagenes/resultado_img.jpeg" alt="imgpagina">
-                <h2><br>La etiqueta &lta&gt... &lt/a&gt</h2>
-                <p class="styparrafos">
-                    Esta etiqueta, de nombre sencillo, es la que va a permitir incluir en las páginas enlaces
-                    hipertexto. Su atributo ’href’ permite indicar cual es la página a la que debe saltar el usuario al
-                    pulsar sobre el texto adecuado. El texto del enlace será aquel que se introduzca entre la
-                    instrucción de inicio y la instrucción de ﬁnal de la etiqueta y debe ser resaltado por el navegador
-                    para que el usuario sepa que puede pulsar en él. La estructura de un link es:[1]
-                </p>
-                <h3>Codigo</h3>
-                <img style="margin: 0% 36%;" src="/proyectoAula/imagenes/codigo_link.jpeg" alt="a">
-                <h3><br>Resultado de la página</h3>
-                <img style="margin: 0% 32%;" src="/proyectoAula/imagenes/RESUL_LINK.jpeg" alt="ap">
-                <hr id="hrul" size="3"  color="black">
-                <h2>Bibliografías</h2>
-                <p class="styparrafos">
-                    [1] J. Ferrer, V. García, and R. García, “Curso completo de HTML,” 9 Mar.<br>
-                    1998, p. 23, 2014, [Online]. Available:
-                    http://es.tldp.org/Manuales-LuCAS/doc-curso-html/doccurso-html.pdf<br /><br />
-                    [2] D. Luca De, “HTML5,” p. 320, 2011, [Online]. Available:<br />
-                    https://drive.google.com/file/d/1AUIXPoxO582IGPdkro-cYGxmChSh4IDD/view
-                </p>
+                    </pre>
+
+                    <img class="rounded mx-auto d-block" src="/proyectoAula/imagenes/linea_divisora.jpeg" alt="Linea horizontal">
+                    <p class="styparrafos">
+                        Así de sencillo. Como vemos, el nombre de la etiqueta va delimitado por los símbolos menor que
+                        (<) y mayor que (>), todas las instrucciones de HTML deben ir encerradas entre estos dos
+                        símbolos.<a href="#11" class="link-dark" >[11]</a>
+                    </p>
+                    <h2><strong>Primeros pasos con HTML</strong></h2><br>
+                    <div id="estructurapagina"></div><h3><strong>Estructura de una página</strong></h3>
+                    <p class="styparrafos">
+                        Todo documento HTML está formado por los bloques a continuación se procede explicar cada
+                        uno de ellos.<br><br>
+                        En primer lugar deberemos especiﬁcar que el archivo de texto que estamos escribiendo es un
+                        documento HTML, para ello usamos las instrucciones de inicio y ﬁn de la etiqueta &lthtml&gt al
+                        principio y al ﬁnal de la página respectivamente:<a href="#11" class="link-dark" >[11]</a>
+                    </p>
+                    <img class="rounded mx-auto d-block" src="/proyectoAula/imagenes/html_codigo.jpeg" alt="Codigo_html">
+                    <p class="styparrafos">
+                        El código de la página esta formado a su vez por dos grandes bloques, la cabecera y el cuerpo.<br><br>
+                        La cabecera de la página está delimitada por las instrucciones de inicio y ﬁn de la etiqueta head.
+                        Estas instrucciones deben estar dentro de la etiqueta HTML de la siguiente manera:<a href="#11" class="link-dark" >[11]</a>
+                    </p>
+                    <img class="rounded mx-auto d-block" src="/proyectoAula/imagenes/Cabecera.jpeg" alt="Cabecera">
+                    <p class="styparrafos">
+                        En la cabecera de la página se introduce toda aquella información que afectará a toda la página.
+                        En un principio esta información se limitará al título. Este título se indicará con la etiqueta title
+                        usando la siguiente sintaxis:<a href="#12" class="link-dark" >[12]</a>
+                    </p>
+                    <img class="rounded mx-auto d-block" src="/proyectoAula/imagenes/titulo.jpeg" alt="Titulo">
+                    <p class="styparrafos">
+                        El cuerpo es el siguiente gran bloque de nuestro documento HTML, éste quedará delimitado por
+                        la etiqueta body. En su interior introduciremos todos aquellos elementos de los que queremos que
+                        conste nuestra página como pueden ser testo, imágenes, tablas, etc.<a href="#12" class="link-dark" >[12]</a>
+                    </p>
+                    <img class="rounded mx-auto d-block" src="/proyectoAula/imagenes/body.jpeg" alt="Body">
+                    <p class="styparrafos">
+                        Como vemos todo el texto que hemos escrito entre las instrucciones de inicio y ﬁn forman ahora
+                        el cuerpo de nuestra página.<a href="#11" class="link-dark" >[11]</a>
+                    </p>
+                    <div id="encabezados"></div><h2><strong>Los encabezados</strong></h2>
+                    <p class="styparrafos">
+                        Usualmente un documento tiene, además de texto llano, una serie de encabezados o titulares. Para
+                        ello el lenguaje HTML posee una serie de etiquetas que permiten disponer de titulares de hasta 6
+                        niveles de importancia.
+                        Estas etiquetas son: &lth1&gt, &lth2gt, &lth3&gt, &lth4&gt, &lth5&gt y &ltH6&gt. La letra "h" al principio del
+                        nombre
+                        de estas etiquetas provien de la abreviatura de la palabra inglesa <span>heading</span> que signiﬁca encabezado.
+                        Siguiendo a la hache hay un número del uno al seis que indica la importancia del titular siendo el
+                        más importante el uno y el menos importante el seis.<a href="#11" class="link-dark" >[11]</a>
+                    </p>
+                    <h3>Codigo</h3>
+                    <img class="rounded mx-auto d-block" src="/proyectoAula/imagenes/codigo_de_los _h.jpeg" alt="Codigo de los h">
+                    <h3><br>Resultado de la página</h3>
+                    <img class="rounded mx-auto d-block" src="/proyectoAula/imagenes/resultado.jpeg" alt="pagina">
+                    <p class="styparrafos">
+                        <br><strong>NOTA:</strong> Los encabezados empiezan siempre en una línea nueva y el texto que les sigue comenzará
+                        en la línea siguiente. Además el navegador podrá mostrar un espacio vertical adicional entre el
+                        encabezado y el texto anterior y posterior.<a href="#11" class="link-dark" >[11]</a><br><br>
+                        En él observamos que todos los titulares están en negrita y el tamaño de la fuente usada para cada
+                        encabezado va decreciendo conforme decrece la importancia del titular. Pero hay que tener en
+                        cuenta, tal y como comentábamos en la introducción, que este es sólo un ejemplo y que otros
+                        navegadores pueden mostrar estos encabezados de manera diferente.<a href="#11" class="link-dark" >[11]</a></p>
+
+                    <div id="atributoshtml"></div><h2><strong>Los atributos en HTML</strong></h2>
+
+                    <ul>
+                        <li class="styli">
+                            id: identificador único del elemento (no pueden existir dos elementos con la misma id en un
+                            mismo documento).
+                        </li>
+                        <li class="styli">
+                            class: permite indicar el nombre de la clase del elemento.
+                        </li>
+                        <li class="styli">
+                            tyle: se usa para especificar el estilo (inline) para el elemento.
+                        </li>
+                        <li class="styli">
+                            title: hace posible escribir información adicional sobre el elemento.
+                        </li>
+                        <li class="styli">
+                            dir: permite especificar la dirección para el contenido en el elemento (el valor puede ser rtl o
+                            ltr).
+                        </li>
+                        <li class="styli">
+                            lang: se utiliza para especificar el código del lenguaje para el contenido del elemento. Para
+                            español se usa lang=”es-ES”.
+                        </li>
+                        <li class="styli">
+                            xml:lang: permite definir el código de lenguaje para elementos (en XHTML). El ejemplo para
+                            español es: xml:lang=”es”.
+                        </li>
+                        <li class="styli">
+                            charset: permite especificar la codificación de caracteres del documento al que se hace
+                            referencia. Por lo general se utiliza UTF-8 (para unicode) o ISO-8859-1 (para alfabeto latino).
+                        </li>
+                        <li class="styli">
+                            media: para especificar el tipo de dispositivo de salida. Su valor puede ser screen, tty, tv,
+                            projection, handheld, print, braille, aural, all.
+                        </li>
+                        <li class="styli">
+                            accesskey: tecla de acceso rápido.
+                        </li>
+                        <li class="styli">
+                            ref: permite indicar la URL de un archivo o recurso.
+                        </li>
+                        <li class="styli">
+                            reflang: permite indicar el lenguaje del texto en el documento.
+                        </li>
+                        <li class="styli">
+                            rel: se encarga de indicar la relación entre el documento actual, respecto del que se está
+                            vinculado.
+                        </li>
+                        <li class="styli">
+                            ev: indica la relación entre el documento vinculado y el actual.
+                        </li>
+                        <li class="styli">
+                            target: permite indicar el destino para el documento vinculado. Puede ser: _blank, _self, _top y
+                            _parent.
+                        </li>
+                        <li class="styli">
+                            ype: permite especificar el tipo MIME.
+                        </li>
+                        <li class="styli">
+                            align: permite indicar la alineación del elemento. Puede tomar los valores left, center, right o
+                            justify. Es un atributo que, desde hace tiempo, ha dejado de utilizarse ya que esto debe manejarse
+                            de CSS.
+                        </li>
+                        <li class="styli">
+                            height: define el alto del elemento
+                        </li>
+                        <li class="styli">
+                            width: se usa para definir el ancho del elemento.
+                        </li>
+                    </ul>
+
+                    <p class="styparrafos">
+                        Estos elementos conforman los principales atributos de HTML.<a href="#12" class="link-dark" >[12]</a>
+                    </p>
+                    <div id="saltoslinea"></div><h2><strong>Saltos de línea</strong></h2>
+                    <p class="styparrafos">
+                        En ocasiones puede ser conveniente introducir un punto y aparte cuando estamos escribiendo un
+                        texto. En HTML para hacer esto puede usarse la etiqueta &ltbr&gt. Cuando el navegador se
+                        encuentra con esta etiqueta provoca un salto de línea y sigue mostrando el contenido de la
+                        página. ejemplo:<a href="#12" class="link-dark" >[12]</a><br><br>
+                        Estaba internándose en lo desconocido. &ltbr&gt<br><br>
+                        Durante todo el trayecto hasta Woodfield no dejó de pensar en los aspectos económicos, con el
+                        temor de estar cometiendo.<a href="#12" class="link-dark" >[12]</a>
+                    </p>
+                    <div id="insertarparrafos"></div><h2><strong>Cómo se insertan párrafos</strong></h2>
+                    <p class="styparrafos">
+                        Un párrafo es un conjunto de frases sobre un mismo asunto. En HTML para demarcar un
+                        párrafo se usa la etiqueta p, situándose la instrucción de inicio &ltp&gt al comienzo del párrafo y la
+                        instrucción de ﬁn &lt/p&gt tras la última frase. Entre ellas pueden insertarse tantos saltos de línea
+                        como se deseen así como muchos otros elementos HTML. A continuación se muestra un
+                        ejemplo:<a href="#11" class="link-dark" >[11]</a>
+                    </p>
+                    <img class="rounded mx-auto d-block" src="/proyectoAula/imagenes/p1.jpeg" alt="p1">
+                    <p class="styparrafos">Otra opción hubiera sido crear un único párrafo e insertar un salto de línea tras la primera
+                        frase:</p>
+                    <img class="rounded mx-auto d-block" src="/proyectoAula/imagenes/p2.jpeg" alt="p2">
+                    <div id="insertarimagenes"></div><h2><br>Cómo insertar imágenes en una página.</h2>
+                    <p class="styparrafos">
+                        En el cuarto capítulo de la obra trataremos con detalle el mundo de las imágenes en el WWW y
+                        aprenderemos todas las posibilidades gráﬁcas que ofrece. En este capítulo aprenderemos, como
+                        introducción, a insertar imágenes para dar mas vida a nuestra página.<a href="#11" class="link-dark" >[11]</a><br><br>
+                        La etiqueta usada para insertar imágenes es: &ltimg&gt. Esta etiqueta está compuesta por una única
+                        instrucción y por tanto &lt/img&gt no existe y su uso está prohibido. Podemos insertar una imagen
+                        en medio de una frase como si fuese una palabra más de ella y será mostrada por el navegador a
+                        continuación del texto (o cualquier otro elemento anterior)<a href="#12" class="link-dark" >[12]</a>
+                    </p>
+                    <h3>Codigo</h3>
+                    <img class="rounded mx-auto d-block" src="/proyectoAula/imagenes/img_codigo.jpeg" alt="imgcod">
+                    <h3><br>Resultado de la página</h3>
+                    <img class="rounded mx-auto d-block" src="/proyectoAula/imagenes/resultado_img.jpeg" alt="imgpagina">
+
+                    <div id="etiquetaenlaces"></div><h2><br><strong>La etiqueta para enlaces</strong></h2>
+                    <p class="styparrafos">
+                        Esta etiqueta, de nombre sencillo, es la que va a permitir incluir en las páginas enlaces
+                        hipertexto. Su atributo ’href’ permite indicar cual es la página a la que debe saltar el usuario al
+                        pulsar sobre el texto adecuado. El texto del enlace será aquel que se introduzca entre la
+                        instrucción de inicio y la instrucción de ﬁnal de la etiqueta y debe ser resaltado por el navegador
+                        para que el usuario sepa que puede pulsar en él. La estructura de un link es:<a href="#12" class="link-dark" >[12]</a>
+                    </p>
+                    <h3>Codigo</h3>
+                    <img class="rounded mx-auto d-block" src="/proyectoAula/imagenes/codigo_link.jpeg" alt="a">
+                    <h3><br>Resultado de la página</h3>
+                    <img class="rounded mx-auto d-block" src="/proyectoAula/imagenes/RESUL_LINK.jpeg" alt="ap">
+                    <div id="Bibliografia"></div>
+                    <hr class="border-primary border-3 opacity-75"><!-- linia divisora del contenido -->
+                    <h1 class="centrado"><strong>Bibliografia de esta pagina</strong></h1>
+                    <br>
+                    
+                    <div id="11"><p>[11] J. Ferrer, V. García, and R. García, “Curso completo de HTML,” 9 Mar.<br>
+                        1998, p. 23, 2014, [Online]. Available:
+                        http://es.tldp.org/Manuales-LuCAS/doc-curso-html/doccurso-html.pdf</p><br /><br />
+                        <div id="12"><p>[12] D. Luca De, “HTML5,” p. 320, 2011, [Online]. Available:<br />
+                                https://drive.google.com/file/d/1AUIXPoxO582IGPdkro-cYGxmChSh4IDD/view</p>
+                    
+                    <br>
+                    <a href="#comienzodelapagina" class="link-dark" ><img src="../imagenes/flecha-correcta.png" class="rounded mx-auto d-block" alt="..."></a>
+                    <br>
+                </div>
             </div>
         </main>
     </body>

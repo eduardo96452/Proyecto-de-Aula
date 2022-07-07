@@ -56,6 +56,7 @@ and open the template in the editor.
                                 <li><a class="dropdown-item" href="guiaJavaScript.html">Guias de JavaScript</a></li>
                                 <li><a class="dropdown-item " href="pagina_java.html">Guias de JAVA</a></li>
                                 <li><a class="dropdown-item " href="Guia_de_JoSPq.html">Guias de JSP</a></li>
+                                <li><a class="dropdown-item " href="GuiaJSF.html">Guias de JSF</a></li>
                             </ul>
                         </li>
 
@@ -82,11 +83,11 @@ and open the template in the editor.
                         </h4>
                     </form>
                     <br>
-                    <form class="card p-2 colores">                        
+                    <form class="card p-2 colores">
                         <ul>
                             <li>
                                 <a href="#introduccionjsp" class="link-dark" >Intruducción a JSP</a>
-                            </li>                        
+                            </li>
                             <li>
                                 <a href="#elementosjsp" class="link-dark" >Elementos de JSP</a>
                             </li>
@@ -95,16 +96,16 @@ and open the template in the editor.
                             </li>
                             <li>
                                 <a href="#Acciones" class="link-dark" >Acciones</a>
-                            </li>  
+                            </li>
                             <li>
                                 <a href="#inclusivopaginas" class="link-dark" >Inclusión de paginas</a>
-                            </li>  
+                            </li>
                             <li>
                                 <a href="#Objetosimplicitos" class="link-dark" >Objetos implicitos</a>
-                            </li>  
+                            </li>
                             <li>
-                                <a href="#aut" class="link-dark" >OUT</a>
-                            </li>  
+                                <a href="#out" class="link-dark" >OUT</a>
+                            </li>
                             <li>
                                 <a href="#Application" class="link-dark" >Application</a>
                             </li> 
@@ -119,7 +120,8 @@ and open the template in the editor.
                 <div class="colores col-md-8 col-lg-9">                    
                     <div id="comienzodelapagina"></div>
                     <div class="colores">
-                        <h1 class="centrado"><strong>Guia sobre JSP COMO TECNOLOGIA PARA DESARROLLO DE APLICACIONES WED</strong></h1>            
+                        <div id="introduccionjsp"></div><h1 class="centrado"><strong>Guia sobre JSP COMO TECNOLOGIA PARA DESARROLLO DE APLICACIONES WED</strong></h1>            
+                        <hr color="black" size="3" id="hrpr">
                         <h3><strong>¿INTRODUCCION A JSP?</strong></h3>
                         <p>
                             JavaServer Pages (JSP) (http://java.sun.com/jsp) es una tecnología basada en el lenguaje Java que
@@ -170,7 +172,7 @@ and open the template in the editor.
                             lenguaje Java a nuestro alcance, con sus ventajas como reusabilidad, robustez, multiplataforma, etc. 
                         </p>
                         
-                        <h4><strong>Elementos de JSP</strong></h4>
+                        <div id="elementosjsp"></div><h4><strong>Elementos de JSP</strong></h4>
                         <p>
                             Podemos insertar código Java dentro de JSP de tres formas: Expresiones, scriptlets y declaraciones. 
                         </p>
@@ -294,7 +296,7 @@ and open the template in the editor.
 
                             </pre>
                         </div>
-                        <h3><strong>Directivas</strong></h3>
+                        <div id="Directivas"></div><h3><strong>Directivas</strong></h3>
                         <p>
                             Las directivas son elementos que proporcionan información al motor JSP, e influirán en la estructura del
                             servlet generado. Hay tres tipos de directivas: page, taglib e include. 
@@ -379,12 +381,12 @@ and open the template in the editor.
                 
                             </pre>
                         </div>
-                        <h3><strong>Acciones</strong></h3>
+                        <div id="Acciones"></div><h3><strong>Acciones</strong></h3>
                         <p>
                             Las acciones tienen la forma &ltjsp:accion [parámetros]/&gt, y tienen diversos usos, entre los
                             que destacan la inclusión de páginas y transferencia de control. 
                         </p>
-                        <h4><strong>Inclusión de páginas</strong></h4>
+                        <div id="inclusivopaginas"></div><h4><strong>Inclusión de páginas</strong></h4>
                         <p>
                             Se realiza con la acción &ltjsp:include page="pagina.jsp"&gt. Incluye la salida de otra página
                             JSP en la actual, al contrario que con la directiva &lt%@include file="fichero.ext"%&gt la
@@ -426,7 +428,7 @@ and open the template in the editor.
                 
                             </pre>
                         </div>
-                        <h3><strong>Objetos implícitos</strong></h3>
+                        <div id="Objetosimplicitos"></div><h3><strong>Objetos implícitos</strong></h3>
                         <p>
                             En JSP disponemos de algunos objetos implícitos, que nos permitirán acceder a diferente información y
                             realizar diversas acciones. En JSP tenemos los siguientes objetos implícitos: request, response,
@@ -494,7 +496,7 @@ and open the template in the editor.
                             respuesta para el cliente, contiene funciones para manejo de cabeceras, códigos de estado, cookies y
                             transferencia de control. 
                         </p>
-                        <h3><strong>Out</strong></h3>
+                        <div id="out"></div><h3><strong>Out</strong></h3>
                         <p>
                             Es un objeto de la clase JspWriter, es el que nos permite acceder a la salida del navegador desde los
                             scriplet.
@@ -567,7 +569,7 @@ and open the template in the editor.
                 
                             </pre>
                         </div>
-                        <h3><strong>Application</strong></h3>
+                        <div id="Application"></div><h3><strong>Application</strong></h3>
                         <p>
                             Es un objeto de la clase ServletContext. Este objeto es común para toda la aplicación web y,
                             entre otras cosas, nos permite almacenar información que será accesible desde todas las páginas de la
@@ -675,7 +677,7 @@ and open the template in the editor.
                 
                             </pre>
                         </div>
-                        <h3><strong>Page</strong></h3>
+                        <div id="Page"></div><h3><strong>Page</strong></h3>
                         <p>
                             Es un sinónimo de this, no tiene utilidad en el estado actual de la especificación.
                         </p>

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Proyecto de Aula</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"><!-- comment -->
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script><!-- comment -->
+        <style>
+            main{     
+                margin: 1.5%;
+                font-family: veldana;
+            }
+
+            .centrado{
+                text-align:center;
+            } 
+            .colores{
+                padding: 4%;
+                background-color: #fdecda;
+            } 
+
+            .cuadro{
+                margin:  5%;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Mundo HMTL</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Pagina Principal</a>
+                        </li>                        
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Guias                               
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item " href="Html/guiaHTML.html">Guias de HTML</a></li>
+                                <li><a class="dropdown-item" href="Html/guiaCSS.html">Guias de CSS</a></li>
+                                <li><a class="dropdown-item" href="Html/guiaJavaScript.html">Guias de JavaScript</a></li> 
+                                <li><a class="dropdown-item " href="Html/pagina_java.html">Guias de JAVA</a></li>
+                                <li><a class="dropdown-item " href="Html/Guia_de_JoSPq.html">Guias de JSP</a></li>
+                                <li><a class="dropdown-item " href="Html/GuiaJSF.html">Guias de JSF</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Html/Accesibilidad.html">Guia de Inclusividad</a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link nav-link active" href="Html/Acercade.html">Acerca de...</a>
+                        </li>
+                    </ul>
+                    <!--<form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>-->
+                </div>
+            </div>
+        </nav> 
+        <main>
+            <div class="colores">
+                <h1 class="centrado"><strong> Los principios de JavaServer Faces [1]</strong></h1>            
+                <h3><strong>Objetivos</strong></h3>
+                <ul>
+                    <li>  
+                        <p>Conocer en qué consiste el Framework “JavaServer Faces” y los servicios que éste proporciona y principales componentes.</p>
+                    </li>                        
+                    <li>
+                        <p>Saber en que consisten los JavaBeans administrados y entender su alcance.</p>
+                    </li>
+                    <li>
+                        <p>Entender cómo se comunican las vistas con la lógica de la aplicación.</p>
+                    </li>
+                    <li>
+                        <p>Saber navegar desde una página Web hacia un Bean y desde una clase Java hacia una
+                            página Web.</p>
+                    </li>
+                    <li>
+                        <p>Conocer los elementos básicos de la interfaz de usuario en JSF.</p>
+                    </li>
+                </ul>
+                <h3><strong>Introducción a JavaServer Faces</strong></h3>
+                <p>
+                    JavaServer Faces (JSF) es otro entorno de desarrollo de aplicaciones Web en Java, diferente
+                    al de los Servlets que hemos visto hasta ahora. Esta tecnología está diseñada para simplificar
+                    el desarrollo Web con Java, y fomenta la separación de la presentación de las interfaces de
+                    usuario con la lógica de la aplicación. JSF utilizaba JSPs, añadiendo librerías que contienen
+                    componentes de alto nivel (menús, paneles, campos de texto,…), cada uno de estos componentes puede interactuar con el servidor de forma independiente. En la actualidad, se utilizan
+                    “Facelets” que son páginas con extensión xhtml que sirven para lo mismo que las JSF pero son
+                    una forma más sencilla de trabajar. Como JavaServer Faces es un “framework” (marco de referencia), simplifica el diseño de la estructura de la aplicación y también proporciona librerías
+                    que hacen más facil el desarrollo de la aplicación
+                </p>
+                <p>
+                    Con JavaServer Faces es posible utilizar Ajax (Asynchronous JavaScript and XML). Ajax es
+                    un enfoque en el que las diferentes acciones que solicita el usuario se realizan dentro de una
+                    misma página, de tal manera que el servidor no genera una nueva página sino sólo los datos.
+                    En las aplicaciones tradicionales, cada petición al servidor hace que éste genere una nueva
+                    página HTML/XHTML. Las aplicaciones RIA (Rich Internet Applications), como lo es JSF,
+                    intentan simular las aplicaciones de escritorio y, cuando usan Ajax, son más rápidas que las
+                    aplicaciones tradicionales.
+                </p>
+                <p>La tecnología JavaServer Faces proporciona:</p>
+                <ul>
+                    <li>  
+                        <p>Un conjunto de componentes de Interfaz de Usuario predefinidos (botones, menús,
+                            campos de texto,…), listos para agregarse a una página Web. Estos componentes se
+                            representan como objetos con un estado.</p>
+                    </li>                        
+                    <li>
+                        <p>Oyentes y manejadores de eventos (pulsación de un botón, cambio en el valor de un
+                            campo,…), los cuales permiten conectar fácilmente los eventos generados del lado del
+                            cliente con código de la aplicación en el servidor</p>
+                    </li>
+                    <li>
+                        <p>Oyentes y manejadores de eventos (pulsación de un botón, cambio en el valor de un
+                            campo,…), los cuales permiten conectar fácilmente los eventos generados del lado del
+                            cliente con código de la aplicación en el servidor</p>
+                    </li>
+                </ul>
+                <p>JSF contiene dos importantes componentes de software: las Tag Libraries y los Managed Beans</p>
+                <h3><strong>Tag Libraries</strong></h3>
+                <p>
+                    Los Facelets son páginas .xhtml con librerías adicionales llamadas Tag libraries. Las librerías
+                    de etiquetas (tag libraries) son componentes especiales de software que encapsulan funcionalidad dinámica y compleja. Estas librerías las construyen especialistas en ciertos servicios,
+                    como, por ejemplo: el acceso a la base de datos, o el manejo de botones, menús, desplegado de
+                    listas, etc. La idea principal es que el diseñador de las vistas pueda incorporar poderoso contenido dinámico en sus páginas sin necesidad de saber cómo se codifican los detalles
+                </p>
+                <p>JSTL (JavaServer pages Standard Tag Library) es una librería que contiene la funcionalidad
+                    más comun de las aplicaciones Web. Los diseñadores de páginas Web sólo deben saber cómo
+                    incluir los tags. JSF proporciona componentes para construir una aplicación con GUIs (Graphical User Interfaces: Interfaces de Usuario Gráficas). El desarrollador personaliza objetos
+                    como menús, check box, botones, etc. manipulando los atributos de los tags de cada uno de
+                    estos componentes.</p>               
+                <p>
+                    Cuando creamos un proyecto en JavaServer Faces en NetBeans, se generan XHTML, las cual
+                    se llaman facelets, y ya tienen incluidas las Tag libraries. 
+                </p>
+                <h3><strong>JavaBeans Administrados (managed Beans)</strong></h3>
+                <p>
+                    Un Bean administrado (Managed Bean) es un JavaBean que puede ser accedido desde una
+                    página Web. El managed Bean se inventó para que el usuario remoto pueda comunicarse con
+                    un programa en Java que está en el servidor. A diferencia de los JavaBeans, los managed Beans
+                    no están obligados a implementar la interfaz serializable
+                </p>
+                <p>
+                    También existen los Beans CDI (Context and Dependency Injection). Los CDI poseen un modelo un poco 
+                    más avanzado para administrar los Beans, sin embargo, aún no se ha demostrado su ventaja sobre los Managed Beans, 
+                    por lo tanto, en este curso, trabajaremos con los Managed Beans.
+                </p>
+                <img class="rounded mx-auto d-block" src="../imagenes/1.png" alt="Conexión de una página web y su managed Bean">
+                <p>En la Figura se muestra la conexión de una página wWeb con su managed Bean asociado. JavaServer Faces usa el mecanismo de los managed Beans para establecer la conexión entre
+                    los datos que se despliegan al usuario y lo que está registrado en el código Java.</p>
+                <h3><strong>El Model-View-Controller (MVC) con JavaServer Faces</strong></h3>
+                <p>
+                    La forma de modelar la arquitectura Model-View-Controller con JSF se puede apreciar en la
+                    Figura que se muestra, y es la siguiente:
+                </p>
+                <img class="rounded mx-auto d-block" src="../imagenes/2.png" alt="Modelo web de tres capas con JavaServer Faces">
+                <ul>
+                    <li>  
+                        <p><span style="color: #333">Vistas.-</span>Se implementan con páginas .xhtml a las que se les llama facelets. Los Managed Beans también pueden usarse como parte de la vista. Incluso, si una clase Java
+                            organiza las páginas Web y sus correspondientes Managed Beans (de la vista) entonces
+                            la clase Java también es parte de la vista.</p>
+                    </li>                        
+                    <li>
+                        <p><span style="color: #333">Controladores.-</span>Los controladores se pueden implementar con los JavaBeans administrados (managed JavaBeans) o con clases Java. Recordar que un controlador realiza
+                            las siguientes funciones: recepción/validación de peticiones, selección de la lógica a
+                            ejecutar y selección de la vista a en la que se presentará el resultado.</p>
+                    </li>
+                    <li>
+                        <p><span style="color: #333">Modelo.-</span>Las clases con la lógica de la aplicación se construyen con clases Java.</p>
+                    </li>
+                </ul>
+                <h3><strong>Las anotaciones Java y la tecnología XML</strong></h3>
+                <p>
+                    XML (Extensible Markup Language) es un lenguaje de marcado de texto, que permite definir etiquetas personalizadas que describen y organizan datos. Se dice que es un lenguaje
+                    de etiquetas, porque cada paquete de información está delimitado por dos etiquetas como
+                    se hace en HTML, con la diferencia de que las etiquetas XML describen el significado de la
+                    información que contiene cada etiqueta, mientras que las etiquetas HTML se ocupan de la
+                    presentación del contenido y no de su significado.
+                </p>
+                <p>
+                    El siguiente es un ejemplo de XML. Al igual que en HTML, el fin de la etiqueta se indica con
+                    el caracter “/”. Nótese que las etiquetas se anidan para que el código sea más claro: 
+                </p>
+                <div class="blanco">
+                    <pre>
+
+                    &ltsession-config&gt
+                        &ltsession-timeout&gt
+                            30
+                        &lt/session-timeout&gt
+                    &lt/session-config&gt
+                
+                    </pre>
+                </div>
+                <p>
+                    Con la etiqueta &ltsession-config&gt sabemos que los datos que ésta encierra se refieren a
+                    la configuración de la sesión. Con la etiqueta anidada: &lt/session-timeout&gt podemos
+                    intuir que el dato se refiere al tiempo que una sesión puede permanecer inactiva. 
+                </p>
+                <p>Los archivos escritos en este XML son archivos de texto con la extensión XML. Estos archivos .
+                    XML siempre están presentes en las aplicaciones Javaweb, ya que sirven para indicar su
+                    configuración. Como el XML es un archivo clave, se genera automáticamente cuando se crea
+                    un proyecto Web (en NetBeans, eclipse, etc…) y, aunque algunas dependencias se generan
+                    automáticamente, es necesario agregar las dependencias que no son autogeneradas en este
+                    archivo
+                </p>
+                <p>Se les llama dependencias a todos aquellos elementos sw que el sistema requiere para funcionar (librerías Java, librerías JSF, conector a base de datos, etc.). Escribir directamente las
+                    dependencias en los archivos XML, da pié a que se cometan errores, ya que hay que escribir
+                    mucho código repetitivo. Las anotaciones en el contexto de las aplicaciones Web, surgieron
+                    como una forma de simplificar la codificación, reducir los errores y facilitar el mantenimiento
+                    de los sistemas Web.</p>
+                <p>Las anotaciones Java permiten indicar en el código fuente cómo debe comportarse el software.
+                    También sirven para añadir metadatos al código fuente. Los metadatos son “información acerca de la información”. 
+                    Por eso se dice que con las anotaciones se asocia la meta-información</p>
+                <p>Una anotación contiene el caracter “@”, seguido de la instrucción correspondiente. En este
+                    curso, estudiaremos particularmente algunas de las anotaciones que se utilizan para el desarrollo de aplicaciones Web con JSF. Las anotaciones son una alternativa que simplifica en gran
+                    medida los archivos de configuración XML.</p>
+                <h3><strong>XHTML</strong></h3>
+                <p>
+                    El lenguaje XHTML (Extensible HyperText Markup Languaje) es otro lenguaje de marcado de
+                    texto que se caracteriza por la separación de la estructura de la información con la presentación de la página. XHTML se basa en HTML, pero utiliza un archivo adicional con extensión
+                    CSS (Cascading Style Sheets) para definir la presentación de la página. La presentación es la
+                    especificación del lugar en donde el navegador presenta cada elemento de la página Web, del
+                    font, y de los colores de cada uno de los elementos a desplegar.
+                </p>
+                <p>Una de las características más importantes del XHTML es que tanto el texto como las imágenes pueden ser hipervínculos. Se pueden consultar varios manuales de XHTML en español en
+                    la Web. También recomendamos [Deitel P., Deitel H., Internet & World Wide Web, 2008] que
+                    tiene un capítulo dedicado a XHTML con ejemplos muy prácticos. Y otro capítulo dedicado
+                    a las hojas de estilo (CSS).</p>
+                <h3><strong>Características importantes de los JavaBeans Administrados</strong></h3>
+                <p>Hay dos maneras de declarar un JavaBean administrado, con anotaciones y con comandos
+                    especiales en un archivo faces-config.xml, en este curso trabajaremos con anotaciones</p>
+                <h3><strong>Anotaciones para establecer el ámbito de los Beans</strong></h3>
+                <p>Existen diferentes ámbitos en los que puede operar un Bean. Los ámbitos más representativos, de menor a mayor alcance, son: petición, vista, sesión y aplicación. Con la anotación de
+                    ámbito, se establece el alcance de los métodos y atributos de un Bean. Las anotaciones para los
+                    ámbitos más utilizados son las siguientes:</p>
+                <p><span style="color: #333">@RequestScoped.-</span>Persiste sólo durante la petición (request) del usuario. Cuando se envía
+                    la respuesta correspondiente (response), se elimina la instancia del Bean. El constructor se
+                    ejecuta cada vez que la página se solicita. </p>
+                <p><span style="color: #333">@ViewScoped.-</span>Es algo intermedio entre RequestScoped y SessionScoped. El Bean existirá
+                    mientras la vista está activa. El Bean permanece activo cuando una petición no requiere cambiar a otra vista, y desaparece cuando el usuario navega hacia otra página. Esto es útil cuando
+                    se trabaja con Ajax.</p>
+                <p><span style="color: #333">@SessionScoped.-</span>El Bean está activo durante toda la sesión del usuario. En otras palabras,
+                    mientras la sesión exista, existe el Bean</p>
+                <p><span style="color: #333">@ApplicationScoped.-</span>El Bean existe mientras la aplicación esté corriendo en el servidor</p>
+                <h3><strong>Declarando un Managed Bean con anotaciones</strong></h3>
+                <p>Para declarar un managed Bean con anotaciones es necesario poner antes del nombre de la
+                    clase, la anotación @ManagedBean. En seguida se pone una anotación para declarar el alcance del Bean, posteriormente se declara el nombre del Bean, con sus atributos privados y el
+                    constructor vacío. Cada atributo de un Bean debe tener su método getter y setter. </p>
+                <p>JavaServer Faces administra los managed Beans automáticamente, por eso deben cumplir con
+                    estas características mencionadas. Las tres acciones que JSF hace de manera automática con
+                    los managed Beans son:</p>
+                <ul>
+                    <li>  
+                        <p>Los instancia (por eso deben tener el constructor vacío).</p>
+                    </li>                        
+                    <li>
+                        <p>Controla su ciclo de vida (por eso deben incluir una declaración de ámbito).</p>
+                    </li>
+                    <li>
+                        <p>Llama a los métodos getters y setters (lo explicaremos en la siguiente sección).</p>
+                    </li>                                             
+                </ul>
+                <p>Para declarar el managed Bean EjemploBean tenemos:</p>
+                <div class="blanco">
+                    <pre>
+
+                    @ManagedBean
+                    @RequestScoped
+                    public class EjemploBean{
+                    . . .
+                    }
+                
+                    </pre>
+                </div>
+                <p>Cuando renombramos un Bean, se puede hacer referencia a él con otro nombre desde las páginas JSF, la sintaxis para renombrar es la siguiente:</p>
+                <div class="blanco">
+                    <pre>
+
+                    @ManagedBean(name=”nombreBean”)
+                
+                    </pre>
+                </div>
+                <p>Por ejemplo:</p>
+                <div class="blanco">
+                    <pre>
+
+                    @ManagedBean (name=”Ejemplito”)
+                    @RequestScoped
+                    public class EjemploBean{
+                    . . .
+                    }
+                
+                    </pre>
+                </div>
+                <h4><strong> Los tres objetos JavaBean en la aplicación Web</strong></h4>
+                <p>
+                    Toda aplicación Web hecha con JavaServer Faces tiene tres objetos que se instancian automáticamente:
+                </p>
+                <ul>
+                    <li>  
+                        <p>1. RequestBean.- Es un objeto que persiste sólo durante la petición del usuario (@
+                            RequestScoped).</p>
+                    </li>                        
+                    <li>
+                        <p>2. SessionBean.- Es un objeto que existe durante toda la sesión del usuario. Sólo hay
+                            un sessionBean por cada usuario</p>
+                    </li>
+                    <li>
+                        <p>. ApplicationBean.- Es un objeto que existe mientras la aplicación se esté ejecutando en el servidor. 
+                            Este objeto lo comparten todas las instancias de la aplicación.</p>
+                    </li>                                             
+                </ul>
+                <h4><strong>Comunicación de las vistas con la lógica de la aplicación</strong></h4>
+                <h4><strong>El lenguaje EL (Expression Languaje)</strong></h4>
+                <p>El JavaExpression Languaje (EL) es un mecanismo compacto y muy poderoso para establecer
+                    la comunicación entre las páginas Web y los JavaBeans. Con EL se pueden enviar los datos
+                    proporcionados por el usuario en una pagina Web a la lógica de la aplicación (en un HTTP
+                    request), y también se pueden mostrar al usuario los datos procesados (en un HTTP response). Las expresiones en lenguaje EL se codifican en las páginas JSP, JSF, facelets y en archivos
+                    XML. En este curso aprenderemos algunas de las instrucciones EL más utilizadas. Para una
+                    referencia completa de EL se puede consultar el documento de especificación de EL en:</p>
+                <p>http://download.oracle.com/otndocs/jcp/el-3_0-fr-eval-spec/index.html</p>
+                <p>Las expresiones de valor (value expressions) son probablemente las expresiones EL más utilizadas porque son las que se utilizan para hacer referencia a los métodos y los atributos de un
+                    objeto o de un managed Bean. EL proporciona un conjunto de objetos implícitos que sirven
+                    para obtener valores de parámetros y atributos de diferentes ámbitos. Con las value expressions se pueden acceder fácilmente los métodos y atributos de un JavaBean, las colecciones y
+                    los datos de tipo enum.</p>
+                <p>Existen dos tipos de value expressions:</p>
+                <ul>
+                    <li>  
+                        <p>rvalue.- Son aquellas que pueden leer los datos, pero no pueden sobreescribirlos. Se
+                            encierran entre llaves, precedidas por el carácter $, es decir, tienen la sintaxis: ${ }</p>
+                    </li>                        
+                    <li>
+                        <p>lvalue.- Son las que pueden leer y escribir en los datos. Se encierran entre llaves, 
+                            precedidas por el carácter #, es decir, tienen la sintaxis: #{ }</p>
+                    </li>                                            
+                </ul>
+                <p>Así, para acceder al atributo de un Bean, se usa la notación punto:</p>
+                <div class="blanco">
+                    <pre>
+
+                    #{nombreBean.atributoBean}
+                
+                    </pre>
+                </div>
+                <p>Y para acceder al método de un Bean, los paréntesis son obligatorios sólo cuando el método
+                    recibe parámetros:</p>
+                <div class="blanco">
+                    <pre>
+
+                    #{nombreBean.metodoBean} // Cuando no tiene parámetros
+                    #{nombreBean.metodoBean(…, …,…)} // Cuando tiene parámetros
+                
+                    </pre>
+                </div>
+                <p>Nótese que se utilizó letra minúscula en nombreBean, esto se debe a que JSF instancia automáticamente un objeto de la clase NombreBean, y cuando se desea acceder a un atributo
+                    del Bean con EL hay que usar el objeto, no la clase.</p>
+                <p>Ejemplo:</p>
+                <p>Si tenemos el managed Bean EjemploBean declarado de la siguiente forma:</p>
+                <div class="blanco">
+                    <pre>
+
+                    @ManagedBean
+                    @RequestScoped
+                    public class EjemploBean{
+                         private String atributo1;
+                         private Integer atributo2;
+                         public EjemploBean(){
+                         }
+                         public void setAtributo1(String atributo1){
+                         this.atributo1 = atributo1;
+                         }
+                         public String getAtributo1(){
+                         return atributo1;
+                         }
+                         public void setAtributo2(Integer atributo2){
+                         this.atributo2 = atributo2;
+                         }
+                         public Integer getAtributo2(){
+                         return atributo2;
+                         }
+                         // otros métodos del Bean
+                         . . .
+                    }
+                
+                    </pre>
+                </div>
+                <p>Entonces, usando EL podremos acceder a los atributos de la clase EjemploBean desde un
+                    facelet, con el objeto ejemploBean, de la siguiente manera:</p>
+                <p>#{ejemploBean.atributo1}, #{ejemploBean.atributo2}</p>
+                <h4><strong>Las propiedades de anidamiento en EL</strong></h4>
+                <p>Supongamos ahora que también tenemos el Bean Direccion:</p>
+                <div class="blanco">
+                    <pre>
+
+                    @ManagedBean
+                    @RequestScoped
+                    public class Direccion{
+                         private String calle;
+                         private int numero;
+                         private int codigoPostal;
+                         public Direccion(){
+
+                         }
+                         public void setCalle(String calle){
+                         this.calle = calle;
+                         }
+                         public void setNumero(int numero){
+                         this.numero = numero;
+                         }
+                         public void setCodigoPostal(int codogoPostal){
+                         this.codigoPostal = codigoPostal;
+                         }
+                         public String getCalle(){
+                         return calle;
+                         }
+                         public int getNumero(){
+                         return numero;
+                         }
+                         public int getCodigoPostal(){
+                         return codigoPostal;
+                         }
+                    }
+                
+                    </pre>
+                </div>
+                <p>Agregaremos un tercer atributo a EjemploBean de clase Direccion:</p>
+                <div class="blanco">
+                    <pre>
+
+                    @ManagedBean
+                    @RequestScoped
+                    public class EjemploBean{
+                        private String atributo1;
+                        private Integer atributo2;
+                        private Direccion atributo3;
+                        public EjemploBean(){
+                        }
+                        public void setAtributo1(String atributo1){
+                        this.atributo1 = atributo1;
+                        }
+                        public String getAtributo1(){
+                        return atributo1;
+                        }
+                        public void setAtributo2(Integer atributo2){
+                        this.atributo2 = atributo2;
+                        }
+                        public Integer getAtributo2(){
+                        return atributo2;
+                        }
+                        public Direccion getAtributo3(){
+                        return atributo3;
+                        }
+                        // otros métodos del Bean
+                        . . .
+                       }
+                
+                    </pre>
+                </div>
+                <p>Cuando queremos hacer referencia a uno de los atributos de Direccion, utilizamos la notación de anidamiento, que es la siguiente:</p>
+                <p>#{ejemploBean.atributo3.calle}, #{ejemploBean.atributo3.numero}, #{ejemploBean.atributo3.codigoPostal}</p>
+                <p>JSF invocará automáticamente a los getters y setters de Direccion.</p>
+                <p>Como pudimos apreciar en los ejemplos anteriores, EL nos permite enlazar la vista con el
+                    modelo</p>
+                <h4><strong> Las etiquetas de JSF</strong></h4>
+                <p>En JavaServer Faces todo se maneja con etiquetas &lth: …. /&gt y &ltf: …./&gt.&lt/p&gt</p>
+                <p>Como JSF se basa en la filosofía de componentes que interactúan con el servidor de forma
+                    independiente, no se manejan las etiquetas HTLM, como &ltform&gt, &ltinput&gt, select&gt, sino
+                    etiquetas para los componentes de JSF, como son por ejemplo &lth:form&gt, &lth:inputText&gt, &lth:-
+                    selectOneListBox&gt. Los componentes JSF brindan funcionalidad del lado del servidor, como
+                    conversiones de tipo, formateo, la posibilidad de definir campos de texto obligatorios, entre
+                    otras.</p>
+                <p>En cualquier etiqueta se pueden accesar los métodos y los atributos de un Bean con la siguiente sintaxis:</p>
+                <div class="blanco">
+                    <pre>
+
+                    #{nombreBean.atributoBean}
+                    #{nombreBean.metodoBean()}
+                
+                    </pre>
+                </div>
+                <p>Las tres etiquetas básicas son:</p>
+                <p><span style="color: #333">&lth: inputText …. /&gt</span> para campos de texto. En el siguiente ejemplo, junto al campo de texto
+                    se pone la etiqueta nombre del campo. </p>
+                <p>&lth: inputtext pt:placeholder =”nombre del campo” /&gt </p>
+                <p><span style="color: #333">&lth: commandButton …. /&gt</span>para botones.
+                    Es común utilizar los botones para la navegación implícita, es decir, en el action se pone el
+                    nombre de la vista a la que se va a transferir el control. No se necesita poner la extensión, como
+                    en el siguiente ejemplo, en el que el botón con la etiqueta “ir a página 2” nos lleva a la vista que
+                    se llama “pagina2”:</p>
+                <div class="blanco">
+                    <pre>
+
+                    &lth: commandButton value =”ir a pagina 2” action =”pagina2”&gt
+                
+                    </pre>
+                </div>
+                <p>El otro uso de commandButton es transferir el control hacia el método de un Bean, como en
+                    el siguiente ejemplo, en el que al seleccionar el botón “Ingresar” el control pasa al método
+                    validarUsuario() del Bean loginBean:</p>
+                <div class="blanco">
+                    <pre>
+
+                    &lth:commandButton value=”Ingresar”
+                                     action=”#{loginBean.validarUsuario}”/&gt
+                
+                    </pre>
+                </div>
+                <p><span style="color: #333">&lth: commandLink action=”PaginaDestino” value=”Etiqueta” /&gt</span>para 
+                    poner ligas a otras páginas, en action se pone el nombre de la página a la que se transfiere
+                    el control cuando se da clic en el enlace, y en value las palabras que aparecen en el enlace
+                </p>
+                <p>Más adelante, en la sección de los componentes de la interfaz de usuario, estudiaremos más
+                    ejemplos con otros componentes.</p>
+                <h4><strong>Ligado de datos de la página Web con el managed Bean</strong></h4>
+                <p>Cuando se instancia una página web (.xhtml), se instancia también su managed Bean asociado. En la Figura VIII-3 se ilustra el caso en el que se despliega un facelet en el navegador, en
+                    ese momento se instancian todos los managed Beans asociados con ese facelet, lo que implica
+                    que en ese momento se ejecutan los constructores de los managed Beans.</p>
+                <p>Cada vez que el usuario modifica el dato de uno de los campos de la página Web, automáticamente se modifica su atributo correspondiente en el managed Bean asociado. A esto se le
+                    conoce como ligado de datos (data binding en inglés).</p>
+                <img class="rounded mx-auto d-block" src="../imagenes/3.png" alt="Los Managed Beans se instancian cuando se despliega la página a la que están asociados">
+                <p>Es muy importante comprender lo que sucede con la vida de los managed Beans en función de
+                    su alcance, para poder llevar un control adecuado de la información.</p>
+                <p>@RequestScoped.- El constructor del Managed Bean se ejecuta cada vez que se hace un request desde la página asociada al Bean (desplegar, pulsar un botón,…). Los datos del Bean se
+                    actualizan cada vez que se construye Bean y se pierden cuando el managed Bean desaparece.
+                </p>
+                <p>En la Figura se ilustra en qué momentos se activa y se desactiva el ManagedBean que
+                    tiene un alcance “request”.</p>
+                <img class="rounded mx-auto d-block" src="../imagenes/4.png" alt=" Ciclo de vida del managed Bean “RequestScoped”">
+                <p>@ViewScoped.- Su constructor se ejecuta cada vez que se despliega la página asociada al Bean.
+                    Los datos están presentes mientras se despliegue la página y se pierden cuando la página desaparece, ya que también desaparece el managed Bean.</p>
+                <p>En la Figura se ilustra en qué momentos se activa y se desactiva el ManagedBean que
+                    tiene un alcance “view”.</p>
+                <img class="rounded mx-auto d-block" src="../imagenes/5.png" alt="Ciclo de vida del managed Bean “ViewScoped”">
+                <p>@SessionScoped.- El Bean se instancia la primera vez que se despliega su página asociada y
+                    permanece activo durante la sesión del usuario. Esto tiene la ventaja de que los datos del Bean
+                    permanecen durante toda la sesión, pero hay que tomar en cuenta que los datos de la página
+                    asociada no se actualizan automáticamente cada vez que ésta se visita, y que el constructor
+                    solamente se ejecuta una vez.</p>
+                <p>En la Figura se ilustra en qué momentos se activa y se desactiva el ManagedBean que
+                    tiene un alcance “sesion”.</p>
+                <img class="rounded mx-auto d-block" src="../imagenes/6.png" alt="Ciclo de vida del managed Bean “SesionScoped”">
+                <h1 class="centrado"><strong>Bibliografia</strong></h1>
+                <p>
+                    [1] 	M. d. C. Gómez Fuentes y J. Cervantes Ojeda, Introducción a la Programación Web con Java: JSP y Servlets, JavaServer Faces, México, 2017. 
+                </p>
+            </div>
+        </main>
+    </body>
+</html>

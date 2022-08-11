@@ -119,7 +119,7 @@
                         <div id="comienzodelapagina"></div><h1 class="centrado"><strong>Guia sobre JSF</strong></h1> 
                         <hr color="black" size="3" id="hrpr">
                         <h3><strong> Los principios de JavaServer Faces</strong></h3>            
-                        <div id="objetivos"></div><h3><strong>Objetivos</strong></h3>
+                        <div id="objetivos"></div><h3><strong>Objetivos</strong></h3><a href="#22" class="link-dark" >[22]</a>
                         <ul>
                             <li>  
                                 <p>Conocer en qué consiste el Framework “JavaServer Faces” y los servicios que éste proporciona y principales componentes.</p>
@@ -147,7 +147,7 @@
                             componentes de alto nivel (menús, paneles, campos de texto,…), cada uno de estos componentes puede interactuar con el servidor de forma independiente. En la actualidad, se utilizan
                             “Facelets” que son páginas con extensión xhtml que sirven para lo mismo que las JSF pero son
                             una forma más sencilla de trabajar. Como JavaServer Faces es un “framework” (marco de referencia), simplifica el diseño de la estructura de la aplicación y también proporciona librerías
-                            que hacen más facil el desarrollo de la aplicación
+                            que hacen más facil el desarrollo de la aplicación.<a href="#22" class="link-dark" >[22]</a>
                         </p>
                         <p>
                             Con JavaServer Faces es posible utilizar Ajax (Asynchronous JavaScript and XML). Ajax es
@@ -156,27 +156,106 @@
                             En las aplicaciones tradicionales, cada petición al servidor hace que éste genere una nueva
                             página HTML/XHTML. Las aplicaciones RIA (Rich Internet Applications), como lo es JSF,
                             intentan simular las aplicaciones de escritorio y, cuando usan Ajax, son más rápidas que las
-                            aplicaciones tradicionales.
+                            aplicaciones tradicionales.<a href="#23" class="link-dark" >[23]</a>
                         </p>
                         <p>La tecnología JavaServer Faces proporciona:</p>
                         <ul>
-                            <li>  
-                                <p>Un conjunto de componentes de Interfaz de Usuario predefinidos (botones, menús,
+                            <li><p>Un conjunto de componentes de Interfaz de Usuario predefinidos (botones, menús,
                                     campos de texto,…), listos para agregarse a una página Web. Estos componentes se
-                                    representan como objetos con un estado.</p>
+                                    representan como objetos con un estado.</p><a href="#22" class="link-dark" >[22]</a>
                             </li>                        
-                            <li>
-                                <p>Oyentes y manejadores de eventos (pulsación de un botón, cambio en el valor de un
+                            <li><p>Oyentes y manejadores de eventos (pulsación de un botón, cambio en el valor de un
                                     campo,…), los cuales permiten conectar fácilmente los eventos generados del lado del
                                     cliente con código de la aplicación en el servidor</p>
                             </li>
-                            <li>
-                                <p>Oyentes y manejadores de eventos (pulsación de un botón, cambio en el valor de un
+                            <li><p>Oyentes y manejadores de eventos (pulsación de un botón, cambio en el valor de un
                                     campo,…), los cuales permiten conectar fácilmente los eventos generados del lado del
                                     cliente con código de la aplicación en el servidor</p>
                             </li>
                         </ul>
+
                         <p>JSF contiene dos importantes componentes de software: las Tag Libraries y los Managed Beans</p>
+
+
+                        <div id="Caracteristicas"></div><h3><strong>Caracteristicas</strong></h3>
+                        <p> Los principales componentes de la tecnología JavaServer Faces son:</p>
+                        <ul>
+                            <li><p>Un API y una implementación de referencia para: representar componentes UI y manejar su estado;
+                                    manejo de eventos, validación del lado del servidor y conversión de datos; definir la navegación entre
+                                    páginas; soportar internacionalización y accesibilidad; y proporcionar extensibilidad para todas estas
+                                    características.</p><a href="#23" class="link-dark" >[23]</a>
+                            </li>
+                            <li><p>Una librería de etiquetas JavaServer Pages (JSP) personalizadas para dibujar componentes UI dentro de
+                                    una página JSP.</p>
+                            </li>
+                        </ul>                 
+                        <p>Este modelo de programación bien definido y la librería de etiquetas para componentes UI facilitan de forma
+                            significativa la tarea de la construcción y mantenimiento de aplicaciones Web con UIs del lado del servidor. Con
+                            un mínimo esfuerzo, podemos:</p><a href="#23" class="link-dark" >[23]</a>
+                        <ul>
+                            <li>
+                                <p>Conectar eventos generados en el cliente a código de la aplicación en el lado del servidor.</p>
+                            </li>                        
+                            <li><p>Mapear componentes UI a una página de datos del lado del servidor.</p>
+                            </li>                        
+                            <li><p>Construir un UI con componentes reutilizables y extensibles.</p>
+                            </li>                        
+                            <li><p>Grabar y restaurar el estado del UI más allá de la vida de las peticiones de servidor.</p>
+                        </ul>
+                        <p>Como se puede apreciar en la siguiente figura, el interface de usuario que creamos con la tecnología
+                            JavaServer Faces (representado por myUI en el gráfico) se ejecuta en el servidor y se renderiza en el cliente.</p>
+
+                        <div id="ventajasjsf"></div><h3><strong>Ventajas e inconvenientes de JSF</strong></h3>
+
+                        <p>Existen numerosas ventajas que hacen que JSF sea una tecnología apropiada para el desarrollo de
+                            aplicaciones web:</p><a href="#23" class="link-dark" >[23]</a>
+                        <ul><li><p>Una de las grandes ventajas de la tecnología JavaServer Faces es que ofrece una clara separación entre
+                                    el comportamiento y la presentación. Las aplicaciones Web construidas con tecnología JSP conseguían
+                                    parcialmente esta separación. Sin embargo, una aplicación JSP no puede mapear peticiones HTTP al
+                                    manejo de eventos específicos del componentes o manejar elementos UI como objetos con estado en el
+                                    servidor.
+                                </p>
+                            </li>
+                            <li><p>La tecnología JavaServer Faces permite construir aplicaciones Web que implementan una separación
+                                    entre el comportamiento y la presentación tradicionalmente ofrecidas por arquitectura UI del lado del
+                                    cliente. JSF se hace fácil de usar al aislar al desarrollador del API de Servlet.
+                                </p>
+                            </li>
+                            <li><p>La separación de la lógica de la presentación también le permite a cada miembro del equipo de desarrollo
+                                    de una aplicación Web enfocarse en su parte del proceso de desarrollo, y proporciona un sencillo modelo
+                                    de programación para enlazar todas las piezas.<a href="#22" class="link-dark" >[22]</a>
+                                </p>
+                            </li>
+                            <li><p>Otro objetivo importante de la tecnología JavaServer Faces es mejorar los conceptos familiares
+                                    Disadvantage de componente-UI y capa-Web sin limitar a una tecnología de script particular o un lenguaje
+                                    de marcas. Aunque la tecnología JavaServer Faces incluye una librería de etiquetas JSP personalizadas
+                                    para representar componentes en una página JSP, los APIs de la tecnología JavaServer Faces se han
+                                    creado directamente sobre el API JavaServlet. Esto permite hacer algunas cosas: usar otra tecnología
+                                    de presentación junto a JSP, crear componentes propios personalizados directamente desde las clases
+                                    de componentes, y generar salida para diferentes dispositivos cliente. Así, se podrán encapsular
+                                    otras tecnologías como Ajax en componentes JSF, haciendo su uso más fácil y productivo, al aislar al
+                                    programador de ellas.<a href="#22" class="link-dark" >[22]</a>
+                                </p>
+                            </li>
+                            <li><p>JavaServer Faces ofrece una gran cantidad de componentes opensource para las funcionalidades que
+                                    se necesiten. Los componentes Tomahawk de MyFaces y ADFFaces de Oracle son un ejemplo. Además,
+                                    también existe una gran cantidad de herramientas para el desarrollo IDE en JSF al ser el estándar de
+                                    JAVA.<a href="#22" class="link-dark" >[22]</a>
+                                </p>
+                            </li>
+                            <li><p>La tecnología JavaServer Faces proporciona una rica arquitectura para manejar el estado de los
+                                    componentes, procesar los datos, validar la entrada del usuario, y manejar eventos.
+                                </p>
+                            </li>
+                            <li><p>Además, ofrece una rápida adaptación para nuevos desarrolladores.
+                                    No obstante, el uso de JavaServer Faces también tiene un conjunto de desventajas:
+                                </p>
+                            </li>
+                            <li><p>Su naturaleza como estándar hace que la evolución de JSF no sea tan rápida como pueda ser la de otros
+                                    entornos como WebWork, Wicket, Spring , etc.<a href="#23" class="link-dark" >[23]</a>
+                                </p>
+                            </li></ul>
+                        
                         <div id="taglibraries"></div><h3><strong>Tag Libraries</strong></h3>
                         <p>
                             Los Facelets son páginas .xhtml con librerías adicionales llamadas Tag libraries. Las librerías
@@ -188,7 +267,7 @@
                             más comun de las aplicaciones Web. Los diseñadores de páginas Web sólo deben saber cómo
                             incluir los tags. JSF proporciona componentes para construir una aplicación con GUIs (Graphical User Interfaces: Interfaces de Usuario Gráficas). El desarrollador personaliza objetos
                             como menús, check box, botones, etc. manipulando los atributos de los tags de cada uno de
-                            estos componentes.</p>               
+                            estos componentes.</p><a href="#23" class="link-dark" >[23]</a>
                         <p>
                             Cuando creamos un proyecto en JavaServer Faces en NetBeans, se generan XHTML, las cual
                             se llaman facelets, y ya tienen incluidas las Tag libraries. 
@@ -203,7 +282,7 @@
                         <p>
                             También existen los Beans CDI (Context and Dependency Injection). Los CDI poseen un modelo un poco 
                             más avanzado para administrar los Beans, sin embargo, aún no se ha demostrado su ventaja sobre los Managed Beans, 
-                            por lo tanto, en este curso, trabajaremos con los Managed Beans.
+                            por lo tanto, en este curso, trabajaremos con los Managed Beans.<a href="#23" class="link-dark" >[23]</a>
                         </p>
                         <img class="rounded mx-auto d-block" src="../imagenes/1.png" alt="Conexión de una página web y su managed Bean">
                         <p>En la Figura se muestra la conexión de una página wWeb con su managed Bean asociado. JavaServer Faces usa el mecanismo de los managed Beans para establecer la conexión entre
@@ -235,7 +314,7 @@
                             de etiquetas, porque cada paquete de información está delimitado por dos etiquetas como
                             se hace en HTML, con la diferencia de que las etiquetas XML describen el significado de la
                             información que contiene cada etiqueta, mientras que las etiquetas HTML se ocupan de la
-                            presentación del contenido y no de su significado.
+                            presentación del contenido y no de su significado.<a href="#23" class="link-dark" >[23]</a>
                         </p>
                         <p>
                             El siguiente es un ejemplo de XML. Al igual que en HTML, el fin de la etiqueta se indica con
@@ -262,7 +341,7 @@
                             configuración. Como el XML es un archivo clave, se genera automáticamente cuando se crea
                             un proyecto Web (en NetBeans, eclipse, etc…) y, aunque algunas dependencias se generan
                             automáticamente, es necesario agregar las dependencias que no son autogeneradas en este
-                            archivo
+                            archivo<a href="#23" class="link-dark" >[23]</a>
                         </p>
                         <p>Se les llama dependencias a todos aquellos elementos sw que el sistema requiere para funcionar (librerías Java, librerías JSF, conector a base de datos, etc.). Escribir directamente las
                             dependencias en los archivos XML, da pié a que se cometan errores, ya que hay que escribir
@@ -285,7 +364,7 @@
                         </p>
                         <p>Una de las características más importantes del XHTML es que tanto el texto como las imágenes pueden ser hipervínculos. Se pueden consultar varios manuales de XHTML en español en
                             la Web. También recomendamos [Deitel P., Deitel H., Internet & World Wide Web, 2008] que
-                            tiene un capítulo dedicado a XHTML con ejemplos muy prácticos. Y otro capítulo dedicado
+                            tiene un capítulo dedicado a XHTML con ejemplos muy prácticos. Y otro capítulo dedicado<a href="#22" class="link-dark" >[22]</a>
                             a las hojas de estilo (CSS).</p>
                         <h3><strong>Características importantes de los JavaBeans Administrados</strong></h3>
                         <p>Hay dos maneras de declarar un JavaBean administrado, con anotaciones y con comandos
@@ -309,7 +388,7 @@
                             constructor vacío. Cada atributo de un Bean debe tener su método getter y setter. </p>
                         <p>JavaServer Faces administra los managed Beans automáticamente, por eso deben cumplir con
                             estas características mencionadas. Las tres acciones que JSF hace de manera automática con
-                            los managed Beans son:</p>
+                            los managed Beans son:</p><a href="#22" class="link-dark" >[22]</a>
                         <ul>
                             <li>  
                                 <p>Los instancia (por eso deben tener el constructor vacío).</p>
@@ -360,7 +439,7 @@
                         <ul>
                             <li>  
                                 <p>1. RequestBean.- Es un objeto que persiste sólo durante la petición del usuario (@
-                                    RequestScoped).</p>
+                                    RequestScoped).</p><a href="#22" class="link-dark" >[22]</a>
                             </li>                        
                             <li>
                                 <p>2. SessionBean.- Es un objeto que existe durante toda la sesión del usuario. Sólo hay
@@ -383,7 +462,7 @@
                         <p>Las expresiones de valor (value expressions) son probablemente las expresiones EL más utilizadas porque son las que se utilizan para hacer referencia a los métodos y los atributos de un
                             objeto o de un managed Bean. EL proporciona un conjunto de objetos implícitos que sirven
                             para obtener valores de parámetros y atributos de diferentes ámbitos. Con las value expressions se pueden acceder fácilmente los métodos y atributos de un JavaBean, las colecciones y
-                            los datos de tipo enum.</p>
+                            los datos de tipo enum.</p><a href="#22" class="link-dark" >[22]</a>
                         <p>Existen dos tipos de value expressions:</p>
                         <ul>
                             <li>  
@@ -404,7 +483,7 @@
                             </pre>
                         </div>
                         <p>Y para acceder al método de un Bean, los paréntesis son obligatorios sólo cuando el método
-                            recibe parámetros:</p>
+                            recibe parámetros:</p><a href="#22" class="link-dark" >[22]</a>
                         <div class="blanco">
                             <pre>
 
@@ -414,7 +493,7 @@
                             </pre>
                         </div>
                         <p>Nótese que se utilizó letra minúscula en nombreBean, esto se debe a que JSF instancia automáticamente un objeto de la clase NombreBean, y cuando se desea acceder a un atributo
-                            del Bean con EL hay que usar el objeto, no la clase.</p>
+                            del Bean con EL hay que usar el objeto, no la clase.</p><a href="#22" class="link-dark" >[22]</a>
                         <p>Ejemplo:</p>
                         <p>Si tenemos el managed Bean EjemploBean declarado de la siguiente forma:</p>
                         <div class="blanco">
@@ -446,7 +525,7 @@
                             </pre>
                         </div>
                         <p>Entonces, usando EL podremos acceder a los atributos de la clase EjemploBean desde un
-                            facelet, con el objeto ejemploBean, de la siguiente manera:</p>
+                            facelet, con el objeto ejemploBean, de la siguiente manera:</p><a href="#23" class="link-dark" >[23]</a>
                         <p>#{ejemploBean.atributo1}, #{ejemploBean.atributo2}</p>
                         <h4><strong>Las propiedades de anidamiento en EL</strong></h4>
                         <p>Supongamos ahora que también tenemos el Bean Direccion:</p>
@@ -521,7 +600,7 @@
                         <p>#{ejemploBean.atributo3.calle}, #{ejemploBean.atributo3.numero}, #{ejemploBean.atributo3.codigoPostal}</p>
                         <p>JSF invocará automáticamente a los getters y setters de Direccion.</p>
                         <p>Como pudimos apreciar en los ejemplos anteriores, EL nos permite enlazar la vista con el
-                            modelo</p>
+                            modelo</p><a href="#22" class="link-dark" >[22]</a>
                         <div id="etiquetasjsf"></div><h4><strong> Las etiquetas de JSF</strong></h4>
                         <p>En JavaServer Faces todo se maneja con etiquetas &lth: …. /&gt y &ltf: …./&gt.&lt/p&gt</p>
                         <p>Como JSF se basa en la filosofía de componentes que interactúan con el servidor de forma
@@ -529,7 +608,7 @@
                             etiquetas para los componentes de JSF, como son por ejemplo &lth:form&gt, &lth:inputText&gt, &lth:-
                             selectOneListBox&gt. Los componentes JSF brindan funcionalidad del lado del servidor, como
                             conversiones de tipo, formateo, la posibilidad de definir campos de texto obligatorios, entre
-                            otras.</p>
+                            otras.</p><a href="#23" class="link-dark" >[23]</a>
                         <p>En cualquier etiqueta se pueden accesar los métodos y los atributos de un Bean con la siguiente sintaxis:</p>
                         <div class="blanco">
                             <pre>
@@ -577,7 +656,7 @@
                             ese momento se instancian todos los managed Beans asociados con ese facelet, lo que implica
                             que en ese momento se ejecutan los constructores de los managed Beans.</p>
                         <p>Cada vez que el usuario modifica el dato de uno de los campos de la página Web, automáticamente se modifica su atributo correspondiente en el managed Bean asociado. A esto se le
-                            conoce como ligado de datos (data binding en inglés).</p>
+                            conoce como ligado de datos (data binding en inglés).</p><a href="#22" class="link-dark" >[22]</a>
                         <img class="rounded mx-auto d-block" src="../imagenes/3.png" alt="Los Managed Beans se instancian cuando se despliega la página a la que están asociados">
                         <p>Es muy importante comprender lo que sucede con la vida de los managed Beans en función de
                             su alcance, para poder llevar un control adecuado de la información.</p>
@@ -585,7 +664,7 @@
                             actualizan cada vez que se construye Bean y se pierden cuando el managed Bean desaparece.
                         </p>
                         <p>En la Figura se ilustra en qué momentos se activa y se desactiva el ManagedBean que
-                            tiene un alcance “request”.</p>
+                            tiene un alcance “request”.</p><a href="#22" class="link-dark" >[22]</a>
                         <img class="rounded mx-auto d-block" src="../imagenes/4.png" alt=" Ciclo de vida del managed Bean “RequestScoped”">
                         <p>@ViewScoped.- Su constructor se ejecuta cada vez que se despliega la página asociada al Bean.
                             Los datos están presentes mientras se despliegue la página y se pierden cuando la página desaparece, ya que también desaparece el managed Bean.</p>
@@ -596,7 +675,8 @@
                             permanece activo durante la sesión del usuario. Esto tiene la ventaja de que los datos del Bean
                             permanecen durante toda la sesión, pero hay que tomar en cuenta que los datos de la página
                             asociada no se actualizan automáticamente cada vez que ésta se visita, y que el constructor
-                            solamente se ejecuta una vez.</p>
+                            solamente se ejecuta una vez.</p><a href="#22" class="link-dark" >[22]</a>
+                        
                         <p>En la Figura se ilustra en qué momentos se activa y se desactiva el ManagedBean que
                             tiene un alcance “sesion”.</p>
                         <img class="rounded mx-auto d-block" src="../imagenes/6.png" alt="Ciclo de vida del managed Bean “SesionScoped”">
@@ -604,8 +684,9 @@
                         <hr class="border-primary border-3 opacity-75"><!-- linia divisora del contenido -->
                         <h1 class="centrado"><strong>Bibliografia de esta pagina</strong></h1>
                         <br>
-                        <div id="6"></div><p>[22] 	M. d. C. Gómez Fuentes y J. Cervantes Ojeda, Introducción a la Programación Web con Java: JSP y Servlets, JavaServer Faces, México, 2017. </p>
+                        <div id="22"></div><p>[22] 	M. d. C. Gómez Fuentes y J. Cervantes Ojeda, Introducción a la Programación Web con Java: JSP y Servlets, JavaServer Faces, México, 2017. </p>
                         <br>
+                        <div id="23"></div><p>[23]       M. Goll, “JavaServer Faces,” JavaServer Faces, pp. 1–10, 2020, doi: 10.1007/978-3-658-31803-1.</p>
                         <a href="#comienzodelapagina" class="link-dark" ><img src="../imagenes/flecha-correcta.png" class="rounded mx-auto d-block" alt="..."></a>
                         <br>
                     </div>

@@ -6,12 +6,61 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Guia de PostgreSQL</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        
+        PostgreSQL es un potente sistema de base de datos relacional de objetos de código abierto que utiliza y amplía el lenguaje SQL combinado con muchas características que almacenan y escalan de forma segura las cargas de trabajo de datos más complicadas. Los orígenes de PostgreSQL se remontan a 1986 como parte del proyecto POSTGRES de la Universidad de California en Berkeley y cuenta con más de 30 años de desarrollo activo en la plataforma central.
+
+A continuación, se muestra una lista exhaustiva de varias funciones que se encuentran en PostgreSQL, y se agregan más en cada versión importante:
+
+Tipos de datos.
+Primitivas: entero, numérico, cadena, booleano.
+Estructurado: Fecha/Hora, Matriz, Rango/Multirango, UUID.
+Documento: JSON/JSONB, XML, clave-valor (Hstore).
+Geometría: punto, línea, círculo, polígono.
+Personalizaciones: Compuesto, Tipos personalizados.
+Integridad de los datos.
+ÚNICO, NO NULO.
+Claves primarias.
+Llaves extranjeras.
+Restricciones de exclusión.
+Bloqueos explícitos, bloqueos de aviso.
+Concurrencia, Rendimiento.
+Indexación: árbol B, varias columnas, expresiones, parcial.
+Indexación avanzada: GiST, SP-Gist, KNN Gist, GIN, BRIN, índices de cobertura, filtros Bloom.
+Planificador/optimizador de consultas sofisticado, escaneos de solo índice, estadísticas de varias columnas.
+Transacciones, transacciones anidadas (a través de puntos de guardado).
+Control de concurrencia de múltiples versiones (MVCC).
+Paralelización de consultas de lectura y creación de índices de árbol B.
+Particionamiento de tablas.
+Todos los niveles de aislamiento de transacciones definidos en el estándar SQL, incluido Serializable.
+Compilación de expresiones justo a tiempo (JIT).
+Confiabilidad, Recuperación de Desastres.
+Registro de escritura anticipada (WAL)
+Replicación: Asíncrona, Sincrónica, Lógica
+Recuperación de un punto en el tiempo (PITR), esperas activas
+Espacios de tablas
+Seguridad.
+Autenticación: GSSAPI, SSPI, LDAP, SCRAM-SHA-256, Certificado y más
+Robusto sistema de control de acceso
+Seguridad a nivel de columna y fila
+Autenticación multifactor con certificados y un método adicional
+Extensibilidad.
+Funciones y procedimientos almacenados
+Lenguajes de procedimiento: PL/PGSQL, Perl, Python (y muchos más)
+Expresiones de ruta SQL/JSON
+Envoltorios de datos externos: conéctese a otras bases de datos o flujos con una interfaz SQL estándar
+Interfaz de almacenamiento personalizable para tablas
+Muchas extensiones que brindan funcionalidad adicional, incluido PostGIS
+Internacionalización, Búsqueda de Texto, [1].
+Compatibilidad con conjuntos de caracteres internacionales, por ejemplo, a través de intercalaciones de ICU
+Intercalaciones que no distinguen entre mayúsculas y minúsculas ni acentos
+Búsqueda de texto completo
+        
+        [1] PostgreSQL, «PostgreSQL?,» [En línea]. Available: https://www.postgresql.org/about/. [Último acceso: 2 Julio 2022].
     </body>
     
     

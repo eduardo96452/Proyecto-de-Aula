@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Guias de Django</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"><!-- comment -->
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script><!-- comment -->
+        <style>
+            main{     
+                margin: 1.5%;
+                font-family: veldana;
+            }
+
+            .centrado{
+                text-align:center;
+            } 
+            .colores{
+                padding: 4%;
+                background-color: #fdecda;
+            } 
+
+            .cuadro{
+                margin:  5%;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Mundo HMTL</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Pagina Principal</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Guias Corte 1                               
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item " href="guiaHTML.html">Guias de HTML</a></li>
+                                <li><a class="dropdown-item" href="guiaCSS.html">Guias de CSS</a></li>
+                                <li><a class="dropdown-item" href="guiaJavaScript.html">Guias de JavaScript</a></li>
+                                <li><a class="dropdown-item " href="pagina_java.html">Guias de JAVA</a></li>
+                                <li><a class="dropdown-item " href="Guia_de_JoSPq.html">Guias de JSP</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Guia Corte 2                               
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item " href="GuiaJSF.html">Guias de JSF</a></li>
+                                <li><a class="dropdown-item " href="#">Guias de PostgreSQL</a></li>
+                                <li><a class="dropdown-item " href="Laravel.html">Guias de Laravel</a></li>
+                                <li><a class="dropdown-item " href="Django.html">Guias de Django</a></li>
+                                <li><a class="dropdown-item " href="#">Guias de Spring Framework</a></li>
+                                <li><a class="dropdown-item " href="Angular.html">Guias de Angular</a></li>                                
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Html/Accesibilidad.html">Guia de Inclusividad</a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link nav-link active" href="Html/Acercade.html">Acerca de...</a>
+                        </li>
+
+                    </ul>
+                    <!--<form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>-->
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class=" p-2 row g-4">
+                <div class="col-md-4 col-lg-3 order-md-last">
+                    <form class="card p-2 colores">
+                        <h4 class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-primary">Contenido de la pagina</span>                        
+                        </h4>
+                    </form>
+                    <br>
+                    <form class="card p-2 colores">
+                        <ul>
+                            <li>
+                                <a href="#queesunframework" class="link-dark">¿Que es un framework?</a>
+                            </li>
+                            <li>
+                                <a href="#historiadedjango" class="link-dark">Historia de Django</a>
+                            </li>
+                            <li>
+                                <a href="#queesdjango" class="link-dark">¿Qué es Django?</a>
+                            </li>
+                            <li>
+                                <a href="#djangounframework" class="link-dark">DJANGO un Framework Web</a>
+                            </li>
+                            <li>
+                                <a href="#elmarcomodelovistacontrolador" class="link-dark">El marco de Modelo Vista Controlador(MVC)</a>
+                            </li>
+                            <li>
+                                <a href="#relacionsemejanzamvcconmvt" class="link-dark">Relación de semejanza entre MVC con MVT</a>
+                            </li>
+                            <li>
+                                <a href="#plantillavistamodelomtv" class="link-dark">Plantilla de vista de modelo (MTV)</a>
+                            </li>
+                            <li>
+                                <a href="#ligadodatospaginaweb" class="link-dark">Ligado de datos de la página Web </a>
+                            </li>
+                            <li>
+                                <a href="#versionesdjangopython" class="link-dark">Versiones de Django y Python</a>
+                            </li>
+                            <li>
+                                <a href="#comparacionrapidodjangoangular" class="link-dark">Comparación rápida de Django V/S Angular</a>
+                            </li>
+                            <li>
+                                <a href="#ventajasdjango" class="link-dark">Ventajas de Django</a>
+                            </li>
+                            <li>
+                                <a href="#desventajasdjango" class="link-dark">Desventajas de Django</a>
+                            </li>
+                        </ul>
+
+                        <a href="#Bibliografia" class="link-dark" >Bibliografia de esta pagina</a>
+                    </form>
+                </div>
+                <div class="colores col-md-8 col-lg-9">
+                    <div class="colores">
+                        <div id="comienzodelapagina"></div><h1 class="centrado"><strong>Guia sobre Django</strong></h1> 
+                        <hr color="black" size="3" id="hrpr">
+                        <div id="queesunframework"></div><h3><strong>¿Qué es un framework?</strong></h3>
+
+                        <p>Un framework es una herramienta de desarrollo web con el propósito de normalizar y estructurar el código 
+                            del sistema, facilitando un esquema (un patrón, un esqueleto) para el desarrollo y/o la implementación de 
+                            aplicaciones. El uso de frameworks ayuda a hacer un trabajo mantenible y escalable, según las características 
+                            del mismo.</p>
+
+                        <p>En el desarrollo de software, un framework es una estructura de soporte definida en la cual otro proyecto 
+                            de software puede ser organizado y desarrollado. En programación, es un set de funciones o código genérico 
+                            que realiza tareas comunes y frecuentes en todo tipo de aplicaciones (creación de objetos, conexión a base 
+                            de datos, etc.). Esto brinda una base sólida sobre la cual desarrollar aplicaciones concretas y permite 
+                            obviar los componentes más triviales y genéricos del desarrollo y abre camino a que diseñadores y programadores 
+                            puedan pasar más tiempo identificando requerimientos de software.</p>
+
+                        <p>Un framework agrega funcionalidad extendida a un lenguaje de programación, automatiza muchos de los patrones 
+                            de programación para orientarlos a un determinado propósito, proporcionando una estructura al código, mejorándolo 
+                            y haciéndolo más entendible y sostenible, también permite separar en capas la aplicación. En general, divide la 
+                            aplicación en tres capas:</p>
+                        
+                        <ul>
+                            <li>La lógica de presentación que administra las interacciones entre el usuario y el software.</li>
+                            <li>La Lógica de datos que permite el acceso a un agente de almacenamiento persistente u otros.</li>
+                            <li>La lógica de dominio o de negocio, que manipula los modelos de datos de acuerdo a los comandos recibidos desde la presentación,<a href="#1" class="link-dark" >[1]</a>.
+                            </li>
+                        </ul>
+                        
+                        <div id="historiadedjango"></div><h3><strong>Historia de Django</strong></h3>
+                        
+                        <p><strong>Adrian Holovaty:</strong> Nacido en 1981, es un desarrollador web, periodista y empresario estadounidense de Chicago, Illinois , 
+                            que vive en Ámsterdam, Países Bajos . Es co-creador del marco web Django y defensor del "periodismo a través de la 
+                            programación informática", <a href="#2" class="link-dark" >[2]</a>.</p>
+                        
+                        <p><strong>Simon Willison:</strong> Nacido en 1981, es un programador británico, cofundador del directorio de conferencias sociales Lanyrd 
+                            y director de arquitectura de Eventbrite . Originario del Reino Unido, actualmente reside en San Francisco, California. 
+                            Simon es co-creador del marco web Django y es un orador público frecuente.</p>
+                        
+                        <p>Django nació en el año 2003, cuando los programadores Web del diario Lawrence Journal-World, Adrian Holovaty y Simon 
+                            Willison, comenzaron a usar Python para crear sus aplicaciones. Los periodistas (y los directivos) exigían que se 
+                            agregaran nuevas características y que aplicaciones enteras se crearan a una velocidad vertiginosa, a menudo con 
+                            sólo días u horas de preaviso. Es así que Adrian y Simon desarrollaron por necesidad un framework de desarrollo Web 
+                            que les ahorrara tiempo, era la única forma en que podían crear aplicaciones mantenibles en tan poco tiempo, <a href="#3" class="link-dark" >[3]</a>.</p>
+                        
+                        <p>Originalmente se desarrolló para administrar varios sitios de noticias que se encontraban a cargo del periódico The 
+                            World Company de Lawrence, Kansas. En julio de 2005 se lanzó públicamente bajo una licencia de software otorgada 
+                            principalmente para los sistemas operativos BSD (Berkeley Software Distribution); el marco lleva el nombre del 
+                            guitarrista de jazz gitano Django Reinhardt. En junio de 2008 se creó Django Software Foundation la cual se haría 
+                            cargo de Django en el futuro, <a href="#4" class="link-dark" >[4]</a>.</p>
+
+                        <div id="queesdjango"></div><h3><strong>¿Qué es Django?</strong></h3>
+
+                        <p>Es un framework web que usa Python para crear sitios web. Su objetivo es escribir sitios web dinámicos muy rápidos.</p>
+
+                        <p>El eslogan de Django es explícito. Este marco fue creado para acelerar el desarrollo fase de un sitio, pero no 
+                            exclusivamente. De hecho, este marco utiliza el patrón MVC, lo que nos permite tener una arquitectura coherente.
+                            Hasta 2013, Django solo era compatible con Python versión 2.x, pero Django 1.5 lanzado el 26 de febrero de 2013, apunta hacia el comienzo de la compatibilidad con Python 3. Hoy en día, grandes 
+                            organizaciones como el sitio web móvil de Instagram, Mozilla.org y Openstack.org está usando Django.</p>
+
+                        <div id="djangounframework"></div><h3><strong>DJANGO un Framework Web</strong></h3>
+
+                        <p>Un framework es un conjunto de software que organiza la arquitectura de una aplicación y facilita el trabajo de 
+                            un desarrollador. Algunas funciones que se utilizan regularmente en un sitio web se pueden automatizar:</p>
+
+                        <ul>
+                            <li>Administración de bases de datos.</li>
+                            <li>Administración de usuarios, <a href="#5" class="link-dark" >[5]</a>.</li>
+                        </ul>
+
+                        <h3><strong>Patrones de diseño</strong></h3>
+                        <ul>
+                            <li>Modelo Vista Controlador.</li>
+                            <li>Plantilla de vista de modelo.</li>
+                        </ul>
+
+                        <div id="elmarcomodelovistacontrolador"></div><h3><strong>El marco de Modelo Vista Controlador ( MVC)</strong></h3>
+
+                        <p>Antes de que existiera el marco MVC, la programación web mezclaba el acceso a la base de datos código y el 
+                            código principal de la página. Esto devolvió una página HTML al usuario. Incluso si estamos almacenando archivos 
+                            CSS y JavaScript en archivos externos, los códigos de idioma del lado del servidor son almacenados en un archivo 
+                            que se comparte entre al menos tres idiomas: Python, SQL y HTML.</p>
+
+                        <p>El patrón MVC fue creado para separar la lógica de la representación y tener un arquitectura interna más tangible 
+                            y real. El modelo-vista-controlador (MVC) representa las tres capas de aplicación que recomienda el paradigma:</p>
+
+                        <ul>
+                            <li><strong>Modelos:</strong> Representan la organización de los datos en una base de datos. En palabras simples, podemos decir que cada modelo define una tabla en la base de datos y las relaciones entre otros modelos.</li>
+                            <li><strong>Vistas:</strong> Contienen toda la información que se enviará al cliente. Crean vistas que generará el documento HTML final. Podemos asociar el código HTML con las vistas.</li>
+                            <li><strong>Controladores:</strong> Contienen todas las acciones realizadas por el servidor y no son visibles para el cliente. El controlador comprueba si el usuario está autenticado o puede generar el código HTML a partir de una plantilla.</li>
+                        </ul>
+                        <br>
+                        <div align="center">
+                            <img src="../imagenes/Captura de pantalla 2022-08-28 064632.png" alt=""/>
+                        </div>
+                        <br>
+                        <p>Los siguientes son los pasos que se siguen en una aplicación con el patrón MVC:</p>
+                        <ol>
+                            <li>El cliente envía una solicitud al servidor para mostrar una página.</li>
+                            <li>El controlador utiliza una base de datos a través de modelos. Puede crear, leer, actualizar, o 
+                                eliminar cualquier registro o aplicar cualquier lógica a los datos recuperados.
+                            <li>El modelo envía datos desde la base de datos; por ejemplo, envía una lista de productos Si tenemos una tienda en línea.</li>
+                            <li>El controlador inyecta datos en una vista para generarlos.</li>
+                            <li>La vista devuelve su contenido en función de los datos proporcionados por el controlador.</li>
+                            <li>El controlador devuelve el contenido HTML al cliente.</li>
+                        </ol>
+
+                        <p>El patrón MVC nos permite obtener coherencia para el trabajador de cada proyecto. En una red agencia donde 
+                            hay un diseñador web y hay desarrolladores, el diseñador web es el jefe de las vistas. Dado que las vistas 
+                            contienen sólo el código HTML, el código del desarrollador no molestará al diseñador web. Los desarrolladores 
+                            editan sus modelos y controladores, <a href="#5" class="link-dark" >[5]</a>.</p>
+
+                        <div id="relacionsemejanzamvcconmvt"></div><h3><strong>Relación de semejanza entre MVC con MVT</strong></h3>
+
+                        <p>Si compara esto con el MVC clásico, "Modelo" es comparable al de Django Modelos, "Ver" suele ser Plantillas de 
+                            Django, y "Controlador" es el marco mismo que procesa una solicitud HTTP entrante y la enruta a la función de 
+                            Vista correcta.</p>
+
+                        <table class="table table-bordered border-dark">
+                            <thead align="center">
+                                <tr>
+                                    <th scope="col">MVC</th>
+                                    <th scope="col">MTV</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Modelo</th>
+                                    <td>Django Modelos</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Vista</th>
+                                    <td>Plantilla de Django</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Controlador</th>
+                                    <td>Vista</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p>Django prefiere nombrar la función de devolución de llamada para manejar cada URL una función de "vista". 
+                            Esto, desafortunadamente, no está relacionado con la idea del patrón MVC de una Vista.</p>
+                        
+                        <div id="plantillavistamodelomtv"></div><h3><strong>Plantilla de vista de modelo (MTV)</strong></h3>
+
+                        <p>Django llama a esto la arquitectura Model-Template-View (MTV). Hay separación de preocupaciones entre las 
+                            clases de interfaz de base de datos (Modelo), procesamiento de solicitudes de clases (Vista), y un lenguaje 
+                            de plantillas para la presentación final (Plantilla), <a href="#6" class="link-dark" >[6]</a></p>
+
+                        <p>En el marco MTV, el controlador es manejada por el marco mismo y la mayor parte de la emoción en Django sucede en 
+                            modelos, plantillas y vistas, Django se conoce como un marco MTV.</p>
+
+                        <p>En el patrón de desarrollo de MTV,</p>
+
+                        <ul>
+                            <li>M significa "Modelo", la capa de acceso a datos. Esta capa contiene cualquier cosa y todo.
+                                sobre los datos: cómo acceder a ellos, cómo validarlos, qué comportamientos tiene y las relaciones entre los datos</li>
+                            <li>T significa “Plantilla”, la capa de presentación. Esta capa contiene información relacionada con la presentación.
+                                Decisiones: cómo se debe mostrar algo en una página web u otro tipo de documento.</li>
+                            <li>V significa "Ver" o “Vista”, la capa de lógica empresarial. Esta capa contiene la lógica que accede el modelo y se remite a la(s) plantilla(s) apropiada(s). Puedes pensar en ello como el puente.
+                                entre modelos y plantillas, <a href="#7" class="link-dark" >[7]</a>.</li>
+                        </ul>
+
+                        <h3><strong>Diagrama de MTV en Django</strong></h3>
+                        <br>
+                        <div align="center">
+                            <img src="../imagenes/Captura de pantalla 2022-08-28 084749.png" alt=""/>
+                        </div>
+                        <br>
+                        <ol>
+                            <li>El navegador envía una solicitud.</li>
+                            <li>La vista interactúa con el modelo para obtener datos.</li>
+                            <li>La vista llama a la plantilla.</li>
+                            <li>La plantilla renderiza la respuesta a la solicitud del navegador, (http://www.maestrosdelweb.com/curso-django-entendiendo-como-trabaja-django/).</li>
+                        </ol>
+
+                        <div id="versionesdjangopython"></div><h3><strong>Versiones de Django y Python <a href="#8" class="link-dark" >[8]</a></strong></h3>
+
+                        <table class="table table-bordered border-dark">
+                            <thead align="center">
+                                >
+                                <tr>
+                                    <th scope="col">versión Django</th>
+                                    <th scope="col">Versiones de Python</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">2.2</th>
+                                    <td>3.5, 3.6, 3.7, 3.8 (agregado en 2.2.8), 3.9 (agregado en 2.2.17)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3.1</th>
+                                    <td>3.6, 3.7, 3.8, 3.9 (agregado en 3.1.3)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3.2</th>
+                                    <td>3.6, 3.7, 3.8, 3.9, 3.10 (agregado en 3.2.9)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4.0, 4.1</th>
+                                    <td>3.8, 3.9, 3.10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3><strong>Opciones de instalación y configuración de Django</strong></h3>
+
+                        <p>Django es flexible en términos de cómo y dónde puede instalarse y configurarse. Django puede ser:</p>
+
+                        <ul>
+                            <li>Instalado en diferentes sistemas operativos.</li>
+                            <li>Ser usado con Python 3 y Python 2.</li>
+                            <li>Instalado desde las fuentes, desde el Python Package Index (PyPi) y en muchos casos desde la aplicación 
+                                de gestión de paquetes de la computadora.</li>
+                            <li>Configurado para usar una de entre varias bases de datos, que pueden también necesitar ser instaladas y 
+                                configuradas por separado.</li>
+                            <li>Ejecuta en el entorno Python del sistema principal o dentro de entornos virtuales Python separados.</li>
+                        </ul>
+
+                        <h3><strong>Tipos de instalación</strong></h3>
+
+                        <ul>
+                            <li>Instalación local: Si instalas Django dentro del entorno por defecto/global sólo podrás apuntar a una sóla 
+                                versión de Django en la computadora. Esto puede ser un problema si quieres crear nuevos sitios (usando la última 
+                                versión de Django) pero manteniendo los sitios web que dependen de versiones más antiguas.</li>
+                            <li>Instalación virtual: Se habilitan múltiples entornos Django diferentes en la misma computadora.</li>
+                        </ul>
+
+                        <h3><strong>Bases de datos que soporta Django</strong></h3>
+
+                        <ul>
+                            <li>PostgreSQL</li>
+                            <li>MySQL</li>
+                            <li>Oracle</li>
+                            <li>SQLite, <a href="#9" class="link-dark" >[9]</a>.</li>
+                        </ul>
+
+                        <div id="comparacionrapidodjangoangular"></div><h3><strong>Comparación rápida de Django V/S Angular</strong></h3>
+
+                        <p>Django y Angular tienen su base de fans y para el cumplimiento de las tendencias de desarrollo web de 2022, 
+                            ambos marcos serán muy populares, diversos y útiles, <a href="#10" class="link-dark" >[10]</a>.</p>
+
+                        <table class="table table-bordered border-dark">
+                            <thead align="center">
+                                <tr>
+                                    <th scope="col">Comparación rápida</th>
+                                    <th scope="col">Angular</th>
+                                    <th scope="col">Django</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Fundadores</th>
+                                    <td>Google</td>
+                                    <td>Adrian Holovaty y Simon Willison</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Escrito en</th>
+                                    <td>TypeScript</td>
+                                    <td>Python</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Tamaño</th>
+                                    <td>500 KB</td>
+                                    <td>8,9 MB</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Tipo de tecnología</th>
+                                    <td>MVC framework</td>
+                                    <td>MVC framework</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Actuación</th>
+                                    <td>Bajo</td>
+                                    <td>Alto</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Curva de aprendizaje</th>
+                                    <td>Empinada</td>
+                                    <td>Empinada</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div id="ventajasdjango"></div><h3><strong>Ventajas de Django</strong></h3>
+                        <ul>
+                            <li>Cuenta con un sistema de autentificación de usuarios.</li>
+                            <li>Manejo de versiones que permite una distribución simple de actualizaciones.</li>
+                            <li>Ofrece un gran rendimiento y flexibilidad, pudiendo escalar proyectos de forma sencilla.</li>
+                            <li>Trabaja bajo un patrón MVC (Modelo Vista Controlador), lo que permite un desarrollo ágil y reutilizable.</li>
+                            <li>Incorpora una amplia variedad de paquetes de librerías (más de 4000).</li>
+                            <li>Dispone de una inmensa comunidad de usuarios en internet.</li>
+                            <li>Incluye opciones de protección para las aplicaciones, por ejemplo, contra ataques de SQL injection o ataques XSS (cross site scripting).</li>
+                            <li>Proporciona una estructura de código autogenerado.</li>
+                            <li>Cuenta con panel de administración para bases de datos.</li>
+                        </ul>
+
+                        <div id="desventajasdjango"></div><h3><strong>Desventajas de Django</strong></h3>
+
+                        <p>Entre los inconvenientes que se pueden encontrar al utilizar Django para desarrollar aplicaciones web 
+                            con Python podemos destacar su extensa documentación, que a veces puede llegar a ser confusa y dispersa. 
+                            También, puede resultar difícil a la hora de realizar API Rest (estilo de arquitectura software para crear 
+                            aplicaciones web respetando el protocolo HTTP) o resultar complejo cuando se trabaja con sockets.</p>
+
+
+
+                    </div>
+                    <div id="Bibliografia"></div>
+                    <hr class="border-primary border-3 opacity-75"><!-- linia divisora del contenido -->
+                    <h1 class="centrado"><strong>Bibliografia de esta pagina</strong></h1>
+                    <br>
+                    <div id="11">
+                        <div id="1"></div><p>[1]	D. Framework, D. Dynamic, and W. Applications, “Design Framework for the Development Dynamic Web Applications PDF Creator - PDF4Free v2 . 0,” no. 44, pp. 178–183, 2010.</p>
+                        <div id="2"></div><p>[2]	A. Holovaty, «hmong,» [En línea]. Available: https://hmong.es/wiki/Adrian_Holovaty.</p>
+
+                        <div id="3"></div><p>[3]	A. C. Cárdenas López, “ANÁLISIS DE PYTHON CON DJANGO FRENTE A RUBY ON RAILS PARA DESARROLLO ÁGIL DE APLICACIONES WEB. CASO PRÁCTICO: DECH.,” Экономика Региона, vol. 10, no. 9, p. 32, 2012, [Online]. Available: https://dspace.ups.edu.ec/bitstream/123456789/5224/1/UPS-QT03885.pdf</p>
+                        <div id="4"></div><p>[4]	J. Angelus, «Django (Web framework),» de Open source, Web application framework, Architectural pattern, 2011.</p>
+                        <div id="5"></div><p>[5]	S. Dauzon, A. Bendoraitis, and A. Ravindran, Django: Web Development with Python. 2016. [Online]. Available:
+                            https://www.amazon.com/Django-Development-Python-Samuel-Dauzon/dp/1787121380/ref=sr_1_1? s=books&ie=UTF8&qid=1499942769&sr=1-1&keywords=Django+web+development+with+Python
+                            +%282016%29%0Ahttp://hym-2017.corpuscodea.es/pdf/Samuel Dauzon et alii - Django web de</p>
+
+                        <div id="6"></div><p>[6]	“Django: Web Development with Python”</p>
+
+                        <div id="7"></div><p>[7]	A. Holovaty and J. Kaplan-moss, 02 DJ - [Expert_s Voice in Web Development] Adrian Holovaty - The Definitive Guide to Django - Web Development Done Right (2008, Apress) - libgen.lc.pdf.
+                        <div id="8"></div><p>[8]	django, «django,» [En línea]. Available: https://docs.djangoproject.com/en/4.1/faq/install/. [Último acceso: 16 08 2022].</p>
+                        <div id="3"></div><p>[9]	Mozilla, «Mozilla,» [En línea]. Available:
+
+                            (https://developer.mozilla.org/es/docs/Learn/Server-side/Django/development_environment).. [Último acceso: 16 08 2022].</p>
+                        <div id="10"></div><p>[10]	S. Aziz, «invozone,» [En línea]. Available:
+
+                            https://invozone.com/blog/django-vs-angular-which-one-to-choose-in-2022. [Último acceso: 23 05 2022].</p>
+
+                        <br>
+                        <a href="#comienzodelapagina" class="link-dark" ><img src="../imagenes/flecha-correcta.png" class="rounded mx-auto d-block" alt="..."></a>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

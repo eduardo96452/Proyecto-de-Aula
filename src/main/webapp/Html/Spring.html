@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Guias de Spring</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        1.	Introducción
+Spring framework es un software libre, desarrollado por la Spring Source, este framework puede ser utilizado en contenedores web, dispensando servidores de aplicaciones como JEE (Java Enterprise Edition) y JBoss.
+Si bien Spring Framework es muy potente, realizar la configuración inicial de dicho framework suele ser bastante tedioso por lo que el equipo de Spring lanzó Spring Boot, el cual simplifica este proceso de manera significativa. [1]
+2.	Spring Framewok
+Este framework nos proporciona varias características entre las que podemos destacar la inyección de dependencias, la gestión de transacciones, el soporte para pruebas automatizadas y el soporte orientado a aspectos de programación.
+Spring nació como una alternativa liviana para lo que entonces era conocido como Java Entreprise Edition (JEE) dejando a un lado el desarrollo de componentes ofreciendo un enfoque más simple para el desarrollo empresarial Java.[1]
+
+              Spring tiene varios frameworks complementarios que son:
+•	Spring MVC: este es utilizado para el desarrollo de aplicaciones web (este es parte e spring framework).
+•	Spring Security: Este es utilizado para la inserción de funcionalidades para la autenticación y autorización.
+•	Spring Data: Destinado para aplicaciones que utilizan nuevas tecnologías de almacenamiento de datos como base de datos y servicios en la nube.
+•	Spring web Services: Utilizado para la creación de servicios web basados en SOAP.
+•	Spring web Flow: Este es una extensión de Spring MVC que permite la implementación de flujos (Wizards) entre pantallas.[2]
+
+2.1          Historia
+Spring fue escrito por Rod Johnson y se empezó a escribir a partir del año 2000.
+Dos años más tarde, en 2002, aparece la primera versión de Spring Framework (la versión 0.9) creada por Rob Johnson. Y ese mismo año, aparece también el famoso libro “Expert One-on-One J2EE Design and Development” de Rod Johnson. Rod, tardó 9 meses en escribirlo.[3]
+Spring es un framework de aplicación desarrollado por la compañía Interface 21, para aplicaciones escritas en el lenguaje de programación Java. Fue creado gracias a la colaboración de grandes programadores, entre ellos se encuentran como principales partícipes y líderes de este proyecto Rod Johnson y Jürgen Hõller. Estos dos desarrolladores, además de otros colaboradores que juntando toda su experiencia en el desarrollo de aplicaciones J2EE (Java 2 Enterprise Editions), incluyendo EJB (Enterprise JavaBeans), Servlets y JSP (Java Server Pages), lograron combinar dichas herramientas y otras más en un sólo paquete, para brindar una estructura más sólida y un mejor soporte para este tipo de aplicaciones.[3]
+Este framework se encuentra actualmente en su versión 5.3.22, aunque es una versión temprana, está adquiriendo gran auge y una gran popularidad. Una de las características que ayuda a este éxito, es que es una aplicación open source, lo cual implica que no tiene ningún costo, ni se necesita una licencia para utilizarlo, por lo tanto, da la libertad a muchas empresas y desarrolladores a incursionar en la utilización de esta aplicación. Además de que está disponible todo el código fuente de este framework en el paquete de instalación. Spring no intenta la rueda" sino integrar las diferentes tecnologías existentes, en un sólo framework para el desarrollo más sencillo y eficaz de aplicaciones J2EE portables entre servidores de aplicación.
+En 2003, un año después de la publicación del libro, se creó un equipo de desarrolladores que buscaban extender el framework en Sourceforge.Y que publicaron la versión 0.9 (no era la release).
+Finalmente, en 2004, fue cuando apareció el primer gran lanzamiento, oficial de Spring la versión 1.0 con la licencia de Apache 2.0. Pronto, será aceptada por un gran número de desarrolladores Java pero aún no a llegado ese momento. Ese mismo año, en agosto, Rod Johnson, Juergen Hoeller, Keith Donald y Colin Sampaleanu crean una compañía de consultoría, llamada Interface21.
+La versión 1.2.6 ganó el premio de productividad Jolt y un premio de innovación JAX (API Java para XML).
+Durante 2004 pese a ser criticado durante, su uso fue extendiéndose por los programadores de Java que vieron un gran paso respeto a programar en JJEE.
+En verano de 2005 Spring Framework ya tenía 400K descargas.
+En 2006, llegó Spring 2.0, tratando de simplificar los archivos de configuración XML y dar soporte a Java 5 .
+En 2007, la consultoría que habían creado Interface21, cambia su nombre a SpringSource. Y también, llegó Spring 2.5, que introdujo nuevas funciones como las configuraciones de anotación.
+En 2009, SpringSource fue adquirió Convent y Hyperic. Posteriormente SpringSource, fue adquirida por VMWare, por la friolera de 420 millones de dolares. ese mismo año, aparece la versión 3.0 que da soporte a Java EE6.
+En 2011, aparece la versión 3.1 de spring framework.
+En 2012, aparece Spring 3.2, que introdujo la configuración de Java, y tenía soporte para Java 7, Hibernate 4, Servlet 3.0. También requería como mínimo la versión 1.5 de Java.
+2.2        Arquitectura de Spring
+Spring es un framework modular que cuenta con una arquitectura divida en siete           capas o módulos lo cual permite tomar y ocupar únicamente las partes que interesen para el proyecto y juntarlas con gran Libertad.
+
+2.3	Módulo principal de primavera:
+El módulo Spring Core, que es el componente central del marco Spring, proporciona el contenedor IoC. Hay dos tipos de implementaciones del contenedor Spring, a saber, la fábrica de frijoles y el contexto de la aplicación. La fábrica de frijoles se define mediante la interfaz org.springframework.beans.factory.BeanFactory y actúa como un contenedor para los frijoles. El contenedor de la fábrica de Bean le permite desacoplar la configuración y especificación de las dependencias de la lógica del programa. En el marco de Spring, la fábrica de Bean actúa como un contenedor de IoC central que es responsable de crear instancias de objetos de aplicación. También configura y ensambla las dependencias entre estos objetos. Existen numerosas implementaciones de la interfaz BeanFactory. La clase XmlBeanFactory es la implementación más común de la interfaz BeanFactory.
+
+2.4	Módulo Spring AOP:
+Similar a la programación orientada a objetos (OOP), que desglosa las aplicaciones en jerarquías de objetos, AOP desglosa los programas en aspectos o preocupaciones. El módulo Spring AOP le permite implementar preocupaciones o aspectos en una aplicación Spring en Spring AOP, los aspectos son los beans Spring regulares o las clases regulares anotadas con la anotación @Aspect. Estos aspectos ayudan en la gestión de transacciones y en el registro y monitoreo de fallas de una aplicación. Por ejemplo, la gestión de transacciones es necesaria en las operaciones bancarias, como la transferencia de una cantidad de una cuenta a otra. El módulo Spring AOP proporciona una capa de abstracción de la gestión de transacciones que se puede aplicar a las API de transacciones.
+2.5	Módulo Spring ORM
+Spring ORM se utiliza para acceder a datos de bases de datos en una aplicación. Proporciona API para manipular bases de datos con JDO, Hibernate e iBatis. Spring ORM es compatible con DAO, que proporciona una forma conveniente de crear las siguientes soluciones ORM basadas en DAO:
+Gestión simple de transacciones declarativas
+Manejo transparente de excepciones
+Clases de plantillas ligeras y seguras para subprocesos
+Clases de apoyo DAO
+Administracion de recursos
+2.6	Módulo Spring Web MVC:
+El módulo Web MVC de Spring implementa la arquitectura MVC para crear aplicaciones web. Separa el código del modelo y los componentes de vista de una aplicación web. En Spring MVC, cuando se genera una solicitud desde el navegador, primero va a la clase DispatcherServlet (controlador frontal), que envía la solicitud a un controlador (clase SimpleFormController o clase AbstractWizardformController) utilizando un conjunto de asignaciones de controladores. El controlador extrae y procesa la información incluida en una solicitud y envía el resultado a la clase DispatcherServlet en forma de objeto modelo. Finalmente, la clase DispatcherServlet usa clases ViewResolver para enviar los resultados a una vista, que muestra estos resultados a los usuarios.
+2.7	Módulo Spring Web Flow: el módulo
+Spring Web Flow es una extensión del módulo Spring Web MVC. El marco Spring Web MVC proporciona controladores de formulario, como la clase SimpleFormController y la clase AbstractWizardFormController, para implementar un flujo de trabajo predefinido. Spring Web Flow ayuda a definir el archivo XML o la clase Java que administra el flujo de trabajo entre diferentes páginas de una aplicación web. Spring Web Flow se distribuye por separado y se puede descargar a través del sitio web http://www.springframework.org .
+Las siguientes son las ventajas de Spring Web Flow:
+El flujo entre las diferentes IU de la aplicación se proporciona claramente definiendo el flujo web en un archivo XML.
+Las definiciones de flujo web le ayudan a dividir virtualmente una aplicación en diferentes módulos y reutilizar estos módulos en múltiples situaciones.
+El ciclo de vida de Spring Web Flow se puede administrar automáticamente
+
+2.8	Módulo DAO de Spring Web:
+El paquete DAO en el marco Spring proporciona soporte DAO mediante el uso de tecnologías de acceso a datos como JDBC, Hibernate o JDO. Este módulo introduce una capa de abstracción JDBC al eliminar la necesidad de proporcionar codificación JDBC tediosa. También proporciona clases de gestión de transacciones programáticas y declarativas. El paquete Spring DAO admite conectividad heterogénea de bases de datos Java y mapeo O / R, lo que ayuda a Spring a trabajar con varias tecnologías de acceso a datos. Para un acceso fácil y rápido a los recursos de la base de datos, el marco Spring proporciona clases base DAO abstractas. Hay varias implementaciones disponibles para cada tecnología de acceso a datos compatible con el marco Spring. Por ejemplo, en JDBC, la clase JdbcDaoSupport y sus métodos se utilizan para acceder a la instancia de DataSource y una instancia de JdbcTemplate preconfigurada.
+2.9	Módulo de contexto de la aplicación Spring:
+el módulo de contexto de la aplicación Spring se basa en el módulo Core. El contexto de la aplicación org.springframework.context.ApplicationContext es una interfaz de BeanFactory. Este módulo deriva su característica del paquete org.springframework.beans y también admite funcionalidades como internacionalización (I18N), validación, propagación de eventos y carga de recursos. El contexto de la aplicación implementa la interfaz MessageSource y proporciona la funcionalidad de mensajería a una aplicación.
+3	Spring MVC
+Spring Web MVC es un sub-proyecto Spring que está dirigido a facilitar y optimizar el proceso creación de aplicaciones web utilizando el patrón MVC (Modelo-Vista-Controlador), donde el Modelo representa los datos o información que manejará la aplicación web, la Vista son todos los elementos de la UI (Interfaz de Usuario), con ellos el usuario interactúa con la aplicación, ejemplo: botones, campos de texto, etc., finalmente el Controlador será el encargado manipular los datos en base a la interacción del usuario. [2]
+Este framework es probablemente el más utilizado dentro del desarrollo web, el cual nos permite crear aplicaciones web con modelo MVC que puede acceder a datos de manera sencilla pudiendo integrarse incluso con otras tecnologías como jQuery, React o Vue al momento de crear aplicaciones modernas y flexibles.
+Al tratarse de un framework MVC trabaja sobre todo con el concepto de Controlador Frontal (FrontController) que es el encargado de soportar todas las peticiones Web y redirigirlas a los componentes que sean necesarios. En este caso el controlador de Spring se denomina ServletDispatcher y viene configurado por defecto por Spring Boot.
+
+Historia
+En octubre de 2012, Mike Youngstrom creó una solicitud de función en Spring jira que requería soporte para la arquitectura de aplicaciones web sin contenedores en el marco de Spring. Habló sobre la configuración del servicio de contenedor web en el contenedor principal para guiar el contenedor de resorte. Este es un extracto de la solicitud de jira: [3]
+Creo que la arquitectura de aplicaciones web de Spring puede simplificarse enormemente si proporciona herramientas y arquitecturas de referencia que utilizan componentes Spring y modelos de configuración de arriba a abajo. Incruste y unifique la configuración de estos servicios comunes de contenedor web en el contenedor Spring guiado por el método simple main (). [3]
+Este requisito impulsó el desarrollo del proyecto Spring Boot que comenzó a principios de 2013. En abril de 2014, se lanzó Spring Boot 1.0.0. Desde entonces, han salido algunas versiones de Spring Boot:
+Spring boot 1.1 (junio de 2014)- Soporte de plantilla mejorado, soporte de gemfire, configuración automática de elasticsearch y apache solr.
+Spring boot 1.2 (marzo de 2015)-Actualizar a servlet 3.1 / tomcat 8 / jetty 9, actualización de primavera 4.1, soporte de anotación banner / jms / SpringBootApplication.
+Spring boot 1.3 (diciembre de 2016)-Actualización de Spring 4.2, nuevas herramientas de arranque de primavera para la configuración automática de la tecnología de caché (ehcache, hazelcast, redis e infinispan) y soporte jar totalmente ejecutable.
+Spring boot 1.4 (enero de 2017)-Actualización de Spring 4.3, soporte couchbase / neo4j, análisis de falla de inicio y RestTemplateBuilder.
+Spring boot 1.5 (febrero de 2017)-Soporta kafka / ldap, actualización de la biblioteca de terceros, desprecia el soporte de CRaSH y el punto final del registrador ejecutor para modificar dinámicamente el nivel de registro de la aplicación.
+Spring boot 2.0 (marzo de 2018)-Basado en Java 8, compatible con Java 9, compatible con Quartz, el programador simplifica enormemente la configuración automática de seguridad, admite Netty incorporado
+La simplicidad de Spring Boot permite a los desarrolladores de Java adoptar el proyecto rápidamente y a gran escala. Spring Boot es posiblemente una de las formas más rápidas de desarrollar aplicaciones web de microservicios basadas en REST en Java.
+
+5	Características de Spring Boot
+Contenedor de aplicaciones integrado.
+Spring Boot nos permite compilar nuestras aplicaciones tanto como un archivo.jar como un archivo .war.
+Un archivo .jar lo ejecuta como si se tratase de una aplicación Java normal.
+Un archivo .war lo compila desplegándolo en un servidor de aplicaciones como lo es Tomcat.
+Todo esto es posible y que Spring Boot tiene in servidor d aplicaciones integrado .jar y levantándose cuando ejecutamos la aplicación, de esta forma podemos distribuir nuestras aplicaciones de una forma más sencilla.
+
+
+Bibliogrtafia
+
+UnyPaython, Spring Boot, Mexico: https://unipython.com/que-es-el-framework-spring-y-las-ventajas-de-utilizarlo/, 2020.
+
+C. Á. Caules, Spring boot, Mexico: https://www.arquitecturajava.com/que-es-spring-boot/, 2021.
+
+A. NORÉN, Un poco de historia sobre Spring, https://javadesde0.com/un-poco-de-historia-sobre-spring/, 2022.
+
+campusMVP, Ventajas y desventajas de spring boot, España: https://www.campusmvp.es/recursos/post/desventajas-spring-framework-y-spring-boot.aspx#:~:text=Las%20principales%20desventajas%20de%20Spring,que%20te%20aportan%20muchas%20funcionalidades., 2021.
+
+
+    </body>
+</html>

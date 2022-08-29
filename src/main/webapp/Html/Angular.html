@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Guias de Angular</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"><!-- comment -->
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script><!-- comment -->
+        <style>
+            main{     
+                margin: 1.5%;
+                font-family: veldana;
+            }
+
+            .centrado{
+                text-align:center;
+            } 
+            .colores{
+                padding: 4%;
+                background-color: #fdecda;
+            } 
+
+            .cuadro{
+                margin:  5%;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Mundo HMTL</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Pagina Principal</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Guias Corte 1                               
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item " href="guiaHTML.html">Guias de HTML</a></li>
+                                <li><a class="dropdown-item" href="guiaCSS.html">Guias de CSS</a></li>
+                                <li><a class="dropdown-item" href="guiaJavaScript.html">Guias de JavaScript</a></li>
+                                <li><a class="dropdown-item " href="pagina_java.html">Guias de JAVA</a></li>
+                                <li><a class="dropdown-item " href="Guia_de_JoSPq.html">Guias de JSP</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Guia Corte 2                               
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item " href="GuiaJSF.html">Guias de JSF</a></li>
+                                <li><a class="dropdown-item " href="#">Guias de PostgreSQL</a></li>
+                                <li><a class="dropdown-item " href="Laravel.html">Guias de Laravel</a></li>
+                                <li><a class="dropdown-item " href="Django.html">Guias de Django</a></li>
+                                <li><a class="dropdown-item " href="#">Guias de Spring Framework</a></li>
+                                <li><a class="dropdown-item " href="Angular.html">Guias de Angular</a></li>                                
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Accesibilidad.html">Guia de Inclusividad</a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link nav-link active" href="Acercade.html">Acerca de...</a>
+                        </li>
+
+                    </ul>
+                    <!--<form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>-->
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class=" p-2 row g-4">
+                <div class="col-md-4 col-lg-3 order-md-last">
+                    <form class="card p-2 colores">
+                        <h4 class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-primary">Contenido de la pagina</span>                        
+                        </h4>
+                    </form>
+                    <br>
+                    <form class="card p-2 colores">
+                        <ul>
+                            <li>
+                                <a href="#queesangular" class="link-dark" >¿Qué es Angular?</a>
+                            </li>
+                            <li>
+                                <a href="#historiaangular" class="link-dark" >Historia de Angular</a>
+                            </li>
+                            <li>
+                                <a href="#versionesangular" class="link-dark" >Versiones de Angular JS</a>
+                                <ul>
+                                    <li>
+                                        <a href="#AngularJS1x" class="link-dark" >Angular JS 1.X</a>
+                                    </li>
+                                    <li>
+                                        <a href="#Angular2" class="link-dark" >Angular 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#Angular3" class="link-dark" >Angular 3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#Angular4" class="link-dark" >Angular 4</a>
+                                    </li>
+                                    <li>
+                                        <a href="#Angular5" class="link-dark" >Angular 5</a>
+                                    </li>
+                                    <li>
+                                        <a href="#Angular6" class="link-dark" >Angular 6</a>
+                                    </li>
+                                    <li>
+                                        <a href="#Angular7" class="link-dark" >Angular 7</a>
+                                    </li>
+                                    <li>
+                                        <a href="#Angular8" class="link-dark" >Angular 8</a>
+                                    </li>
+                                    <li>
+                                        <a href="#Angular9" class="link-dark" >Angular 9</a>
+                                    </li>
+                                    <li>
+                                        <a href="#Angular10" class="link-dark" >Angular 10</a>
+                                    </li>
+                                    <li>
+                                        <a href="#Angular11" class="link-dark" >Angular 11</a>
+                                    </li>
+                                    <li>
+                                        <a href="#Angular12" class="link-dark" >Angular 12</a>
+                                    </li>
+                                    <li>
+                                        <a href="#Angular13" class="link-dark" >Angular 13</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#ventajasydesventajasdeangular" class="link-dark" >Las ventajas y desventajas de Angular</a>
+                                <ul>
+                                    <li>
+                                        <a href="#ventajas" class="link-dark" >Ventajas</a>
+                                    </li>
+                                    <li>
+                                        <a href="#deventajas" class="link-dark" >Desventajas</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <a href="#Bibliografia" class="link-dark" >Bibliografia de esta pagina</a>
+                    </form>
+                </div>
+                <div class="colores col-md-8 col-lg-9">
+                    <div class="colores">
+                        <div id="comienzodelapagina"></div><h1 class="centrado"><strong>Guia sobre Angular</strong></h1> 
+                        <hr color="black" size="3" id="hrpr">
+                        <div id="queesangular"></div><h3><strong>¿Qué es Angular?</strong></h3>
+
+                        <p>El framework Angular se rediseñó por completo en la versión 2.0, y pasó de llamarse AngularJS a 
+                            Angular. Para no dejar colgados a los desarrolladores de AngularJS, Google sigue dando soporte 
+                            y mantenimiento a AngularJS. En la actualidad, AngularJS se encuentra en la versión 1.6.4, y 
+                            Angular en la versión 4.0.<a href="#1" class="link-dark" >[1]</a> </p>
+
+                        <div id="historiaangular"></div><h3><strong>Historia de Angular</strong></h3>
+
+                        <p>El concepto de las single-page applications (SPA) empezó a debatirse en 2003, pero no fue hasta 
+                            2005 que se utilizó el término por primera vez. Como vemos, se trata de un tipo de aplicación 
+                            relativamente nueva, sin embargo, su uso se está extendiendo rápidamente y a día de hoy ya detectamos 
+                            su presencia en aplicaciones tan conocidas como Gmail, Outlook, Facebook y Twitter. <a href="#1" class="link-dark" >[1]</a> </p>
+
+                        <p>El auge de este tipo de aplicaciones se debe en parte a las ventajas que aportan respecto a otras soluciones, 
+                            pero, sobre todo, a la gran inversión que están haciendo grandes empresas tecnológicas para desarrollar 
+                            frameworks que permitan su desarrollo. Este es el caso de Google con el framework Angular, o Facebook con 
+                            el framework React.js.</p>
+
+                        <p>AngularJS fue desarrollado en 2009 por Miško Hevery y Adams Abrons. Originalmente era el software detrás de 
+                            un servicio de almacenamiento online de archivos JSON, pero, poco tiempo después, se abandonó el proyecto y 
+                            se liberó AngularJS como una biblioteca de código abierto. Adams Abrons dejó el proyecto, pero Miško Hevery, 
+                            como empleado de Google, continuó el desarrollo y mantenimiento del framework.<a href="#2" class="link-dark" >[2]</a> </p>
+
+                        <div id="versionesangular"></div><h3><strong>Versiones de Angular JS</strong></h3>
+
+                        <div id="AngularJS1x"></div><h4><strong>Angular JS 1.X</strong></h4>
+
+                        <p>Fue lanzado inicialmente en octubre de 2010 (hace 7 años).</p>
+
+                        <p>Su objetivo es simplificar el desarrollo y las pruebas de aplicaciones al proporcionar un marco para las 
+                            arquitecturas Model View Control (MVC) y Model View Model (MVVM) para los clientes, así como los componentes 
+                            que se usan comúnmente en las aplicaciones. Internet.</p>
+
+                        <div id="Angular2"></div><h4><strong>Angular 2</strong></h4>
+
+                        <p>Fue lanzado en septiembre de 2016.</p>
+
+                        <p>Angular 1.x no está diseñado teniendo en cuenta la compatibilidad móvil, mientras que Angular 2 está orientado a dispositivos móviles.<a href="#3" class="link-dark" >[3]</a> </p>
+
+                        <div id="Angular3"></div><h4><strong>Angular 3</strong></h4>
+
+                        <p>Se omitió Angular 3.</p>
+
+                        <p>Ahora lanzar Angular como versión 3, con su ruta en la versión 4 creará confusión</p>
+
+                        <p>Para evitar esta confusión, decidieron omitir la versión 3 y lanzar la versión 4.0.0, de modo que todas las dependencias principales estén en el camino correcto.<a href="#3" class="link-dark" >[3]</a></p> 
+
+                        <div id="Angular4"></div><h4><strong>Angular 4</strong></h4>
+
+                        <p>Angular 4 se lanzó en marzo de 2017.</p>
+
+                        <p>Esta versión es retrocompatible con la versión 2.xx para la mayoría de las aplicaciones.</p>
+
+                        <p>No hay cambios de ruptura en Angular 4 desde Angular 2. Angular 4 no es una reescritura completa del ángulo 2<a href="#3" class="link-dark" >[3]</a> </p>
+
+                        <div id="Angular5"></div><h4><strong>Angular 5</strong></h4>
+
+                        <p>Angular 5 se lanzó en noviembre de 2017.</p>
+
+                        <p>Características importantes de Angular 5:</p>
+
+                        <ul>
+                            <li>Optimizador de compilación: las compilaciones de producción creadas con Angular CLI ahora aplicarán el optimizador 
+                                de compilación de forma predeterminada.L</li>
+                            <li>API de transferencia de estado universal angular y compatibilidad con DOM.</li>
+                            <li>Mejoras en la compilación</li>
+                            <li>Los canales digitales, las fechas y las monedas son internacionales</li>
+                        </ul>
+
+                        <div id="Angular6"></div><h4><strong>Angular 6</strong></h4>
+
+                        <p>Angular 6.0.0 se lanzó en mayo de 2018. Se lanzó con Angular CLI 6 y Material 6.</p>
+
+                        <p>Características Importantes Lanzadas En Angular 6, Angular CLI 6 Y Angular Material 6 Son:<a href="#3" class="link-dark" >[3]</a></p>
+
+                        <ul>
+                            <li>Se agregaron dos nuevos comandos de Angular cli: actualización, agregar.</li>
+                            <li>Elemento angular.</li>
+                            <li>Kit de desarrollo de componentes (CDK).</li>
+                            <li>Componente inicial de material angular</li>
+                            <li>Espacios de trabajo de la CLI</li>
+                            <li>Esquemas</li>
+                            <li>Soporte de biblioteca</li>
+                            <li>Proveedores de eje de vibración</li>
+                            <li>Mejorar el rendimiento de la animación</li>
+                            <li>RxJS v6.0</li>
+                        </ul>
+
+                        <div id="Angular7"></div><h4><strong>Angular 7</strong></h4>
+
+                        <p>Angular 7.0.0 se lanzó en octubre de 2018, se lanzó sincronizado con Angular CLI 7 y Angular Material 7.<a href="#4" class="link-dark" >[4]</a></p>
+
+                        <p>Características Importantes Lanzadas En Angular 7, Angular CLI 7 Y Angular Material 7 Son:</p>
+
+                        <ul>
+                            <li>Avisos de la CLI.</li>
+                            <li>Paquete de presupuestos en CLI.</li>
+                            <li>Material angular y CDK</li>
+                            <li>Desplazamiento virtual</li>
+                            <li>Arrastrar y soltar</li>
+                            <li>Soporte de proyección de contenido en elementos angulares.</li>
+                            <li>Actualizaciones de dependencia:</li>
+                            <li>Mecanografiado 3.1</li>
+                            <li>RxJS 6.3</li>
+                            <li>Se agregó soporte para Node 10</li>
+                        </ul>
+
+                        <div id="Angular8"></div><h4><strong>Angular 8</strong></h4>
+
+                        <p>Angular 8 se lanza en mayo de 2019. Lanzamiento sincronizado con Angular CLI 8 y Angular Material 8.<a href="#4" class="link-dark" >[4]</a></p>
+
+                        <ul>
+                            <li>Carga diferencial predeterminada: este es un proceso en el que el navegador elige entre JavaScript moderno o 
+                                heredado en función de sus propias capacidades.</li>
+                            <li>Importación dinámica de perfiles de ruta.</li>
+                            <li>API Builder en CLI: esta es una gran característica, con la que podemos personalizar los comandos de Angular 
+                                CLI cómo, y .construir, prueba ng, correr.</li>
+                            <li>API de espacio de trabajo en la CLI</li>
+                            <li>Soporte de personal web<a href="#4" class="link-dark" >[4]</a> </li>
+                            <li>Angular CLI 8.3.0 agregó una nueva experiencia de usuario a una aplicación inicial recién creada con ng new.</li>
+                            <li>ng desplegar más en Angular CLI 8.3.0</li>
+                        </ul>
+
+                        <div id="Angular9"></div><h4><strong>Angular 9</strong></h4>
+
+                        <p>Angular 9 se lanza en febrero de 2020. Es la versión principal sincronizada con Angular CLI 9 y Angular Material 9.<a href="#4" class="link-dark" >[4]</a></p>
+
+                        <p>Angular 9 creó el compilador Ivy más esperado.</p>
+
+                        <ul>
+                            <li><strong>Compilador Ivy:</strong> A partir de la versión 9, todas las aplicaciones se transfieren al compilador Ivy y al entorno de tiempo de 
+                                ejecución predeterminado. (En la esquina 8, está en modo suscripción). Ofrece los siguientes beneficios.
+                                <ul>
+                                    <li>Tamaño de paquete más pequeño</li>
+                                    <li>Pruebas más rápidas</li>
+                                    <li>Mejor depuración</li>
+                                    <li>Enlace de clase y estilo CSS mejorado</li>
+                                    <li>Comprobación de tipos mejorada</li>
+                                    <li>Errores de compilación mejorados</li>
+                                    <li>Tiempos de compilación mejorados, habilitando AOT de forma predeterminada</li>
+                                    <li>Internacionalización mejorada</li>
+                                </ul>
+                            </li>
+                            <li>Nuevas opciones de activos en Decorator. Además de las opciones y módulos originales anteriores, 
+                                tienes dos opciones más. proporcionada en @Inyectable
+                                <ul>
+                                    <li><strong>plataforma:</strong> Especificar hace que el servicio esté disponible en un inyector de plataforma 
+                                        único especial que es compartido por todas las aplicaciones en la página. proporcionado en: ´plataforma´.<a href="#4" class="link-dark" >[4]</a> </li>
+                                    <li><strong>ningún:</strong> proporciona una instancia única en cada módulo (incluidos los módulos perezosos) que inyecta el token.</li>
+                                </ul>
+                            </li>
+                            <li>Nuevo componente de material angular
+                                <ul>
+                                    <li>Componente del reproductor de Youtube</li>
+                                    <li>Componente de mapas de Google</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div id="Angular10"></div><h4><strong>Angular 10</strong></h4>
+
+                        <p>Angular 10 se lanzó en junio de 2020. Esta es una versión más pequeña en comparación con los otros lanzamientos 
+                            principales debido al lapso de solo cuatro meses desde el lanzamiento principal anterior v9.<a href="#5" class="link-dark" >[5]</a></p>
+
+                        <p>Es la versión principal sincronizada con Angular CLI 10 y Angular Material 10.</p>
+
+                        <p>Características Importantes Lanzadas En Angular 10 Son:</p>
+                        <ul>
+                            <li>Nuevo componente de material angular
+                                <ul>
+                                    <li>Selector de rango de fechas: consulte este blog para saber cómo usar el selector de rango de datos de material angular.</li>
+                                </ul>
+                            </li>
+                            <li>Tenga en cuenta al importar CommonJS: al usar dependencias empaquetadas con CommonJS, esto puede resultar 
+                                en aplicaciones más grandes y más lentas. A partir de la versión 10, le avisamos cuando su versión incluye uno de estos paquetes.</li>
+                            <li>Configuraciones más estrictas opcionales.</li>
+                            <li>Mecanografiado 3.9.</li>
+                        </ul>
+
+                        <div id="Angular11"></div><h4><strong>Angular 11</strong></h4>
+
+                        <p>Angular 11 se lanzó en noviembre de 2020. Esta versión se lanzó con algunas correcciones de errores populares y 
+                            algunas funciones interesantes.</p>
+
+                        <p>Características importantes lanzadas en Angular 11 son:</p>
+
+                        <ul>
+                            <li>Inyección automática de fuentes: durante la compilación, Angular CLI descarga las fuentes incrustadas utilizadas 
+                                y asociadas en la aplicación. Lo que hará que la aplicación sea más rápida.<a href="#5" class="link-dark" >[5]</a> </li>
+                            <li>Creación y servicio mejorados Informes y registro</li>
+                            <li>Vista previa actualizada del servicio de idiomas basada en Ivy.</li>
+                        </ul>
+
+                        <div id="Angular12"></div><h4><strong>Angular 12</strong></h4>
+
+                        <p>Angular 12 se lanzó en mayo de 2021. Esta versión se lanzó con excelentes funciones, y la mejor de ellas es la compatibilidad adicional con Tailwind CSS.<a href="#5" class="link-dark" >[5]</a></p>
+
+                        <p>Las características importantes lanzadas en Angular 12 son:</p>
+
+                        <ul>
+                            <li>Pasar contexto a interceptores HTTP: Evita el accesos para pasar metadatos a interceptores HTTP.</li>
+                            <li>Ahora es compatible con Sass en línea en la propiedad Styles del decorador @Component</li>
+                            <li>Se agregó compatibilidad con Tailwind CSS: ahora solo necesita instalar el paquete tailwindcss y agregar tailwind.config.js para usar Tailwind CSS.</li>
+                        </ul>
+
+                        <div id="Angular13"></div><h4><strong>Angular 13</strong></h4>
+
+                        <p>Angular 13 se lanzó en noviembre de 2021. Angular continúa evolucionando con Ivy.</p>
+
+                        <p>Las características importantes lanzadas en Angular 13 son:</p>
+
+                        <ul>
+                            <li>Ahora es fácil crear componentes dinámicos.</li>
+                            <li>La nueva API elimina la necesidad de incluir ComponentFactoryResolver en el constructor.</li>
+                            <li>Ivy permite crear instancias de componentes con ViewContainerRef.createComponent sin crear una fábrica asociada.</li>
+                        </ul>
+
+                        <p>Desde entonces se han ido lanzando muchas versiones de AngularJS, pero, sobre todas ellas, cabe destacar la salida de la 
+                            versión 2.0 por los siguientes motivos:</p>
+
+                        <p>Se rediseñó por completo todo el framework (nueva arquitectura basada en componentes, etc.).</p>
+
+                        <p>Se introdujo el uso de TypeScript de Microsoft (superconjunto de JavaScript) como lenguaje de programación.</p>
+
+                        <p>Se cambió el nombre del framework. Pasó de llamarse AngularJS a Angular.</p>
+
+                        <p>Los desarrolladores anunciaron que darían soporte y mantenimiento tanto para AngularJS (versiones 1.X.Y) como para 
+                            Angular (versiones superiores), pero que una y otra seguirán ciclos de vida independientes. Actualmente, AngularJS 
+                            se encuentra en la versión 1.6.4, mientras que Angular se halla en la versión 4.0.</p>
+
+                        <p>En un primer momento, la salida de Angular tuvo muchas críticas por parte de los desarrolladores que usaban AngularJS, 
+                            ya que veían como la actualización de sus desarrollos al nuevo framework requería un trabajo muy laborioso de migración. 
+                            Por otra parte, también veían que su experiencia y conocimiento no les servía de mucho con los nuevos conceptos de Angular.<a href="#5" class="link-dark" >[5]</a></p>
+
+
+                        <div id="ventajasydesventajasdeangular"></div><h3><strong>Las ventajas y desventajas de Angular</strong></h3>
+
+                        <div id="ventajas"></div><h4><strong>Ventajas.-<a href="#6" class="link-dark" >[6]</a></strong></h4>
+                        <ul>
+                            <li><strong>Implementación de la arquitectura MVC:</strong> La arquitectura Modelo-Vista-Controlador, no solo otorga valor al marco al 
+                                crear una aplicación del lado del cliente, sino que también sienta las bases para otras características como el 
+                                enlace de datos y los alcances.</li>
+
+                            <li><strong>Arquitectura de diseño mejorada:</strong> Algunas de las grandes aplicaciones web contienen muchos componentes. Angular 
+                                simplifica la forma de administrar estos componentes incluso si un nuevo programador se une al proyecto después 
+                                de que el proceso de desarrollo ya haya comenzado.</li>
+
+                            <li><strong>Módulos:</strong> Un módulo es un mecanismo que agrupa directivas, componentes, tuberías y servicios que se relacionan, 
+                                de tal forma que se puede combinar con otros módulos para crear una aplicación La aplicación basada en Angular 
+                                puede considerarse como un rompecabezas donde cada módulo se necesario para poder ver la imágen completa.</li>
+
+                            <li><strong>Directivas personalizadas:</strong> Mejoran las directivas personalizadas HTML funcionalidad y son adecuados para 
+                                aplicaciones dinámicas del lado del cliente . Todos comienzan con el prefijo ng para que HTML pueda 
+                                identificarlos. Algunos de estos son:
+                                <ul>
+                                    <li><strong>NgModel:</strong> proporciona enlace de datos bidireccional a elementos de formulario HTML.</li>
+                                    <li><strong>NgClass:</strong> elimina y agrega un conjunto de clases.</li>
+                                    <li><strong>NgStyle:</strong> agrega y elimina un conjunto de estilos HTML.</li>
+                                </ul>
+                            </li>
+                            <li><strong>TypeScript:</strong> mejores herramientas, código más limpio y mayor escalabilidad</li>
+                        </ul>
+
+                        <p>Angular está escrito usando TypeScript, que es un superconjunto para JavaScript. Cumple plenamente con JavaScript 
+                            y también ayuda a detectar y eliminar errores comunes durante la codificación. Si bien los proyectos pequeños de 
+                            JavaScript no requieren tal mejora, las aplicaciones a escala empresarial necesitan desarrolladores para hacer su 
+                            código más limpio y verificar la calidad con más frecuencia.<a href="#6" class="link-dark" >[6]</a></p>
+
+                        <div id="deventajas"></div><h4><strong>Desventajas</strong></h4>
+
+                        <ul>
+                            <li><strong>Opciones de SEO limitadas:</strong> 
+                                Un gran inconveniente de usar Angular son las opciones limitadas de SEO y la poca accesibilidad para los rastreadores de motores de búsqueda.
+                            </li>
+                            <li><strong>Angular es detallado y complejo<a href="#6" class="link-dark" >[6]</a></strong> 
+                                Una queja frecuente que escucharía de los desarrolladores de Angular es la verbosidad del instrumento. Y este problema no ha cambiado mucho desde AngularJS.
+                            </li>
+                            <li>
+                                <strong>Curva de aprendizaje muy elevada<a href="#6" class="link-dark" >[6]</a></strong>  
+                                Si incorporas a nuevos desarrolladores que están familiarizados con JavaScript para usar el nuevo Angular, les resultará difícil en comparación con o incorporación de Vue. Esto se debe a que la variedad de temas y aspectos a cubrir es bastante grande.
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="Bibliografia"></div>
+                    <hr class="border-primary border-3 opacity-75"><!-- linia divisora del contenido -->
+                    <h1 class="centrado"><strong>Bibliografia de esta pagina</strong></h1>
+                    <br>
+                    <div id="11">
+                        <div id="1"></div><p>[1] 	“Estudio Del Framework Angularjs Y Su,” 2016.</p>
+                        <div id="2"></div><p>[2] 	J. A. Gómez Gutiérrez and M. Boada Oriols, El gran libro de Angular, vol. 1. 2018. [Online]. Available: https://www.academia.edu/42671049/El_gran_libro_de_Angular_compressed%0Ahttp://www.alfaomega.com.mx</p>
+                        <div id="3"></div><p>[3] 	S. Kotwicki, “Sold to:,” Finance, pp. 98052–98052, 2010.</p>
+                        <div id="4"></div><p>[4]	 “AngularJS”.</p>
+                        <div id="5"></div><p>[5]	  DesarrolladorSoft, “Learn Algoritmo,” 2017. https://es.ichlese.at/what-are-advantages</p>
+                        <div id="6"></div><p>[6]	  NgDevelop, “NgDevelop,” 2022. https://www.ngdevelop.tech/angular/history/</p>
+                        <br>
+                        <a href="#comienzodelapagina" class="link-dark" ><img src="../imagenes/flecha-correcta.png" class="rounded mx-auto d-block" alt="..."></a>
+                        <br>
+                    </div>
+                </div>
+        </main>
+    </body>
+</html>

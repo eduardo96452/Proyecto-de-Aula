@@ -4,14 +4,88 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html lang="es">
     <head>
         <title>Guia de PostgreSQL</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"><!-- comment -->
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script><!-- comment -->
+        <style>
+            main{     
+                margin: 1.5%;
+                font-family: veldana;
+            }
+
+            .centrado{
+                text-align:center;
+            } 
+            .colores{
+                padding: 4%;
+                background-color: #fdecda;
+            } 
+
+            .cuadro{
+                margin:  5%;
+            }
+        </style>
     </head>
     <body>
-        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Mundo HMTL</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Pagina Principal</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Guias Corte 1                               
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item " href="guiaHTML.html">Guias de HTML</a></li>
+                                <li><a class="dropdown-item" href="guiaCSS.html">Guias de CSS</a></li>
+                                <li><a class="dropdown-item" href="guiaJavaScript.html">Guias de JavaScript</a></li>
+                                <li><a class="dropdown-item " href="pagina_java.html">Guias de JAVA</a></li>
+                                <li><a class="dropdown-item " href="Guia_de_JoSPq.html">Guias de JSP</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Guia Corte 2                               
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item " href="GuiaJSF.html">Guias de JSF</a></li>
+                                <li><a class="dropdown-item " href="PostgreSQL.html">Guias de PostgreSQL</a></li>
+                                <li><a class="dropdown-item " href="Laravel.html">Guias de Laravel</a></li>
+                                <li><a class="dropdown-item " href="Django.html">Guias de Django</a></li>
+                                <li><a class="dropdown-item " href="Spring.html">Guias de Spring Framework</a></li>
+                                <li><a class="dropdown-item " href="Angular.html">Guias de Angular</a></li>                                
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Accesibilidad.html">Guia de Inclusividad</a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link nav-link active" href="Acercade.html">Acerca de...</a>
+                        </li>
+
+                    </ul>
+                    <!--<form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>-->
+                </div>
+            </div>
+        </nav>
         PostgreSQL es un potente sistema de base de datos relacional de objetos de código abierto que utiliza y amplía el lenguaje SQL combinado con muchas características que almacenan y escalan de forma segura las cargas de trabajo de datos más complicadas. Los orígenes de PostgreSQL se remontan a 1986 como parte del proyecto POSTGRES de la Universidad de California en Berkeley y cuenta con más de 30 años de desarrollo activo en la plataforma central.
 
 A continuación, se muestra una lista exhaustiva de varias funciones que se encuentran en PostgreSQL, y se agregan más en cada versión importante:

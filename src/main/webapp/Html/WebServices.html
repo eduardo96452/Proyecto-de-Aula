@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es">
+    <head>
+        <title>Guias de Web Service</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"><!-- comment -->
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script><!-- comment -->
+        <style>
+            main{     
+                margin: 1.5%;
+                font-family: veldana;
+            }
+
+            .centrado{
+                text-align:center;
+            } 
+            .colores{
+                padding: 4%;
+                background-color: #fdecda;
+            } 
+
+            .cuadro{
+                margin:  5%;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Mundo HMTL</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Pagina Principal</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Guias Corte 1                               
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item " href="guiaHTML.html">Guias de HTML</a></li>
+                                <li><a class="dropdown-item" href="guiaCSS.html">Guias de CSS</a></li>
+                                <li><a class="dropdown-item" href="guiaJavaScript.html">Guias de JavaScript</a></li>
+                                <li><a class="dropdown-item " href="pagina_java.html">Guias de JAVA</a></li>
+                                <li><a class="dropdown-item " href="Guia_de_JoSPq.html">Guias de JSP</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Guia Corte 2                               
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item " href="GuiaJSF.html">Guias de JSF</a></li>
+                                <li><a class="dropdown-item " href="PostgreSQL.html">Guias de PostgreSQL</a></li>
+                                <li><a class="dropdown-item " href="Laravel.html">Guias de Laravel</a></li>
+                                <li><a class="dropdown-item " href="Django.html">Guias de Django</a></li>
+                                <li><a class="dropdown-item " href="Spring.html">Guias de Spring Framework</a></li>
+                                <li><a class="dropdown-item " href="Angular.html">Guias de Angular</a></li>   
+                                <li><a class="dropdown-item " href="Html/WebServices.html">Guias de Web Services SOAP RESTful</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Accesibilidad.html">Guia de Inclusividad</a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link nav-link active" href="Acercade.html">Acerca de...</a>
+                        </li>
+
+                    </ul>
+                    <!--<form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>-->
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class=" p-2 row g-4">
+                <div class="col-md-4 col-lg-3 order-md-last">
+                    <form class="card p-2 colores">
+                        <h4 class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-primary">Contenido de la pagina</span>                        
+                        </h4>
+                    </form>
+                    <br>
+                    <form class="card p-2 colores">
+                        <ul>
+                            <li>
+                                <a href="#servicioweb" class="link-dark" >¿Qué son los servicios web?</a>
+                            </li>
+                            <li>
+                                <a href="#caracteristicasservicioweb" class="link-dark" >Características de los Servicios Web</a>
+                            </li>
+                            <li>
+                                <a href="#arquitecturaserviciosweb" class="link-dark" >Arquitectura de los Servicios Web</a>
+
+                            </li>
+                            <li>
+                                <a class="link-dark" >Las ventajas y desventajas de los Servicio Web</a>
+                                <ul>
+                                    <li>
+                                        <a href="#ventajasservicioweb" class="link-dark" >Ventajas</a>
+                                    </li>
+                                    <li>
+                                        <a href="#deventajasserviciosweb" class="link-dark" >Desventajas</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="link-dark" >Servicio Web SOAP</a>
+                            </li>
+                            <li>
+                                <a href="#servicioSOAP" class="link-dark" >¿Qué es SOAP?</a>
+                            </li>
+                            <li>
+                                <a href="#estructurasoap" class="link-dark" >La estructura SOAP</a>
+                            </li>
+                            <li>
+                                <a href="#caracteristicassoap" class="link-dark" >Características</a>
+                            </li>
+                            <li>
+                                <a class="link-dark" >Las ventajas y desventajas de los Servicio Web SOAP</a>
+                                <ul>
+                                    <li>
+                                        <a href="#ventajasserviciowebSOAP" class="link-dark" >Ventajas</a>
+                                    </li>
+                                    <li>
+                                        <a href="#deventajasservicioswebSOAP" class="link-dark" >Desventajas</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#servicioswebRESTful" class="link-dark" >Servicio Web RESTful</a>
+                            </li>
+                            <li>
+                                <a href="#caracteristicasrestful" class="link-dark" >Características</a>
+                            </li>
+                            <li>
+                                <a class="link-dark" >Las ventajas y desventajas de los Servicio Web RESTful</a>
+                                <ul>
+                                    <li>
+                                        <a href="#ventajasserviciowebrestful" class="link-dark" >Ventajas</a>
+                                    </li>
+                                    <li>
+                                        <a href="#deventajasservicioswebrestful" class="link-dark" >Desventajas</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="#Bibliografia" class="link-dark" >Bibliografia de esta pagina</a>
+                    </form>
+                </div>
+                <div class="colores col-md-8 col-lg-9">
+                    <div class="colores">
+                        <div id="comienzodelapagina"></div><h1 class="centrado"><strong>Guia sobre Web Services, SOAP, RESful</strong></h1> 
+                        <hr color="black" size="3" id="hrpr">
+                        <div id="servicioweb"></div><h3><strong>¿Qué son los servicios web?</strong></h3>
+
+                        <p>Lo primero que debe de estar claro es que cuál es la definición de servicio web. 
+                        </p>
+                        <p>Los servicios web son aplicaciones autónomas, autodescriptivas y modulares que se pueden publicar, 
+                            encontrar e invocar en la web y que tienen mecanismos estándar para comunicarse con otros tipos 
+                            de software en la red. "La idea es que cualquier cosa puede ser un servicio web". 
+                            "Un servicio web es esencialmente una capa de infraestructura que existe entre el modelo de 
+                            componentes". Desde una perspectiva empresarial, los servicios web permiten a las organizaciones 
+                            integrar sin problemas diferentes aplicaciones.
+                            <a href="#1" class="link-dark" >[1]</a> </p>
+                        <p>Eficaz sin tener que preocuparse por cómo están construidos, dónde viven, qué sistema operativo 
+                            están ejecutando o cómo acceden a ellos. Por esta razón, los servicios web se consideran integrados 
+                            porque permiten crear una interfaz para acceder a las aplicaciones, independientemente de sus 
+                            características de implementación.
+                            <a href="#1" class="link-dark" >[1]</a> </p>
+                        <p>Antes de hacer eso la integración requiere la creación de módulos de software especializados, pero con 
+                            los servicios web actuales, los marcos basados en XML se utilizan como punto de partida. 
+                            <a href="#1" class="link-dark" >[1]</a></p>
+                        <p>Hay cuatro estándares para un servicio web simple: XML, SOAP, UDDI y WSDL, los cuales al trabajar juntos 
+                            proporcionan la funcionalidad básica de "solicitud/respuesta". Se puede entregar usando servicios web simples.
+                            <a href="#1" class="link-dark" >[1]</a></p>
+                        <p>Proporcionar de manera efectiva al sitio web información como noticias, estadísticas y pronósticos del tiempo, 
+                            mientras los servicios web complejos pueden involucrar transacciones más complejas entre múltiples partes, 
+                            incluidos socios comerciales o proveedores, y se basan en estándares de comercio electrónico como ebXML. 
+                            Si los comerciantes necesitan reabastecer sus tiendas, pueden solicitar un presupuesto en línea mediante un servicio web. 
+                            A su vez, los proveedores pueden responder automáticamente a las solicitudes y enviar sus ofertas a la tienda en línea y la 
+                            aplicación que inició la solicitud. 
+                            <a href="#1" class="link-dark" >[1]</a></p>
+                        <p>Los informes pueden seleccionar automáticamente la oferta con la mejor relación costo-beneficio. 
+                            <a href="#1" class="link-dark" >[1]</a></p>
+
+                        <div id="caracteristicasservicioweb"></div><h3><strong>Características de los Servicios Web</strong></h3>
+
+                        <p> Las características de los servicios Web son:
+                            <a href="#2" class="link-dark" >[2]</a> </p>
+
+                        <p>El servicio debe estar disponible en la web. Para esto necesitas usar protocolos de transporte estándar como HTTP y 
+                            mensajes de código como un lenguaje estándar que cualquier cliente que quiera utilizar el servicio puede conocer.
+                        </p>
+
+                        <p>El servicio debe incluir una descripción del mismo. Así uno la aplicación podrá averiguar cuál es la función del 
+                            servicio web y para qué sirve. Su interfaz para que cualquiera pueda usarla automáticamente aplicación sin intervención 
+                            del usuario. </p>
+
+                        <p>Debe ser capaz de localizar. Tenemos que tener algún mecanismo. Encuentre un servicio web que realice una función específica. 
+                            Es por eso queremos dejar que la aplicación encuentre los servicios que necesita. Automáticamente sin el conocimiento previo 
+                            del usuario.</p>
+
+                        <div id="arquitecturaserviciosweb"></div><h3><strong>Arquitectura de los Servicios Web</strong></h3>
+                        <p> Las aplicaciones web de hoy ya no son suficientes. El modelo de comercio electrónico actual no 
+                            facilita la integración de las aplicaciones de Internet con el resto del software empresarial. 
+                            Si una empresa quiere aprovechar al máximo Internet, su sitio web debe seguir evolucionando. 
+                            Este es el trasfondo de la aparición de los servicios web. </p>
+
+                        <p> Como hemos visto, un servicio web es un componente de software de una aplicación empresarial que 
+                            permite a los usuarios compartir datos con otros programas modulares a través de Internet. </p>
+
+                        <p> Son aplicaciones independientes de la plataforma que se pueden publicar, localizar e invocar fácilmente 
+                            mediante protocolos web estándar como XML, SOAP, UDDI o WSDL. El objetivo final es crear un directorio de 
+                            servicios web en línea fácil de encontrar y altamente confiable.
+                            <a href="#3" class="link-dark" >[3]</a></p>
+
+                        <div id="ventajasservicioweb"></div><h4><strong>Ventajas de los Servicios Web</strong></h4>
+                        <ul>
+                            <li>  Aseguran la interoperabilidad de las aplicaciones de software independientemente
+                                de sus capacidades o plataforma de instalación. 
+                                <a href="#4" class="link-dark" >[4]</a></li>
+                            <li>  Los servicios web promueven estándares y protocolos basados en texto 
+                                que facilitan el acceso a su contenido y la comprensión de su funcionamiento. 
+                                <a href="#4" class="link-dark" >[4]</a></li>
+                            <li>  Facilitan la unión de diferentes empresas de diferentes geografías 
+                                para brindar servicios integrados.
+                                <a href="#4" class="link-dark" >[4]</a></li>
+                        </ul>
+
+                        <div id="deventajasserviciosweb"></div><h4><strong>Desventajas de los Servicios Web</strong></h4>
+                        <ul>
+                            <li> No son tan avanzados como los estándares abiertos para computación distribuida como 
+                                CORBA (Common Object Request Broker Architecture) cuando se trata de realizar transacciones.
+                                <a href="#4" class="link-dark" >[4]</a></li>
+                            <li> Compatible con otros modelos de computación distribuida como RMI (Invocación de Método Remoto), 
+                                CORBA o DCOM (Modelo de Objeto de Componentes Distribuidos). Esta es una de las desventajas de usar el formato de texto. 
+                                La brevedad y la eficiencia de procesamiento tampoco son objetivos de XML.
+                                <a href="#4" class="link-dark" >[4]</a></li>
+                            <li> Al depender de HTTP, pueden evitar las medidas de seguridad basadas en cortafuegos cuyas reglas intentan 
+                                bloquear o inspeccionar la comunicación entre programas a ambos lados de la barrera.
+                                <a href="#4" class="link-dark" >[4]</a></li>
+                        </ul>
+
+                        <div></div><h3><strong>Servicios web-SOAP</strong></h3>
+
+                        <div id="servicioSOAP"></div><h4><strong>¿Qué es SOAP?</strong></h4>
+                        <p> SOAP pretende ser un nuevo protocolo para entornos distribuidos y descentralizados que utiliza 
+                            las capacidades de Internet y XML para transferir información escrita entre nodos. SOAP originalmente
+                            significaba Protocolo simple de acceso a objetos, pero en la versión 1.2 se cambió a solo SOAP porque 
+                            no usa objetos directamente. SOAP es esencialmente un paradigma de intercambio de mensajes sin estado
+                            y unidireccional entre nodos SOAP (desde un remitente SOAP hasta un receptor SOAP). 
+                            <a href="#5" class="link-dark" >[5]</a></p>
+                        <p>SOAP se puede utilizar para crear interacciones más complejas, como solicitud/respuesta, 
+                            solicitud/respuesta múltiple, etc., al combinar intercambios unidireccionales con la funcionalidad 
+                            proporcionada por el protocolo de transporte y/o la información de la aplicación subyacente. 
+                            (Don Box, 2000). 
+                            <a href="#5" class="link-dark" >[5]</a></p>
+                        <p>SOAP es un protocolo liviano que es independiente de la plataforma, el transporte y el sistema 
+                            operativo, ya que se basa en marcos probados con el tiempo, como el protocolo HTTP y el marcado 
+                            de texto XML. SOAP es una recomendación del W3C, lo que significa que es un informe técnico que es
+                            el resultado final de un amplio consenso, tanto dentro como fuera del W3C, sobre una tecnología o 
+                            política en particular. Hay dos tipos de solicitudes SOAP. 
+                            <a href="#5" class="link-dark" >[5]</a></p>
+                        <p>La primera son las llamadas a procedimientos remotos (RPC) ha pedido, similares a otras 
+                            arquitecturas distribuidas. Esto suele ser síncrono; el cliente envía un mensaje y espera recibir
+                            una respuesta o un mensaje de error del servidor. El segundo tipo de solicitud SOAP es una 
+                            solicitud de documento. En este caso, el cliente y el servidor envían/envían un documento XML 
+                            completo en un mensaje SOAP.
+                            <a href="#5" class="link-dark" >[5]</a></p>
+
+                        <div id="estructurasoap"></div><h4><strong>La estructura de SOAP </strong></h4>
+
+                        <p> SOAP se basa en el metalenguaje XML. Esta es también una recomendación del W3C y es el conjunto
+                            de elementos de información necesarios para generar un documento XML bien formado (es decir, 
+                            conforme a la estructura recomendada). SOAP absorbe su propia estructura de mensajes y, por lo 
+                            tanto, se ajusta principalmente a los documentos XML.
+                            <a href="#6" class="link-dark" >[6]</a></p>
+                        <p> En la mayoría de los casos, SOAP también está integrado con HTTP. El transporte es realizado 
+                            por el protocolo e integrado en su estructura. Un mensaje HTTP con una solicitud SOAP tiene la 
+                            siguiente forma:</p>
+                        <div class="blanco">
+                            <pre>
+
+                            POST /example HTTP/1.1
+                            Host: example.org
+                            Content-Type: text/xml; charset=utf-8
+                            &lt?xml version="1.0"? &gt
+                            &ltSOAP-ENV:Envelope
+                            xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+                            SOAP-ENV:encodingStyle="http://www.w3.org/2001/12/soap-encoding"&gt
+                                    &lt SOAP-ENV:Header&gt
+                                    &lt /SOAP-ENV:Header&gt
+                                    &lt SOAP-ENV:Body&gt
+                                    &lt /SOAP-ENV:Body&gt
+                                    &lt /SOAP_ENV:Envelope&gt
+                            </pre>
+                        </div>
+                        <p> En este ejemplo, la solicitud comienza con encabezados HTTP. El siguiente es el llamado sobre SOAP, 
+                            que envuelve el contenido del mensaje real en un sobre. Los elementos principales de SOAP son el 
+                            encabezado y el cuerpo.
+                            <a href="#6" class="link-dark" >[6]</a></p>
+
+                        <div id="caracteristicassoap"></div><h4><strong>Características </strong></h4>
+                        <ul>
+                            <li> Las operaciones son definidas como puertos WSDL. 
+                                <a href="#7" class="link-dark" >[7]</a></li>
+                            <li> Dirección única para todas las operaciones. </li>
+                            <li> Múltiples instancias del proceso comparten la misma operación. </li>
+                            <li> Componentes fuertemente acoplados.</li>
+                        </ul>
+                        <div id="ventajasserviciowebSOAP"></div><h4><strong>Ventajas </strong></h4>
+                        <ul>
+                            <li> Fácil (generalmente) de utilizar. 
+                                <a href="#7" class="link-dark" >[7]</a></li>
+                            <li> La depuración es posible. </li>
+                            <li> Las operaciones complejas pueden ser escondidas detrás de una fachada. </li>
+                            <li> Envolver API’s existentes es sencillo. Incrementa la privacidad. </li>
+                            <li> Herramientas de desarrollo.</li>
+                        </ul>
+                        <div id="deventajasservicioswebSOAP"></div><h4><strong>Desventajas </strong></h4>
+                        <ul>
+                            <li> Los clientes necesitan saber las operaciones y su semántica antes de su utilización.  
+                                <a href="#7" class="link-dark" >[7]</a></li>
+                            <li> Los clientes necesitan puertos dedicados para diferentes tipos de notificaciones.  </li>
+                            <li> Las instancias del proceso son creadas implícitamente.</li>
+                        </ul>
+
+                        <div id="servicioswebRESTful"></div><h4><strong>Servicios web-RESTful </strong></h4>
+                        <p> Estos dos conceptos clave son necesarios porque los servicios web RESTful son servicios
+                            web basados en la arquitectura REST. Los servicios web RESTful están basados en 
+                            recursos. Un recurso es una entidad que se almacena principalmente en el servidor y un 
+                            cliente solicita el recurso a través de servicios web RESTful.
+                            <a href="#8" class="link-dark" >[8]</a></p>
+                        <p>El uso de servicios web RESTful mejora la portabilidad entre cualquier tipo de plataforma. 
+                            Esto permite a los desarrolladores ampliar fácilmente las aplicaciones. La principal ventaja
+                            es la separación entre cliente y servidor, ya que no importa de qué lenguaje o tipo de servidor 
+                            provenga (Python, Java, Node.js); todo lo que se requiere es generar cada solicitud 
+                            correctamente.
+                            <a href="#8" class="link-dark" >[8]</a></p>
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th> Servicios Web RESTful</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Operacion</th>
+                                    <th scope="col">Metodo o HTTP</th>
+                                    <th scope="col">Uri</th>
+                                    <th scope="col">Parametros</th>
+                                    <th scope="col">Resultados</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Listar</th>
+                                    <td>GET</td>
+                                    <td>/{RECURSO}</td>
+                                    <td>NO APLICA</td>
+                                    <td>LISTAR TIPO DE RECURSO</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Crear</th>
+                                    <td>POST</td>
+                                    <td>/{RECURSO}</td>
+                                    <td>DENTRO DEL CUERPO</td>
+                                    <td>SE CREA UN NUEVO RECURSO</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Leer</th>
+                                    <td>GET</td>
+                                    <td>/{RECURSO}/{RECURSO_ID}</td>
+                                    <td>NO APLICA</td>
+                                    <td>RECURSO EN FUNCION(ID)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Actualizar</th>
+                                    <td>PUT/PATCH</td>
+                                    <td>/{RECURSO}/{RECURSO_ID}</td>
+                                    <td>SE PASAN USANDO UNA CADENA</td>
+                                    <td>SE ACTUALIZA/REEMPLAZA EL RECURSO</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Borrar</th>
+                                    <td>DELETE</td>
+                                    <td>/{RECURSO}/{RECURSO_ID}</td>
+                                    <td>NO APLICA</td>
+                                    <td>SE ELIMINA EL RECURSO EN FUNCION(ID)</td>
+                                </tr>
+                            </tbody>
+                            <br>
+                        </table>
+                        <div id="caracteristicasrestful"></div><h4><strong>Características </strong></h4>
+                        <ul>
+                            <li> Tiene cinco operaciones típicas: listar, crear, leer, actualizar y borrar.
+                                <a href="#8" class="link-dark" >[8]</a></li>
+                            <li> Cada operación requiere de dos cosas: El método URI y HTTP.</li>
+                            <li> El URI es un sustantivo que contiene el nombre del recurso.</li>
+                            <li> El método HTTP es un verbo.</li>
+                        </ul>
+                        <div id="ventajasserviciowebrestful"></div><h4><strong>Ventajas </strong></h4>
+                        <ul>
+                            <li> Separacion cliente/servidor.
+                                <a href="#9" class="link-dark" >[9]</a></li>
+                            <li> Independencias de tecnologías/lenguajes.</li>
+                            <li> Fiabilidad, escalabilidad, flexibilidad.</li>
+                            <li> Experiencia de usuario.</li>
+                            <li> Rest requiere menos recursos del servidor.</li>
+                        </ul>
+
+                        <div id="deventajasservicioswebrestful"></div><h4><strong>Desventajas </strong></h4>
+
+                        <ul>
+                            <li> No tenemos estado en la API REST, lo que significa que debe configurar su propia
+                                infraestructura para mantener toda la aplicación. Por lo general, enviará un token 
+                                al servidor que le indicará quién es usted y qué ha hecho en su aplicación.
+                                <a href="#9" class="link-dark" >[9]</a></li>
+                            <li> Inicialmente, es posible que necesite más tiempo de desarrollo porque debe 
+                                configurar todo el sistema API. Pero en el futuro, especialmente si planea usar 
+                                API de otros sistemas, puede recuperar el tiempo extra empleado y obtener mucha
+                                velocidad, porque el núcleo (API) del nuevo sistema ya está desarrollado. De 
+                                cualquier manera, tendrá menos mantenimiento gracias a la separación de REST y 
+                                código.
+                                <a href="#9" class="link-dark" >[9]</a></li>
+                            <li> En algunos casos, puede haber más rigor en el desarrollo, especialmente porque 
+                                se trata de dos proyectos separados y su backend está basado en REST, y los 
+                                frontends pueden no estar sincronizados. Por ejemplo, encuentra en el lado del 
+                                cliente que necesita contenido nuevo de la API, y las personas responsables de 
+                                crearlo en el lado del servidor pueden desarrollarlo a un ritmo diferente y tomarse 
+                                el tiempo para desarrollarlo.
+                                <a href="#9" class="link-dark" >[9]</a></li>
+                            <li> Requiere más conocimiento y te obliga a salir de la zona de confort en la 
+                                que podríamos estar. Debe conocer no solo el idioma, la base de datos, la 
+                                biblioteca, sino también el protocolo HTTP.
+                                <a href="#9" class="link-dark" >[9]</a></li>
+                        </ul>
+
+                        
+                    </div>
+                    <div id="Bibliografia"></div>
+                    <hr class="border-primary border-3 opacity-75"><!-- linia divisora del contenido -->
+                    <h1 class="centrado"><strong>Bibliografia de esta pagina</strong></h1>
+                    <br>
+                    <div id="11">
+                        <div id="1"></div><p>[1] 	L. Arboleda, «Servicios WEB: Distribucion e Integracion,» [En línea]. 
+                            Available: https://www.icesi.edu.co/contenido/pdfs/larboled_servicios-web.pdf.</p>
+                        <div id="2"></div><p>[2] 	Departamento Ciencias de la computacion e IA ALL rights reserved, 
+                            «Servicios Web y SOA,» [En línea]. Available: http://www.jtech.ua.es/j2ee/publico/servc-web-2012-13/wholesite.pdf.</p>
+                        <div id="3"></div><p>[3] 	DOCPLAYER, «ARQUITECTURA DE SERVICIOS WEB (WS),» [En línea]. 
+                            Available: https://docplayer.es/3942649-5-arquitectura-de-servicios-web-ws.html.</p>
+                        <div id="4"></div><p>[4]	 docplayer, «Servicio Web. Estándares empleados. Ventajas de los servicios web. 
+                            Inconvenientes de los servicios Web,» [En línea]. 
+                            Available: https://docplayer.es/1577467-Servicio-web-estandares-empleados-ventajas-de-los-servicios-web-inconvenientes-de-los-servicios-web.html.</p>
+                        <div id="5"></div><p>[5]	  B. Suda, «SOAP Web Services,» [En línea]. 
+                            Available: https://suda.co.uk/publications/MSc/brian.suda.thesis.pdf.</p>
+                        <div id="6"></div><p>[6]	  Digital Guide IONOS, «SOAP | Web services y recomendación de W3C - IONOS,» 15 04 2020. [En línea]. 
+                            Available: https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/soap-simple-object-access-protocol/.</p>
+                        <div id="7"></div><p>[7] 	m. castro, d. rivero, d. castro, j. farfan, a. candido y a. vargas, «Aplicación de Servicios Web SOAP/REST para funcionalidades existentes,» 
+                            [En línea]. Available: https://42jaiio.sadio.org.ar/proceedings/simposios/Trabajos/SIE/03.pdf.</p>
+                        <div id="8"></div><p>[8] 	A. Castro, «Servicios Web: RESTful,» [En línea]. 
+                            Available: https://blog.bi-geek.com/servicios-web-restful/.</p>
+                        <div id="9"></div><p>[9] 	M. A. Alvarez, «Desarrollo Web,» 19 12 2014. [En línea]. 
+                            Available: https://desarrolloweb.com/articulos/ventajas-inconvenientes-apirest-desarrollo.html.</p>
+                        <br>
+                        <a href="#comienzodelapagina" class="link-dark" ><img src="../imagenes/flecha-correcta.png" class="rounded mx-auto d-block" alt="..."></a>
+                        <br>
+                    </div>
+                </div>
+        </main>
+    </body>
+</html>

@@ -68,7 +68,7 @@ and open the template in the editor.
                                 <li><a class="dropdown-item " href="Django.html">Guias de Django</a></li>
                                 <li><a class="dropdown-item " href="Spring.html">Guias de Spring Framework</a></li>
                                 <li><a class="dropdown-item " href="Angular.html">Guias de Angular</a></li> 
-                                <li><a class="dropdown-item " href="Html/WebServices.html">Guias de Web Services SOAP RESTful</a></li>
+                                <li><a class="dropdown-item " href="WebServices.html">Guias de Web Services SOAP RESTful</a></li>
                             </ul>
                         </li>
 
@@ -87,57 +87,141 @@ and open the template in the editor.
                 </div>
             </div>
         </nav>
-        PostgreSQL es un potente sistema de base de datos relacional de objetos de código abierto que utiliza y amplía el lenguaje SQL combinado con muchas características que almacenan y escalan de forma segura las cargas de trabajo de datos más complicadas. Los orígenes de PostgreSQL se remontan a 1986 como parte del proyecto POSTGRES de la Universidad de California en Berkeley y cuenta con más de 30 años de desarrollo activo en la plataforma central.
+        <div class=" p-2 row g-4">
+            <div class="col-md-4 col-lg-3 order-md-last">
+                <form class="card p-2 colores">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-primary">Contenido de la pagina</span>                        
+                    </h4>
+                </form>
+                <br>
+                <form class="card p-2 colores">
+                    <ul>
+                        <li>
+                            <a href="#Introduccion" class="link-dark">Introduccion</a>
+                        </li>
+                        <li>
+                            <a href="#listafunciones" class="link-dark">Funciones de PostgreSQL</a>
+                            <ul>
+                                    <li>
+                                        <a href="#Tiposdedatos" class="link-dark" >Tipos de datos</a>
+                                    </li>
+                                    <li>
+                                        <a href="#Integridad" class="link-dark" >Integridad de los datos</a>
+                                    </li>
+                                    <li>
+                                        <a href="#Concurrencia" class="link-dark" >Concurrencia, rendimiento</a>
+                                    </li>
+                                    <li>
+                                        <a href="#Confiabilidad" class="link-dark" >Confiabilidad, Recuperación de Desastres</a>
+                                    </li>
+                                    <li>
+                                        <a href="#Seguridad" class="link-dark" >Seguridad</a>
+                                    </li>
+                                    <li>
+                                        <a href="#Extensibilidad" class="link-dark" >Extensibilidad</a>
+                                    </li>
+                                    <li>
+                                        <a href="#Internacionalización" class="link-dark" >Internacionalización, Búsqueda de Texto</a>
+                                    </li>
+                                </ul>
+                        </li>
+                    </ul>
 
-A continuación, se muestra una lista exhaustiva de varias funciones que se encuentran en PostgreSQL, y se agregan más en cada versión importante:
+                    <a href="#Bibliografia" class="link-dark" >Bibliografia de esta pagina</a>
+                </form>
+            </div>
+            <div class="colores col-md-8 col-lg-9">
+                <div class="colores">
+                    <div id="comienzodelapagina"></div><h1 class="centrado"><strong>Guias de PostgreSQL</strong></h1> 
+                    <hr color="black" size="3" id="hrpr">
+                    <div id="Introduccion"></div><h3><strong>Introducción</strong></h3>
+                </div>
 
-Tipos de datos.
-Primitivas: entero, numérico, cadena, booleano.
-Estructurado: Fecha/Hora, Matriz, Rango/Multirango, UUID.
-Documento: JSON/JSONB, XML, clave-valor (Hstore).
-Geometría: punto, línea, círculo, polígono.
-Personalizaciones: Compuesto, Tipos personalizados.
-Integridad de los datos.
-ÚNICO, NO NULO.
-Claves primarias.
-Llaves extranjeras.
-Restricciones de exclusión.
-Bloqueos explícitos, bloqueos de aviso.
-Concurrencia, Rendimiento.
-Indexación: árbol B, varias columnas, expresiones, parcial.
-Indexación avanzada: GiST, SP-Gist, KNN Gist, GIN, BRIN, índices de cobertura, filtros Bloom.
-Planificador/optimizador de consultas sofisticado, escaneos de solo índice, estadísticas de varias columnas.
-Transacciones, transacciones anidadas (a través de puntos de guardado).
-Control de concurrencia de múltiples versiones (MVCC).
-Paralelización de consultas de lectura y creación de índices de árbol B.
-Particionamiento de tablas.
-Todos los niveles de aislamiento de transacciones definidos en el estándar SQL, incluido Serializable.
-Compilación de expresiones justo a tiempo (JIT).
-Confiabilidad, Recuperación de Desastres.
-Registro de escritura anticipada (WAL)
-Replicación: Asíncrona, Sincrónica, Lógica
-Recuperación de un punto en el tiempo (PITR), esperas activas
-Espacios de tablas
-Seguridad.
-Autenticación: GSSAPI, SSPI, LDAP, SCRAM-SHA-256, Certificado y más
-Robusto sistema de control de acceso
-Seguridad a nivel de columna y fila
-Autenticación multifactor con certificados y un método adicional
-Extensibilidad.
-Funciones y procedimientos almacenados
-Lenguajes de procedimiento: PL/PGSQL, Perl, Python (y muchos más)
-Expresiones de ruta SQL/JSON
-Envoltorios de datos externos: conéctese a otras bases de datos o flujos con una interfaz SQL estándar
-Interfaz de almacenamiento personalizable para tablas
-Muchas extensiones que brindan funcionalidad adicional, incluido PostGIS
-Internacionalización, Búsqueda de Texto, [1].
-Compatibilidad con conjuntos de caracteres internacionales, por ejemplo, a través de intercalaciones de ICU
-Intercalaciones que no distinguen entre mayúsculas y minúsculas ni acentos
-Búsqueda de texto completo
-        
-        [1] PostgreSQL, «PostgreSQL?,» [En línea]. Available: https://www.postgresql.org/about/. [Último acceso: 2 Julio 2022].
+                <p>PostgreSQL es un potente sistema de base de datos relacional de objetos de código abierto que utiliza 
+                    y amplía el lenguaje SQL combinado con muchas características que almacenan y escalan de forma segura 
+                    las cargas de trabajo de datos más complicadas. Los orígenes de PostgreSQL se remontan a 1986 como parte 
+                    del proyecto POSTGRES de la Universidad de California en Berkeley y cuenta con más de 30 años de desarrollo 
+                    activo en la plataforma central.<a href="#1" class="link-dark" >[1]</a></p>
+
+                <div id="listafunciones"></div><p>A continuación, se muestra una lista exhaustiva de varias funciones que se encuentran en PostgreSQL, y 
+                    se agregan más en cada versión importante:</p>
+
+                <div id="Tiposdedatos"></div><h5>Tipos de datos<a href="#1" class="link-dark" >[1]</a></h5>
+                <ul>
+                    <li>Primitivas: entero, numérico, cadena, booleano.</li>
+                    <li>Estructurado: Fecha/Hora, Matriz, Rango/Multirango, UUID.</li>
+                    <li>Documento: JSON/JSONB, XML, clave-valor (Hstore).</li>
+                    <li>Geometría: punto, línea, círculo, polígono.</li>
+                    <li>Personalizaciones: Compuesto, Tipos personalizados.</li>
+                </ul>
+                
+                <div id="Integridad"></div><h5>Integridad de los datos.<a href="#1" class="link-dark" >[1]</a></h5>
+                <ul>
+                    <li>ÚNICO, NO NULO.</li>
+                    <li>Claves primarias.</li>
+                    <li>Llaves extranjeras.</li>
+                    <li>Restricciones de exclusión.</li>
+                    <li>Bloqueos explícitos, bloqueos de aviso.</li>
+                </ul>
+                
+                <div id="Concurrencia"></div><h5>Concurrencia, Rendimiento.<a href="#1" class="link-dark" >[1]</a></h5>
+                <ul>
+                    <li>Indexación: árbol B, varias columnas, expresiones, parcial.</li>
+                    <li>Indexación avanzada: GiST, SP-Gist, KNN Gist, GIN, BRIN, índices de cobertura, filtros Bloom.</li>
+                    <li>Planificador/optimizador de consultas sofisticado, escaneos de solo índice, estadísticas de varias columnas.</li>
+                    <li>Transacciones, transacciones anidadas (a través de puntos de guardado).</li>
+                    <li>Control de concurrencia de múltiples versiones (MVCC).</li>
+                    <li>Paralelización de consultas de lectura y creación de índices de árbol B.</li>
+                    <li>Particionamiento de tablas.</li>
+                    <li>Todos los niveles de aislamiento de transacciones definidos en el estándar SQL, incluido Serializable.</li>
+                    <li>Compilación de expresiones justo a tiempo (JIT).</li>
+                </ul>
+                
+                <div id="Confiabilidad"></div><h5>Confiabilidad, Recuperación de Desastres.<a href="#1" class="link-dark" >[1]</a></h5>
+                <ul>
+                    <li>Registro de escritura anticipada (WAL)</li>
+                    <li>Replicación: Asíncrona, Sincrónica, Lógica</li>
+                    <li>Recuperación de un punto en el tiempo (PITR), esperas activas</li>
+                    <li>Espacios de tablas</li>
+                </ul>
+                
+                <div id="Seguridad"></div><h5>Seguridad.<a href="#1" class="link-dark" >[1]</a></h5>
+                <ul>
+                    <li>Autenticación: GSSAPI, SSPI, LDAP, SCRAM-SHA-256, Certificado y más</li>
+                    <li>Robusto sistema de control de acceso</li>
+                    <li>Seguridad a nivel de columna y fila</li>
+                    <li>Autenticación multifactor con certificados y un método adicional</li>
+                </ul>
+                
+                <div id="Extensibilidad"></div><h5>Extensibilidad.<a href="#1" class="link-dark" >[1]</a></h5>
+                <ul>
+                    <li>Funciones y procedimientos almacenados</li>
+                    <li>Lenguajes de procedimiento: PL/PGSQL, Perl, Python (y muchos más)</li>
+                    <li>Expresiones de ruta SQL/JSON</li>
+                    <li>Envoltorios de datos externos: conéctese a otras bases de datos o flujos con una interfaz SQL estándar</li>
+                    <li>Interfaz de almacenamiento personalizable para tablas</li>
+                    <li>Muchas extensiones que brindan funcionalidad adicional, incluido PostGIS</li>
+                </ul>
+                
+                <div id="Internacionalización"></div><h5>Internacionalización, Búsqueda de Texto.<a href="#1" class="link-dark" >[1]</a></h5>
+                <ul>
+                    <li>Compatibilidad con conjuntos de caracteres internacionales, por ejemplo, a través de intercalaciones de ICU</li>
+                    <li>Intercalaciones que no distinguen entre mayúsculas y minúsculas ni acentos</li>
+                    <li>Búsqueda de texto completo</li>
+                </ul>
+                
+                <div id="Bibliografia"></div>
+                <hr class="border-primary border-3 opacity-75"><!-- linia divisora del contenido -->
+                <h1 class="centrado"><strong>Bibliografia de esta pagina</strong></h1>
+                <br>
+                <div id="11">
+                    <div id="1"></div><p>[1]    PostgreSQL, «PostgreSQL?,» [En línea]. Available: https://www.postgresql.org/about/. [Último acceso: 2 Julio 2022].</p>
+                    <br>
+                    <a href="#comienzodelapagina" class="link-dark" ><img src="../imagenes/flecha-correcta.png" class="rounded mx-auto d-block" alt="..."></a>
+                    <br>
+                </div>
+            </div>
+        </div>
     </body>
-    
-    
-    
 </html>
